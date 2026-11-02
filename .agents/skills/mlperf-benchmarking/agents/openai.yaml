@@ -1,0 +1,4 @@
+interface:
+  display_name: "MLPerf Benchmarking"
+  short_description: "Run and analyze MLPerf benchmark results"
+  default_prompt: "Use $mlperf-benchmarking to analyze these MLPerf results and state their scope and limitations."

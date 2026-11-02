@@ -2,10 +2,15 @@
 
 ## Current Baseline
 
-This repository currently contains contributor documentation only. Do not assume
-that notebooks, source packages, tests, dependency files, or datasets already
-exist. Add those components deliberately and update this guide when the
-repository structure changes.
+This repository currently contains documentation and a reusable MLPerf skill.
+Do not assume that notebooks, source packages, tests, dependency
+files, or datasets already exist.
+
+## Agent Skill
+
+The MLPerf skill is `.agents/skills/mlperf-benchmarking/`. Read its
+`SKILL.md` for MLPerf suite, execution, result, device, GNN, or roofline work.
+Invoke it explicitly with `$mlperf-benchmarking` when needed.
 
 ## Project Structure & Module Organization
 
@@ -45,7 +50,7 @@ secrets. Use `ruff` or `black` if either tool is added to the project.
 Use `pytest` and name tests `tests/test_<behavior>.py` with functions named
 `test_<expected_behavior>`. Mock paid model APIs and external services so the
 default suite runs offline. Every bug fix should include a regression test when
-practical; report any tests or notebooks that could not be executed.
+practical; report tests or notebooks that could not be executed.
 
 ## Commit & Pull Request Guidelines
 
@@ -59,6 +64,6 @@ screenshots for user-visible behavior.
 
 Load credentials from environment variables and provide placeholders only in
 `.env.example`. Clear sensitive notebook outputs before committing them. Agents
-should inspect the current tree before suggesting commands, change only
+should inspect the tree before suggesting commands, change only
 task-related files, preserve unrelated work, and never commit datasets or
-generated artifacts without explicit approval.
+generated artifacts without approval.
