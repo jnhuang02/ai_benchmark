@@ -1,0 +1,9 @@
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.4
+torch>=2.4
+torch-geometric>=2.6
+matplotlib>=3.8
+ipykernel>=6.29
+jupyterlab>=4.2
+pytest>=8.0

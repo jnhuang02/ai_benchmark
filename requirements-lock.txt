@@ -1,0 +1,10 @@
+# Tested top-level versions for the reported development run.
+pandas==3.0.2
+numpy==2.4.4
+scikit-learn==1.8.0
+matplotlib==3.10.9
+torch==2.11.0
+torch-geometric==2.7.0
+ipykernel==7.1.0
+jupyterlab==4.6.5
+pytest==9.2.0
