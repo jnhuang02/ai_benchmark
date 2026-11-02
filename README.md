@@ -90,6 +90,9 @@ the slower leave-one-system-out evaluation.
 pytest -q
 ```
 
+On this Apple-silicon machine, use `arch -arm64 ./.venv/bin/python -m pytest -q`
+when the shell reports `x86_64`.
+
 The tests verify input hashes, expected row and system counts, target
 construction, heterogeneous graph node/edge types, and construction of the
 GraphSAGE and ablation models.
@@ -100,6 +103,26 @@ The committed five-fold run and its interpretation are documented in
 [`results/datacenter_edge/README.md`](results/datacenter_edge/README.md).
 Pooled MAPE must be interpreted alongside the per-workload table because five
 singleton workload groups account for most of the aggregate error.
+
+## Thesis figures
+
+The `figures/` directory contains eight publication-ready PDF/PNG figures
+covering the current thesis data scope, exploratory associations,
+metadata-only baselines, GraphSAGE/random-forest comparison, workload-level
+diagnostics, sparse-group and Edge limitations, and the evaluation pipeline.
+
+The figure generator is `scripts/generate_thesis_figures.py`. Its compact,
+reviewable data inputs are in `data/thesis_figures/`, and the provenance notes
+distinguish current-thesis reported metrics from the MLPerf v6.1 coverage
+counts. Suggested thesis placements and LaTeX captions are in
+[`notes/figure_insert_guide.md`](notes/figure_insert_guide.md).
+
+Regenerate the figure set with:
+
+```bash
+MPLCONFIGDIR=.cache/matplotlib python scripts/generate_thesis_figures.py
+python -m unittest discover -s tests -v
+```
 
 ## Scientific limits
 

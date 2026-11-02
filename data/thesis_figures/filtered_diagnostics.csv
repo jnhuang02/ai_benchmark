@@ -1,0 +1,3 @@
+method,mean_mape_pct,median_mape_pct,within_50_pct
+GraphSAGE,59.5,26.6,73.3
+Random forest,164.3,20.6,71.4

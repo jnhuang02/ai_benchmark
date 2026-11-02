@@ -1,0 +1,15 @@
+workload,datacenter_cells,edge_cells,total_cells
+GPT-OSS-120B,112,0,112
+Llama 2 70B,87,0,87
+Llama 3.1 8B,76,0,76
+DeepSeek-R1,70,0,70
+VLM,46,0,46
+Text-to-video,30,0,30
+Whisper,23,2,25
+YOLO-95,0,9,9
+DLRM-v3,6,0,6
+R-GAT,5,0,5
+Agentic Edge,0,5,5
+YOLO-99,0,3,3
+End-to-End QA,1,0,1
+End-to-End Vector DB,1,0,1

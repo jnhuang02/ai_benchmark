@@ -1,0 +1,3 @@
+model,groups_with_lower_median_ape,total_groups
+GraphSAGE,8,20
+Random forest,12,20

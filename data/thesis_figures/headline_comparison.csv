@@ -1,0 +1,11 @@
+method,metric,value,lower_is_better
+GraphSAGE,pooled_mape_pct,460.7,true
+Random forest,pooled_mape_pct,557.0,true
+GraphSAGE,median_group_mape_pct,38.8,true
+Random forest,median_group_mape_pct,67.8,true
+GraphSAGE,median_row_mape_pct,27.4,true
+Random forest,median_row_mape_pct,23.5,true
+GraphSAGE,normalized_rmse,1.455,true
+Random forest,normalized_rmse,1.502,true
+GraphSAGE,median_group_spearman,0.711,false
+Random forest,median_group_spearman,0.732,false

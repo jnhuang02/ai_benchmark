@@ -1,0 +1,9 @@
+workload,ridge_mape_pct,knn_mape_pct
+VLM Server,18.4,24.7
+VLM Offline,14.5,19.7
+DeepSeek-R1 Server,16.3,21.0
+DeepSeek-R1 Offline,16.3,20.4
+Llama 3.1 8B Offline,21.7,63.1
+Whisper Offline,32.0,43.6
+Llama 2 70B Offline,97.8,64.6
+GPT-OSS-120B Offline,84.8,56.9

@@ -1,0 +1,11 @@
+workload,n,median_ape_pct,spearman_rho
+Llama 2 70B Interactive,9,9.2,0.33
+Text-to-video SingleStream,15,10.4,0.76
+VLM Offline,19,11.3,0.86
+VLM Server,18,16.5,0.92
+DeepSeek-R1 Server,32,16.9,0.79
+Whisper Offline,23,21.5,0.93
+DeepSeek-R1 Offline,32,22.5,0.80
+GPT-OSS-120B Offline,54,27.5,0.69
+Llama 3.1 8B Offline,31,34.6,0.95
+Llama 3.1 8B Server,31,35.5,0.95

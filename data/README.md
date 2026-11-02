@@ -15,3 +15,8 @@ independent system identifiers.
 Source: [MLCommons Inference Results v6.1](https://github.com/mlcommons/inference_results_v6.1).
 The original exports are public benchmark metadata and measurements. They are
 not accuracy-compliance records and do not contain hardware profiler counters.
+
+The compact inputs used to regenerate the thesis result figures are in
+[`thesis_figures/`](thesis_figures/). That directory also records the exact
+current-thesis provenance and whether each displayed metric has a
+higher-is-better or lower-is-better direction.

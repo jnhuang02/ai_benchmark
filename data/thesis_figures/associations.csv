@@ -1,0 +1,7 @@
+workload,metric,n,spearman_rho
+DeepSeek-R1 Offline,throughput,32,0.90
+VLM Server,throughput,18,0.95
+GPT-OSS-120B Offline,throughput,54,0.79
+Llama 3.1 8B Offline,throughput,22,0.80
+Llama 2 70B Interactive,throughput,9,-0.27
+Text-to-video SingleStream,latency,15,-0.81

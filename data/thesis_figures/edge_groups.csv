@@ -1,0 +1,9 @@
+group,rows
+Agentic Edge SingleStream,5
+YOLO-95 MultiStream,3
+YOLO-95 Offline,3
+YOLO-95 SingleStream,3
+Whisper Offline,2
+YOLO-99 MultiStream,1
+YOLO-99 Offline,1
+YOLO-99 SingleStream,1

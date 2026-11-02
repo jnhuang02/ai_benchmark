@@ -1,0 +1,7 @@
+metric,value
+datacenter_submissions,98
+edge_submissions,10
+datacenter_result_cells,457
+edge_result_cells,19
+combined_systems,96
+combined_workload_groups,31
