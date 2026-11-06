@@ -1,14 +1,14 @@
 # AI Benchmark
 
 This repository contains the reproducibility package for the thesis study
-**Hybrid Roofline-GNN Models for Predicting LLM Inference Performance Across
-Datacenter Accelerators**.
+**Heterogeneous Graph Neural Networks for Predicting MLPerf Inference
+Performance from System and Workload Metadata**.
 
 The current experiment predicts task-specific MLPerf Inference v6.1
-performance using a heterogeneous GraphSAGE model over systems, accelerators,
-processors, workloads, and result records. It compares that model with
-target-group median, Ridge regression, and random forest baselines under
-complete-system-held-out validation.
+performance using heterogeneous GraphSAGE, GCN, and GAT models over systems,
+accelerators, processors, workloads, and result records. It compares those
+models with target-group median, Ridge regression, and random forest baselines
+under complete-system-held-out validation.
 
 The reported values are model-validation results, not official MLPerf
 submissions. The MLPerf exports contain performance measurements but no
@@ -26,6 +26,8 @@ general accuracy-compliance field or hardware-profiler counters.
 - `data/mlperf_long.csv`: the normalized 476-row analysis table.
 - `results/datacenter_edge/`: five-fold summary, per-group metrics, and
   row-level held-out predictions.
+- `results/architecture_ablation/`: shared-fold GraphSAGE, GCN, and GAT
+  comparison with per-group metrics and row-level predictions.
 - `tests/`: data-contract, graph-construction, and model-construction checks.
 
 ## Input scope
@@ -77,6 +79,18 @@ python -m ai_benchmark.train_graphsage \
   --suite all --folds 5 --model graphsage
 ```
 
+Run GraphSAGE, GCN, and GAT on identical folds:
+
+```bash
+python -m ai_benchmark.train_graphsage \
+  --suite all --folds 5 \
+  --models graphsage gcn gat
+```
+
+`--models` runs every listed architecture with the same fold assignments and
+random seeds. GAT uses four attention heads by default; set
+`--attention-heads` to change that value.
+
 Or open `mlperf_graphsage.ipynb` and run it from top to bottom. The notebook
 uses the checked-in `data/raw` files by default and falls back to
 `~/Downloads/mlcommons_results_latest`.
@@ -103,6 +117,12 @@ The committed five-fold run and its interpretation are documented in
 [`results/datacenter_edge/README.md`](results/datacenter_edge/README.md).
 Pooled MAPE must be interpreted alongside the per-workload table because five
 singleton workload groups account for most of the aggregate error.
+
+The completed architecture ablation is documented in
+[`results/architecture_ablation/README.md`](results/architecture_ablation/README.md).
+GCN has the best median workload-group error and rank correlation, while
+GraphSAGE is substantially more stable on pooled error and filtered mean error.
+GAT is intermediate and remains sensitive to sparse extrapolation cases.
 
 ## Thesis figures
 

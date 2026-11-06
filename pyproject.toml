@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ai-benchmark"
 version = "0.1.0"
-description = "Heterogeneous GraphSAGE modeling of MLPerf inference results"
+description = "Heterogeneous GNN modeling of MLPerf inference results"
 requires-python = ">=3.10"
 dependencies = [
   "pandas>=2.2",

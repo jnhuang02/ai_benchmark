@@ -3,7 +3,9 @@ from pathlib import Path
 import numpy as np
 
 from ai_benchmark import prepare_data
-from ai_benchmark.train_graphsage import HeteroGraphSAGE, make_graph
+from pandas import DataFrame
+
+from ai_benchmark.train_graphsage import HeteroGraphSAGE, make_graph, metrics
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -52,3 +54,17 @@ def test_graphsage_and_ablation_models_construct():
     assert HeteroGraphSAGE(64, 2, "graphsage").head.out_features == 1
     assert HeteroGraphSAGE(64, 2, "gcn").head.out_features == 1
     assert HeteroGraphSAGE(64, 2, "gat").head.out_features == 1
+
+
+def test_metrics_report_median_row_error():
+    evaluation = DataFrame(
+        {
+            "result": [10.0, 20.0, 40.0],
+            "prediction": [12.0, 10.0, 80.0],
+            "target_group": ["a", "a", "b"],
+            "y": [0.0, 1.0, 2.0],
+        }
+    )
+    result = metrics(evaluation, evaluation["y"].to_numpy())
+
+    assert result["median_row_mape"] == 0.5

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Train a heterogeneous GraphSAGE performance model and grouped baselines."""
+"""Train heterogeneous GNN performance models and grouped baselines."""
 
 from __future__ import annotations
 
@@ -24,6 +24,7 @@ from torch_geometric.nn import GATConv, HeteroConv, SAGEConv
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+AVAILABLE_MODELS = ("graphsage", "gcn", "gat")
 
 NUMERIC_COLUMNS = [
     "nodes",
@@ -153,14 +154,21 @@ def baseline_matrix(
 
 class HeteroGraphSAGE(nn.Module):
     def __init__(
-        self, hidden: int, layers: int, model_name: str, dropout: float = 0.2
+        self,
+        hidden: int,
+        layers: int,
+        model_name: str,
+        dropout: float = 0.2,
+        attention_heads: int = 4,
     ) -> None:
         super().__init__()
         self.convs = nn.ModuleList()
         for _ in range(layers):
             edge_types = graph_edge_types()
             convolutions = {
-                edge_type: bipartite_conv(edge_type, hidden, model_name)
+                edge_type: bipartite_conv(
+                    edge_type, hidden, model_name, attention_heads
+                )
                 for edge_type in edge_types
             }
             self.convs.append(HeteroConv(convolutions, aggr="sum"))
@@ -210,21 +218,43 @@ class BipartiteGCNConv(nn.Module):
         return output + destination_x + self.bias
 
 
+class BipartiteGATConv(nn.Module):
+    """Multi-head GAT messages plus a learned destination self-term."""
+
+    def __init__(self, output_size: int, heads: int) -> None:
+        super().__init__()
+        self.message = GATConv(
+            (-1, -1),
+            output_size,
+            heads=heads,
+            concat=False,
+            add_self_loops=False,
+        )
+        self.root = nn.LazyLinear(output_size, bias=False)
+
+    def forward(
+        self,
+        source_and_destination: tuple[torch.Tensor, torch.Tensor],
+        edge_index: torch.Tensor,
+    ) -> torch.Tensor:
+        source_x, destination_x = source_and_destination
+        return self.message(
+            (source_x, destination_x), edge_index
+        ) + self.root(destination_x)
+
+
 def bipartite_conv(
-    edge_type: tuple[str, str, str], hidden: int, model_name: str
+    edge_type: tuple[str, str, str],
+    hidden: int,
+    model_name: str,
+    attention_heads: int,
 ) -> nn.Module:
     if model_name == "graphsage":
         return SAGEConv((-1, -1), hidden)
     if model_name == "gcn":
         return BipartiteGCNConv(hidden)
     if model_name == "gat":
-        return GATConv(
-            (-1, -1),
-            hidden,
-            heads=1,
-            concat=False,
-            add_self_loops=False,
-        )
+        return BipartiteGATConv(hidden, attention_heads)
     raise ValueError(f"Unknown model: {model_name}")
 
 
@@ -409,6 +439,7 @@ def metrics(evaluation: pd.DataFrame, log_predictions: np.ndarray) -> dict[str, 
     return {
         "pooled_mape": float(np.mean(mape)),
         "median_group_mape": float(np.median(group_mape)),
+        "median_row_mape": float(np.median(mape)),
         "rmse_log_score": float(np.sqrt(np.mean((log_predictions - evaluation["y"]) ** 2))),
         "median_group_spearman": group_spearman(evaluation),
     }
@@ -428,9 +459,16 @@ def train_gnn(
     train_mask: np.ndarray,
     validation_mask: np.ndarray,
     test_mask: np.ndarray,
+    model_name: str,
     args: argparse.Namespace,
 ) -> np.ndarray:
-    model = HeteroGraphSAGE(args.hidden, args.layers, args.model, args.dropout)
+    model = HeteroGraphSAGE(
+        args.hidden,
+        args.layers,
+        model_name,
+        args.dropout,
+        attention_heads=getattr(args, "attention_heads", 4),
+    )
     optimizer = torch.optim.AdamW(
         model.parameters(), lr=args.learning_rate, weight_decay=args.weight_decay
     )
@@ -482,6 +520,7 @@ def train_gnn(
 def cross_validate(
     frame: pd.DataFrame, args: argparse.Namespace
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
+    model_names = list(getattr(args, "models", None) or [args.model])
     systems = np.array(sorted(frame["system_id"].unique()))
     if args.loso:
         outer_folds = [([system], [s for s in systems if s != system]) for system in systems]
@@ -552,17 +591,23 @@ def cross_validate(
                 prediction_log=log_prediction,
             )
 
-        graph = make_graph(frame, train)
-        graph["result"].y = torch.as_tensor(y_norm, dtype=torch.float32)
-        set_seed(args.seed + fold)
-        log_prediction = train_gnn(
-            graph, train_mask, validation_mask, test_mask, args
-        )
-        output_frames[args.model] = evaluation.assign(
-            prediction=scaler.inverse(evaluation, log_prediction),
-            y=y_norm[test_mask],
-            prediction_log=log_prediction,
-        )
+        for model_name in model_names:
+            graph = make_graph(frame, train)
+            graph["result"].y = torch.as_tensor(y_norm, dtype=torch.float32)
+            set_seed(args.seed + fold)
+            log_prediction = train_gnn(
+                graph,
+                train_mask,
+                validation_mask,
+                test_mask,
+                model_name,
+                args,
+            )
+            output_frames[model_name] = evaluation.assign(
+                prediction=scaler.inverse(evaluation, log_prediction),
+                y=y_norm[test_mask],
+                prediction_log=log_prediction,
+            )
 
         for name, prediction_frame in output_frames.items():
             if "prediction_log" not in prediction_frame:
@@ -589,7 +634,8 @@ def cross_validate(
             )
         print(
             f"fold {fold + 1:>3}/{len(outer_folds)} | "
-            f"held out {len(evaluation):>3} rows / {len(test_systems):>2} systems"
+            f"held out {len(evaluation):>3} rows / {len(test_systems):>2} systems | "
+            f"models: {', '.join(model_names)}"
         )
 
     predictions = pd.concat(all_predictions, ignore_index=True)
@@ -661,11 +707,27 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--model",
         default="graphsage",
-        choices=["graphsage", "gcn", "gat"],
+        choices=AVAILABLE_MODELS,
+        help="Single graph model to evaluate.",
+    )
+    parser.add_argument(
+        "--models",
+        nargs="+",
+        choices=AVAILABLE_MODELS,
+        help=(
+            "Evaluate multiple graph models on identical folds. "
+            "Overrides --model."
+        ),
     )
     parser.add_argument("--hidden", type=int, default=64)
     parser.add_argument("--layers", type=int, default=2)
     parser.add_argument("--dropout", type=float, default=0.2)
+    parser.add_argument(
+        "--attention-heads",
+        type=int,
+        default=4,
+        help="Number of attention heads used by GAT.",
+    )
     parser.add_argument("--epochs", type=int, default=150)
     parser.add_argument("--patience", type=int, default=20)
     parser.add_argument("--learning-rate", type=float, default=0.01)
@@ -696,9 +758,13 @@ def main() -> None:
 
     summary, predictions = cross_validate(frame, args)
     args.out_dir.mkdir(parents=True, exist_ok=True)
-    summary_path = args.out_dir / f"{args.suite}_{args.model}_summary.csv"
-    prediction_path = args.out_dir / f"{args.suite}_{args.model}_predictions.csv"
-    group_path = args.out_dir / f"{args.suite}_{args.model}_groups.csv"
+    model_names = list(getattr(args, "models", None) or [args.model])
+    run_name = (
+        args.model if len(model_names) == 1 else "architecture_comparison"
+    )
+    summary_path = args.out_dir / f"{args.suite}_{run_name}_summary.csv"
+    prediction_path = args.out_dir / f"{args.suite}_{run_name}_predictions.csv"
+    group_path = args.out_dir / f"{args.suite}_{run_name}_groups.csv"
     summary.to_csv(summary_path, index=False)
     prediction_columns = [
         "fold",
