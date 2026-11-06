@@ -1,0 +1,18 @@
+fold   1/5 | held out  96 rows / 20 systems | models: graphsage, gcn, gat
+fold   2/5 | held out  66 rows / 19 systems | models: graphsage, gcn, gat
+fold   3/5 | held out  82 rows / 19 systems | models: graphsage, gcn, gat
+fold   4/5 | held out  87 rows / 19 systems | models: graphsage, gcn, gat
+fold   5/5 | held out 145 rows / 19 systems | models: graphsage, gcn, gat
+
+Grouped system-level validation (development evidence, not an official MLPerf result):
+       method        pooled_mape median_group_mape median_row_mape rmse_log_score median_group_spearman pooled_mape_95ci_low pooled_mape_95ci_high fold_median_mape
+    graphsage              4.607             0.388           0.274          1.455                 0.711                0.681                10.539            0.696
+random_forest              5.570             0.678           0.235          1.502                 0.732                1.086                14.191            1.050
+          gat              7.622             0.372           0.274          1.444                 0.661                0.730                21.267            1.075
+ group_median            250.566             0.776           0.630          1.828                -0.369                2.937               739.624            3.913
+          gcn           4502.656             0.359           0.266          1.480                 0.749               17.700             13447.674            1.056
+        ridge 84104951177567.156             0.603           0.506          1.903                 0.666             5255.646   214304302014280.594            2.139
+
+Summary:      results/architecture_ablation/all_architecture_comparison_summary.csv
+Predictions:  results/architecture_ablation/all_architecture_comparison_predictions.csv
+Groups:       results/architecture_ablation/all_architecture_comparison_groups.csv
