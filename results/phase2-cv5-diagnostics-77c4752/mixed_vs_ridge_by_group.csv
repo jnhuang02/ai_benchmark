@@ -1,0 +1,21 @@
+target_group,hierarchical_mixed,ridge,mixed_minus_ridge
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,1.4128449131170755,0.9048640716459889,0.5079808414710866
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,0.4429909994759681,0.17136953099101843,0.27162146848494967
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,0.4851731097017226,0.1587018771257732,0.32647123257594945
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,0.06173831580532489,0.497521826945653,-0.4357835111403281
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,0.4387616557740969,0.20106583374095716,0.23769582203313977
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,0.44298831694979784,0.216770613849965,0.22621770309983286
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,0.3243398446773604,1.6298138575872436,-1.3054740129098832
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,0.5480198085628638,0.2843031775650102,0.2637166309978536
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,0.6090940591195189,0.3129578477628872,0.29613621135663165
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,0.22303354795152863,0.0862669629767037,0.1367665849748249
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,0.5298972510206603,0.4085567576018295,0.1213404934188308
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,0.5533225434434421,0.39383732751080025,0.15948521593264187
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,0.539420024571676,0.5360448373133291,0.0033751872583469567
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,0.472580093398555,0.7486359687100677,-0.27605587531151266
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,0.577233728344105,0.9305932171723832,-0.35335948882827817
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,0.2681090160258803,0.2109378375350735,0.05717117849080677
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,0.3904891310543158,0.24430346101933625,0.14618567003497956
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),0.2846676593089954,0.19107352433992605,0.09359413496906935
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,0.5116021440510414,0.3870766518374419,0.12452549221359954
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),0.40677288159098657,0.46005569988700695,-0.053282818296020384

@@ -1,0 +1,8 @@
+temporary_root=/tmp/stage3c-fresh-final.p3QjNy
+mlperf_commit=0829eda8abbe547d4e6f528288fa5f88c9e4b87d
+thesis_commit=dafcf4879e4c0cff8c2366efe79e9e5424d508d1
+command=arch -arm64 python3 generate_thesis_results.py --snapshot-only
+/private/tmp/stage3c-fresh-final.p3QjNy/thesis_overleaf/generated
+generated_assets_clean=yes
+main_table_sha256=b8a6f1d319eebcae4bff7784dd32cb69518486786b06a5765391611c37da0ea1
+checker_command=arch -arm64 python3 stage3c_final_checks.py --run-tests

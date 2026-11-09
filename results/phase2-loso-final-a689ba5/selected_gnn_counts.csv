@@ -1,0 +1,4 @@
+selected_gnn,fold_seed_selections
+gat,16
+gcn,152
+graphsage,129

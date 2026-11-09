@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-11-08T01:13:53.997151+00:00",
+  "data_sha256": "a6853e1e2dc777404ddf9f5e0546679fef758df38bc4ebe5bba21e0c0bb735dd",
+  "full_test_suite": {
+    "module_counts": {
+      "test_data": 3,
+      "test_folds": 3,
+      "test_leakage": 8,
+      "test_metrics": 2,
+      "test_phase2": 5
+    },
+    "output_sha256": "bc32c3bdc317fdfa6ce0cb1b6871e90ee3aab64d1a8e25e9f5254752bd7663d6",
+    "targeted_phase2_and_fold_tests": 8,
+    "tests": 21
+  },
+  "git_branch": "stage-3a-plan",
+  "git_commit": "e97bb939b3488766a17d4ad310f734c97944688e",
+  "git_dirty": false,
+  "loafo_main_table_sha256": "a18ee08a239b790079d9a6858ff0361b91b27b0a8af97ab52b887076f38ded3c",
+  "loafo_predictions_sha256": "55bb110d65e68444dd5138c576e733059d4ad6c660a20bd2d9d5aad204fd43c8",
+  "loafo_total_systems_accounted_for": 105,
+  "loafo_unique_tested_systems": 97,
+  "output_sha256": {
+    "headline_claim_counts.csv": "639e9d3c14e82b02ecefced8d0b6deec13c9e39718c44f3c2e86777d92280766",
+    "loafo_family_support.csv": "26a74465c0d04cdbe98191789cddc2632ee5f04f4190b6c830d21609e49da4d5",
+    "loafo_group_median_comparisons.csv": "f0dda7572ba74c18e8e35011d1ef782dbddacf2ec91050e8d0f5080639f4022c",
+    "loafo_system_coverage.csv": "1737de242bdcfd412245a27357c8fad3c35c82836c1371f15dc9234503a43840",
+    "partial_pooling_status.json": "87489558dcadab51d03fcd158a0180e9e582c962c92a2c9a15de824f6946a99d",
+    "test_module_counts.csv": "df63c7d3e674d5b9b7e0011705fb67b06e636a1117c753b98d6d752d8a6f242d",
+    "test_suite_output.txt": "bc32c3bdc317fdfa6ce0cb1b6871e90ee3aab64d1a8e25e9f5254752bd7663d6"
+  },
+  "partial_pooling_deviation_id": "S3A-SHRINK-001",
+  "partial_pooling_status": "not_run",
+  "protocol_history_sha256": "8a05e9edfab1332800fe349b6ed15f9d9b35886ea3ece4a2ae0f980f039f7f1e",
+  "protocol_sha256": "d4c5930477b54f6b3a65bbc1be98b755bc4a2335efcc2261294469d6f0123f3e"
+}

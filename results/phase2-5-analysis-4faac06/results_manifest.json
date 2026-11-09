@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-11-08T00:36:08.860349+00:00",
+  "cv5_predictions_sha256": "fbb24f26c92c9f649c4da26895889a87dafcf5b18905e61f9ee227b2a41c2597",
+  "data_sha256": "a6853e1e2dc777404ddf9f5e0546679fef758df38bc4ebe5bba21e0c0bb735dd",
+  "empty_loso_folds": [
+    "holdout_000",
+    "holdout_049",
+    "holdout_098",
+    "holdout_099",
+    "holdout_101",
+    "holdout_102"
+  ],
+  "git_branch": "phase-2.5-loafo",
+  "git_commit": "4faac06eec7951706571e8d1943085c423bfbd2b",
+  "git_dirty": false,
+  "loso_predictions_sha256": "5f1b3540157480b65b9a7285b53663c7da69316fb514ec39702d1b3cd0cfb9dd",
+  "output_sha256": {
+    "loso_empty_folds.csv": "8e9f0422375b2239ac94946c436f2f2696456d8c808c85bcf27914be33b541d7",
+    "loso_powell_fallback.csv": "77af2cf1eca8de50ded5009bceb54ff16218d6bf4f28576fab2d8133ac511bf5",
+    "tail_summary.csv": "d22edf72aae46bdfa326ca5f502140ab10793cdf659a293c4d5f120e42236660"
+  },
+  "powell_fallback_fold": "holdout_089",
+  "powell_fallback_system": "datacenter|Supermicro|AS-4126GS-NMR-LCC|datacenter",
+  "protocol_sha256": "d4c5930477b54f6b3a65bbc1be98b755bc4a2335efcc2261294469d6f0123f3e",
+  "tail_methods": [
+    "random_forest",
+    "mlp",
+    "graphsage"
+  ],
+  "tail_percentiles": [
+    0.5,
+    0.75,
+    0.9,
+    0.95
+  ]
+}

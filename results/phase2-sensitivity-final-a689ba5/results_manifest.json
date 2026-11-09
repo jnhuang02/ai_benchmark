@@ -1,0 +1,27 @@
+{
+  "bootstrap_replicates": 2000,
+  "created_utc": "2026-11-08T00:25:14.582881+00:00",
+  "data_sha256": "a6853e1e2dc777404ddf9f5e0546679fef758df38bc4ebe5bba21e0c0bb735dd",
+  "fold_assignments_sha256": "3ed4dd0bf019685255c6f6d11f309d10f147280487617cf8f49c7c437e433443",
+  "git_branch": "phase-1-evaluation",
+  "git_commit": "a689ba57926001e840971cac25e74da6d90a57ab",
+  "git_dirty": false,
+  "input_files": [
+    {
+      "path": "results/phase2-sensitivity-a689ba5/predictions.csv",
+      "sha256": "a3b4aed5f77e7de24e93f62e1416cde6c68b1ed9a9d17769d205b66a225512ef"
+    }
+  ],
+  "loafo_run": false,
+  "output_sha256": {
+    "bootstrap_by_method.csv": "0a0542e3209b179bde244fb54efdf9f1cbdedbe545d6fda8271f0b1d1d9a90bb",
+    "main_table.csv": "71d765f338ac9279590ac38638c4f81843bfda416bdd2f1f399f64c6a3dcad32",
+    "paired_differences.csv": "a7205a4b93536f7f80a5a93037e746e137347b7212e3f842e33423c4b8325253",
+    "per_group_results.csv": "3bc587e3f0133f87373fd65c9771eb8b7687015dcf98d68bc2df9cdf9a48f303",
+    "pooled_mape_appendix.csv": "30487444d736b4649e3126461f6b79bd3b77533b16d8a5e38323b17290a5d22c",
+    "predictions_by_fold_seed.csv": "9f4a18416866f58ad8d4ceb52ed150c3bdb6b05b381cd691471690042bc48dda",
+    "selected_gnn_counts.csv": "65c85ec1c9dff9ef512d0d7a75d2939ddfd22c653971091344f6d3f623e8676a"
+  },
+  "protocol": "sensitivity",
+  "protocol_sha256": "d4c5930477b54f6b3a65bbc1be98b755bc4a2335efcc2261294469d6f0123f3e"
+}

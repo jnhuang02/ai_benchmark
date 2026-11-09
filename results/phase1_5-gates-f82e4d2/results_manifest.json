@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-11-07T22:53:22.430151+00:00",
+  "data_sha256": "a6853e1e2dc777404ddf9f5e0546679fef758df38bc4ebe5bba21e0c0bb735dd",
+  "git_branch": "phase-1-evaluation",
+  "git_commit": "f82e4d25387f36c9408a6aeffce43d03365ba9a1",
+  "git_dirty": false,
+  "output_sha256": {
+    "gate_runtime.txt": "15c576f38505773b2d88c9347dc60d2e0cfa1a66454efc5559dfe789dd1dd1ff",
+    "loafo_family_proposal.csv": "1e952a888bcd8a970fc7fca2cd47c6e1bdff0b1244776adea51e840a9d6a52f2",
+    "loss_mask_bug_check.csv": "7fc86c1e8abf4aaa6f237b970cff4af4c407e2441074ad502fd073e384e14f74",
+    "mask_check_current.csv": "0a338a3bd8837b40173da12eee3df1578d0c4a367633b6613faa84b8816988c4",
+    "multi_count_rows.csv": "abfcc69975694ab8be6201c86ac157cc15bb5c2372e67429c032cc3a9dc85341",
+    "mutation_test.csv": "d8b99c8ee37fe5f1dba4fa15d323c01974dba1e6a3c1b1ed90ccaaf6b534ad4a",
+    "mutation_test.txt": "d6f78a34c1a8901aab48263dd4a51ef73d22844fea978ec88568e1ec1dbad215",
+    "phase1_fixed_seed7_comparison.csv": "691579c9a6cb6a41206250d973664b6844c0e8a2ce2fa9a5bcd4155e075b5eec",
+    "spearman_by_seed.csv": "936be92411072e4161a2937508cbded43f5dc8f5bc811f8f6164f7ffdc250baa",
+    "spearman_group_details.csv": "3d835425ecd9394d17ff6a36d8abfc94b442595257a88c9dffad8118077cafdb",
+    "spearman_reconciliation.csv": "1b6e5ca0fa7711efb34ab19bf402af0b012f8555845794c488376f638c8ac883"
+  },
+  "phase2_model_runs": 0
+}

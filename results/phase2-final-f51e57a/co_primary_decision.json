@@ -1,0 +1,8 @@
+{
+  "both_same_label": true,
+  "combined_label": "inconclusive",
+  "cv5_label": "inconclusive",
+  "hypothesis": "best_gnn - mlp primary error",
+  "loso_label": "inconclusive",
+  "sensitivity_label_not_co_primary": "worse"
+}

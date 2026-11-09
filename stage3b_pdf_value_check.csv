@@ -1,0 +1,13 @@
+expected_text,present_in_pdf,source_file
+0.201853,True,thesis_overleaf/main.pdf
+0.165012,True,thesis_overleaf/main.pdf
+0.261071,True,thesis_overleaf/main.pdf
+0.246446,True,thesis_overleaf/main.pdf
+0.617066,True,thesis_overleaf/main.pdf
+0.580975,True,thesis_overleaf/main.pdf
++0.115597,True,thesis_overleaf/main.pdf
+"[0.047136, 0.198051]",True,thesis_overleaf/main.pdf
++0.104155,True,thesis_overleaf/main.pdf
+"[0.023774, 0.192784]",True,thesis_overleaf/main.pdf
++0.158657,True,thesis_overleaf/main.pdf
+18 of 36,True,thesis_overleaf/main.pdf

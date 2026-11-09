@@ -1,0 +1,8 @@
+protocol,heldout_systems,test_rows,supported_test_rows,unsupported_test_rows
+cv5_partition_0,105,476,450,26
+cv5_partition_1,105,476,451,25
+cv5_partition_2,105,476,452,24
+cv5_partition_3,105,476,448,28
+cv5_partition_4,105,476,448,28
+loso,105,476,454,22
+cv5_all,105,2380,2249,131

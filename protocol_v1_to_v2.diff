@@ -1,0 +1,332 @@
+diff --git a/protocol.md b/protocol.md
+index 4bc0da1..5901666 100644
+--- a/protocol.md
++++ b/protocol.md
+@@ -1,7 +1,13 @@
+-# Phase 2 Pre-registration
++# Phase 2 Pre-registration, Version 2
+ 
+ Frozen: 2026-11-07, before any Phase 2 model run.
+ 
++This version supersedes Version 1 from commit `d3bc835`, whose file SHA-256 was
++`eb14e445f34c83ee817f59b35555f086be402d031534d4415815c575579fe811`.
++The amendment log is `protocol_history.md`. Any future design change must be
++committed and labeled exploratory unless it is made before any Phase 2 result
++exists and is recorded as a new pre-registered version.
++
+ Scope: MLPerf Inference v6.1, Closed division, Datacenter and Edge, 476
+ published measurements from 105 submitter-aware system descriptions.
+ 
+@@ -11,42 +17,55 @@ Canonical data SHA-256:
+ Accelerator-family map SHA-256:
+ `f52b4021cadbec2582d5b2b5fa5931c146630db068b9ac4ba871b21bc1703c2d`.
+ 
+-This protocol is frozen before seeing Phase 2 model results. Any later design
+-change is labeled exploratory. The file hash and introducing Git commit are
+-recorded in `protocol.sha256` and the Phase 1.5 report.
+-
+ ## Data and identity
+ 
+ - `system_id = suite|submitter|system_name|system_type`.
+-- `total_accelerators` is the scalar numeric accelerator-count feature on each
+-  result row.
++- Each result row uses its scalar exported `total_accelerators` count.
++- Every model uses `log1p(total_accelerators)` plus a CPU-only indicator.
++  CPU-only is defined as `total_accelerators == 0`. No zero-accelerator row is
++  silently dropped.
+ - The sorted tuple of reported counts is retained only for audit grouping. It
+   is not a numeric feature and is not part of the sensitivity split key.
+ - The sensitivity split key is `submitter|accelerator|processor`.
+-- Empty categorical metadata is represented by `<unknown>`. Training also
+-  masks categorical values to `<unknown>` with probability 0.1.
++- Empty categorical metadata is represented by `<unknown>`. Training masks
++  categorical values to `<unknown>` with probability 0.1.
+ - All vocabulary, imputation, scaling, target normalization, graph, and
+   baseline fitting uses training systems only. Validation systems are used for
+-  early stopping. Test systems enter only the inference graph after weights are
+-  fixed.
++  early stopping and the pre-registered best-GNN selection. Test systems enter
++  only the inference graph after weights are fixed.
++
++## Fold protocols and reuse
++
++One saved fold file keyed by `system_id` is the source of every Phase 2 model
++split: `folds/phase2_fold_assignments.csv`.
++
++Co-primary protocols:
+ 
+-## Protocols and fold reuse
++1. Grouped five-fold cross-validation repeated over five partitions using
++   partition seeds `20261107`, `20261108`, `20261109`, `20261110`, and
++   `20261111`. The seeds and the resulting assignments are recorded in the fold
++   file.
++2. Leave-one-system-out (LOSO), 105 folds, generated with seed `20261107` for
++   its training-only validation selection.
+ 
+-One saved fold file keyed by `system_id` is the source of every model's split.
++Conservative check:
+ 
+-1. Primary: grouped five-fold cross-validation.
+-2. Robustness: leave-one-system-out (LOSO), 105 folds.
+-3. Conservative check: five-fold sensitivity split on
+-   `submitter|accelerator|processor`.
+-4. Stress test: leave-one-accelerator-family-out (LOAFO), only after the Phase
+-   1.5 family table is approved.
++3. Five-fold sensitivity split on `submitter|accelerator|processor`, generated
++   with seed `20265107`. This check is labeled modest because 78 of its 90
++   groups are singleton systems.
+ 
+-Families with at least three systems define LOAFO stress-test estimates.
+-Smaller eligible families are shown separately. Mixed-accelerator systems are
+-always in training and are never held out as a family.
++Stress test:
++
++4. Leave-one-accelerator-family-out (LOAFO), only after approval of the
++   family table. Eligible families with at least three systems define the
++   LOAFO stress-test estimate. Eligible smaller families are reported
++   separately rather than pooled into that estimate. CPU-only is one
++   execution-regime family. Mixed-accelerator systems are always in training
++   and are never held out as a family.
+ 
+ Within each outer fold, validation is selected only from outer-training
+-systems. Roles are disjoint.
++systems. Roles are disjoint. The five CV partitions reuse the same 105
++systems but change the system-to-fold assignment.
+ 
+ ## Evaluated set
+ 
+@@ -56,8 +75,8 @@ The supported row set is determined from that fold's training partition and is
+ identical across every model.
+ 
+ Unsupported test rows are excluded from the primary evaluated set and their
+-share is reported per protocol. No global fallback normalization is used in
+-the primary analysis.
++share is reported for every protocol. No global fallback normalization is used
++in the primary analysis.
+ 
+ ## Metrics
+ 
+@@ -65,68 +84,143 @@ Primary error:
+ 
+ `median(|ln(prediction / measured)|)`
+ 
+-over the supported out-of-fold rows in a seed. Lower is better.
++over supported out-of-fold rows. Lower is better.
++
++Median-group Spearman uses the corrected thesis definition:
++
++- a group enters only if it has at least three evaluated rows and at least two
++  distinct measured values and two distinct predictions;
++- singleton groups and two-row groups do not enter the median;
++- the reported value is the median of the qualifying group-level Spearman
++  correlations.
++
++This is the definition used by the original Table 6.4 helper. It supersedes
++the Phase 1 metric that admitted two-row groups.
+ 
+-Secondary metrics:
++Reported secondary metrics are:
+ 
+ - median row absolute percentage error;
+-- mean absolute percentage error;
+ - normalized RMSE on the signed within-group log target;
+ - median over target groups of the group median absolute log ratio;
+-- median-group Spearman rank correlation;
++- corrected median-group Spearman;
+ - coverage = evaluated supported rows / all 476 rows.
+ 
+-Neural stochastic models use seeds 7-16. For each metric, report the mean and
+-SD of the ten seed-level values. The Phase 2 main table also reports a seed
+-ensemble obtained by averaging each row's signed log prediction across the ten
+-seeds before inverse transformation.
++Pooled MAPE is an appendix diagnostic only. It is not used for model
++selection, hypothesis testing, or the main ranking.
++
++Neural stochastic models use seeds 7-16. For descriptive tables, report the
++mean and SD of the ten seed-level values. For repeated CV, also report
++partition-level variability.
++
++## System-clustered inference across partition and seed variability
+ 
+ Confidence intervals use 2,000 bootstrap resamples of whole systems. The same
+-resampled systems are used for every model in a paired comparison. Neural
+-seed variability is averaged within each resampled system. Resampling never
+-selects rows or measurements independently within a system.
++selected systems are used for every model in a paired comparison.
++
++Within each bootstrap draw, partition and seed variability is averaged inside
++each selected system before pooling. Specifically:
++
++1. Form each model's row prediction as the mean signed-log prediction across
++   neural seeds.
++2. For repeated CV, average that system's row contribution across the five
++   partitions inside the draw.
++3. For LOSO, use the single system-held-out prediction and average across
++   seeds.
++4. Compute the paired difference from the same system resample and draw.
+ 
+-A paired 95% interval containing zero is labeled
+-`not distinguishable`. It is not described as equivalence.
++Partitions or seeds are never treated as independent bootstrap units. Rows are
++never resampled independently within a system.
+ 
+-## Models and fixed fitting policy
++## Model fitting policy
+ 
+-Policy: no tuning for any model. The settings below are fixed before Phase 2.
++Policy: no tuning for any model. The same fixed budget applies to every model.
+ 
+-- Group median: within-fold training median of the signed log target for each
+-  target group.
++- Group median: within-fold training median of the signed log target.
+ - Ridge: alpha `10.0`.
+ - Random forest: 300 trees, minimum leaf size 2, maximum features `0.7`,
+   `random_state=7`.
+ - Gradient boosting: 300 iterations, learning rate `0.05`, maximum 15 leaves,
+   L2 regularization `1.0`, `random_state=7`.
+ - MLP: the same metadata features and learned categorical identifier
+-  embeddings as specified below, no edges; two 64-unit hidden layers, dropout
+-  `0.2`, AdamW learning rate `0.01`, weight decay `1e-4`, Huber loss with
+-  delta `1.0`, at most 150 epochs, early-stopping patience 20.
+-- GraphSAGE, GCN, and GAT: the existing metadata graph with real edges;
+-  hidden size 64, two layers, dropout `0.2`, AdamW learning rate `0.01`,
+-  weight decay `1e-4`, Huber loss with delta `1.0`, at most 150 epochs,
+-  early-stopping patience 20. GAT uses four heads of 16 channels.
+-- Shuffled graph: GraphSAGE with degree-preserving shuffled edges. Edge
+-  endpoints are permuted only within each directed relation, preserving the
+-  exact out-degree sequence per source and in-degree sequence per destination.
+-- Relation removal: separate GraphSAGE models remove all directed edges
+-  incident to each metadata node type in turn: system, accelerator, processor,
+-  or workload. Result nodes and numeric result features remain.
+-- Hierarchical mixed model: fixed effects for workload target group, log total
+-  accelerators, and accelerator memory; random intercepts for accelerator
+-  family, submitter, and system. An unseen test system receives a zero random
+-  intercept and is not used to estimate any variance component.
+-
+-The learned ID embedding width is fixed at
++  embeddings, no edges; two 64-unit hidden layers, dropout `0.2`, AdamW
++  learning rate `0.01`, weight decay `1e-4`, Huber loss delta `1.0`, at most
++  150 epochs, patience 20.
++- GraphSAGE, GCN, and GAT: metadata graph with real edges; hidden size 64, two
++  layers, dropout `0.2`, AdamW learning rate `0.01`, weight decay `1e-4`,
++  Huber loss delta `1.0`, at most 150 epochs, patience 20. GAT uses four
++  attention heads of 16 channels.
++- Shuffled graph: GraphSAGE with degree-preserving shuffled directed edges.
++  Per relation, source out-degrees and destination in-degrees are retained
++  exactly.
++- Relation removal: separate GraphSAGE models remove every edge incident to
++  one metadata node type in turn: system, accelerator, processor, or workload.
++  Result nodes and result numeric features remain.
++- Hierarchical mixed model: fixed effects for workload target group,
++  `log1p(total_accelerators)`, CPU-only indicator, and accelerator memory;
++  random intercepts for accelerator family, submitter, and system. An unseen
++  test system receives a zero random intercept and contributes no variance
++  estimation.
++
++Learned identifier embedding width is fixed at
+ `min(16, max(2, round(sqrt(category_count))))` per categorical identifier,
+-fitted from training systems only. Categorical values absent from training use
+-the trained `<unknown>` representation.
++fitted from training systems only. Values absent from training use the trained
++`<unknown>` representation.
++
++Within-group target center and scale come from the fold's training partition.
++Groups with fewer than three training rows or no defined scale are unsupported
++in the primary analysis.
++
++## Single primary hypothesis
++
++The sole primary hypothesis is:
++
++`primary error(best GNN) - primary error(MLP)`
+ 
+-Within-group target standardization is unchanged: center and scale come from
+-the fold's training partition, and groups with fewer than three training rows
+-or no defined scale are unsupported in the primary analysis.
++under both co-primary protocols. Lower primary error is better.
++
++Best GNN is selected without test labels, separately for each outer fold and
++neural seed:
++
++- candidates are GraphSAGE, GCN, and GAT using the fixed fitting policy above;
++- validation primary error is computed on the outer fold's validation systems;
++- the candidate with lowest validation primary error is selected;
++- ties use the fixed order GraphSAGE, GCN, GAT.
++
++The selected architecture supplies the test predictions for that fold and
++seed. For LOSO, the same rule is applied using only the outer-training and
++validation systems.
++
++The equivalence margin is `+/-0.05` log units on the paired difference.
++Classification uses the 95% system-clustered paired interval:
++
++- `better`: interval is entirely below `-0.05`;
++- `worse`: interval is entirely above `+0.05`;
++- `equivalent`: interval is entirely inside `[-0.05, +0.05]`;
++- `inconclusive`: none of the above.
++
++Because there are two co-primary protocols, the combined primary conclusion is
++the intersection of their labels. The hypothesis is called better only if both
++intervals are entirely below `-0.05`; equivalent only if both are entirely
++inside the margin; worse only if both are entirely above `+0.05`. Any
++disagreement is `inconclusive`. There is no multiplicity correction for the
++single primary hypothesis.
++
++## Secondary comparisons
++
++The fixed GraphSAGE model is the reference for these secondary comparisons:
++
++1. GraphSAGE - random forest.
++2. GraphSAGE real edges - GraphSAGE degree-preserving shuffled edges.
++3. GCN - GraphSAGE.
++4. GAT - GraphSAGE.
++
++Each comparison is evaluated under both co-primary protocols using the same
++system-clustered paired interval. Holm correction is applied across the eight
++protocol-comparison tests. Adjusted results are labeled secondary. A
++zero-containing interval is `not distinguishable`; it is not equivalence.
++
++All other comparisons, subgroup analyses, pooled MAPE, and post hoc model
++choices are exploratory.
+ 
+ ## Sparse-group secondary comparison
+ 
+@@ -134,29 +228,21 @@ Primary analysis excludes unsupported sparse groups. A pre-specified secondary
+ analysis uses partial pooling normalization: target-group center and scale are
+ shrunk toward global training values according to training group size. The
+ same shrinkage posterior is used for every model, and test labels never enter
+-the estimate. Results are labeled secondary and do not replace primary
++the estimate. Results are labeled secondary and never replace primary
+ exclusions.
+ 
+-## Paired comparisons
+-
+-The following paired differences use the same system-cluster bootstrap draws:
+-
+-1. GraphSAGE - random forest.
+-2. GraphSAGE - MLP.
+-3. GraphSAGE real edges - GraphSAGE degree-preserving shuffled edges.
+-4. GCN - GraphSAGE.
+-5. GAT - GraphSAGE.
+-
+-Differences are left minus right and are reported with system-clustered 95%
+-intervals. A zero-containing interval is `not distinguishable`.
+-
+ ## Deliverables
+ 
+-- Main table: every model by primary error, median row error, median-group
+-  Spearman, normalized RMSE, and coverage, each with a clustered 95% interval.
+-- Paired-difference table for the five comparisons above.
++- Separate main results for repeated CV and LOSO.
++- All models by primary error, median row error, corrected median-group
++  Spearman, normalized RMSE, and coverage, each with clustered 95% intervals.
++- Partition-specific CV results.
++- The primary best-GNN minus MLP decision table.
++- The four Holm-corrected secondary comparisons under both co-primary
++  protocols.
+ - Per-target-group results for every model in an appendix.
+ - Per-fold support and exclusion counts.
++- Pooled MAPE in an appendix only.
+ - A manifest with commit, seeds, fold hash, data hash, and output hashes.
+ 
+ ## Semantic-layer boundary

@@ -1,0 +1,28 @@
+{
+  "cv5_partition_seeds": [
+    20261107,
+    20261108,
+    20261109,
+    20261110,
+    20261111
+  ],
+  "data_sha256": "a6853e1e2dc777404ddf9f5e0546679fef758df38bc4ebe5bba21e0c0bb735dd",
+  "fold_assignments_sha256": "3ed4dd0bf019685255c6f6d11f309d10f147280487617cf8f49c7c437e433443",
+  "fold_summary_sha256": "e3c082d3d2f6d962e4c565b830bdbe560f16a022299a9edec7e4bca2fb458892",
+  "git_branch": "phase-1-evaluation",
+  "git_commit": "cce2f43207dc77d29769b09ed821be31bfa329a3",
+  "loso_seed": 20261107,
+  "phase2_model_runs": 0,
+  "protocols": [
+    "cv5_partition_0",
+    "cv5_partition_1",
+    "cv5_partition_2",
+    "cv5_partition_3",
+    "cv5_partition_4",
+    "loso",
+    "sensitivity"
+  ],
+  "rows": 14175,
+  "sensitivity_seed": 20265107,
+  "systems": 105
+}

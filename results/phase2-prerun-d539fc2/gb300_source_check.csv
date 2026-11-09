@@ -1,0 +1,14 @@
+system,public_id,Benchmark,model,scenario,nodes,accelerators_per_node,nodes_x_accelerators,reported_total_accelerators,product_matches_total
+NVIDIA GB300 NVL72,6.1-0074,Inference,VLM,Server,18,4,72,72,True
+NVIDIA GB300 NVL72,6.1-0073,Inference,deepseek-r1,Server,72,4,288,288,True
+NVIDIA GB300 NVL72,6.1-0074,Inference,gpt-oss-120b,Server,18,4,72,72,True
+NVIDIA GB300 NVL72,6.1-0074,Inference,text_to_video,SingleStream,18,4,72,72,True
+NVIDIA GB300 NVL72,6.1-0074,Inference,gpt-oss-120b,Offline,18,4,72,72,True
+NVIDIA GB300 NVL72,6.1-0074,Inference,deepseek-r1,Interactive,18,4,72,72,True
+NVIDIA GB300 NVL72,6.1-0074,Inference,VLM,Offline,18,4,72,72,True
+NVIDIA GB300 NVL72,6.1-0074,Inference,deepseek-r1,Offline,18,4,72,72,True
+NVIDIA GB300 NVL72,6.1-0074,Inference,text_to_video,Offline,18,4,72,72,True
+NVIDIA GB300 NVL72,6.1-0073,Inference,deepseek-r1,Offline,72,4,288,288,True
+NVIDIA GB300 NVL72,6.1-0074,Inference,deepseek-r1,Server,18,4,72,72,True
+NVIDIA GB300 NVL72,6.1-0074,Inference,VLM,Interactive,18,4,72,72,True
+NVIDIA GB300 NVL72,6.1-0074,Inference,gpt-oss-120b,Interactive,18,4,72,72,True

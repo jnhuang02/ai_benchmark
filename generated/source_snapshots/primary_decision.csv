@@ -1,0 +1,4 @@
+left,right,role,mean_difference,difference_95ci_low,difference_95ci_high,probability_left_better,status,secondary_holm_status,bootstrap_p_value,protocol
+best_gnn,mlp,primary,0.1155966233148253,0.0471356451420624,0.1980509492751089,0.0005,inconclusive,not_applicable,0.001,cv5_partitioned
+best_gnn,mlp,primary,0.1041554184269779,0.0237744878397438,0.192784136806438,0.0085,inconclusive,not_applicable,0.017,loso
+best_gnn,mlp,primary,0.1586573345963746,0.0586062817128288,0.2575612910262264,0.0015,worse,not_applicable,0.003,sensitivity

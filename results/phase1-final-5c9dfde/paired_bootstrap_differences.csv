@@ -1,0 +1,2 @@
+left_policy,right_policy,metric,mean_difference,difference_95ci_low,difference_95ci_high,probability_left_better,bootstrap_replicates,bootstrap_seeds
+legacy_leaky_global,isolated_supported,median_absolute_log_ratio,0.004250580904589488,-0.07792054749234475,0.0782187278131001,0.47545000000000004,2000,10

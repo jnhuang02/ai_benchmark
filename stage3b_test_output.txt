@@ -1,0 +1,78 @@
+test_multiple_count_signatures_are_retained_for_grouping (test_data.TestSystemTable.test_multiple_count_signatures_are_retained_for_grouping) ... ok
+test_sensitivity_key_excludes_accelerator_counts (test_data.TestSystemTable.test_sensitivity_key_excludes_accelerator_counts) ... ok
+test_total_accelerators_remain_the_numeric_feature (test_data.TestSystemTable.test_total_accelerators_remain_the_numeric_feature) ... ok
+test_five_repeated_partitions_cover_every_system (test_folds.TestPhase2Folds.test_five_repeated_partitions_cover_every_system) ... ok
+test_loso_and_sensitivity_are_present (test_folds.TestPhase2Folds.test_loso_and_sensitivity_are_present) ... ok
+test_partitions_are_distinct (test_folds.TestPhase2Folds.test_partitions_are_distinct) ... ok
+test_baseline_fit_never_receives_test_rows_for_every_fold (test_leakage.TestEveryFoldIsolation.test_baseline_fit_never_receives_test_rows_for_every_fold) ... ok
+test_no_test_system_graph_scaler_vocabulary_or_baseline_for_every_fold (test_leakage.TestEveryFoldIsolation.test_no_test_system_graph_scaler_vocabulary_or_baseline_for_every_fold) ... ok
+test_roles_are_disjoint_for_every_fold (test_leakage.TestEveryFoldIsolation.test_roles_are_disjoint_for_every_fold) ... ok
+test_unknown_vectors_are_exercised_during_training (test_leakage.TestEveryFoldIsolation.test_unknown_vectors_are_exercised_during_training) ... ok
+test_production_weights_ignore_test_metadata_on_five_fold_cases (test_leakage.TestFiveFoldWeightBoundary.test_production_weights_ignore_test_metadata_on_five_fold_cases) ... /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+ok
+test_loss_masks_exclude_unsupported_rows_without_isolation (test_leakage.TestSupportedLeakyPolicy.test_loss_masks_exclude_unsupported_rows_without_isolation) ... /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+./tests/test_leakage.py:277: DeprecationWarning: __array_wrap__ must accept context and return_scalar arguments (positionally) in the future. (Deprecated NumPy 2.0)
+  self.assertTrue(np.isfinite(result.trained_weights["head.bias"]).all())
+ok
+test_production_weights_ignore_scrambled_test_metadata (test_leakage.TestWeightPerturbation.test_production_weights_ignore_scrambled_test_metadata) ... /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+ok
+test_reintroduced_leak_fails_the_production_weight_check (test_leakage.TestWeightPerturbation.test_reintroduced_leak_fails_the_production_weight_check) ... /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+ok
+test_paired_difference_uses_same_system_draw (test_metrics.TestClusteredBootstrap.test_paired_difference_uses_same_system_draw) ... ok
+test_two_row_groups_are_excluded_by_default (test_metrics.TestMedianGroupSpearman.test_two_row_groups_are_excluded_by_default) ... ok
+test_core_neural_path_omits_secondary_graph_variants (test_phase2.TestPhase2Fold.test_core_neural_path_omits_secondary_graph_variants) ... /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+ok
+test_deterministic_ladder_is_finite (test_phase2.TestPhase2Fold.test_deterministic_ladder_is_finite) ... ok
+test_deterministic_subset_omits_unrequested_models (test_phase2.TestPhase2Fold.test_deterministic_subset_omits_unrequested_models) ... ok
+test_graph_diagnostic_reports_training_stop_state (test_phase2.TestPhase2Fold.test_graph_diagnostic_reports_training_stop_state) ... /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+ok
+test_neural_ladder_and_best_gnn_are_finite (test_phase2.TestPhase2Fold.test_neural_ladder_and_best_gnn_are_finite) ... /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch_geometric/inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 14.818s
+
+OK

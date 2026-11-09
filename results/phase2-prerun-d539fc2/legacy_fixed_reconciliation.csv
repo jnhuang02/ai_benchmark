@@ -1,0 +1,12 @@
+context,fold_scheme,fold_seed,model_seed,prediction_rows,evaluated_rows,coverage,primary_error,primary_error_sd
+Gate3_attribution_baseline_seed7_all_rows,legacy 96-system random folds,7,7,476,476,1.0,0.37338676193705034,
+Phase1_legacy_seed7_full_predictions,Phase 1 canonical cv5,20261107,7,476,476,1.0,0.5157732725290995,
+Phase1_legacy_seed7_identical_supported,Phase 1 canonical cv5,20261107,7,476,450,0.9453781512605042,0.4851458466046532,
+Phase1_legacy_seeds7to16_identical_supported,Phase 1 canonical cv5,20261107,7-16,476,450,0.9453781512605042,0.4654271336704318,0.035388280326682814
+Phase1_fixed_seed7_full_predictions,Phase 1 canonical cv5,20261107,7,450,450,0.9453781512605042,0.5109971488879594,
+Phase1_fixed_seed7_identical_supported,Phase 1 canonical cv5,20261107,7,450,450,0.9453781512605042,0.5109971488879594,
+Phase1_fixed_seeds7to16_identical_supported,Phase 1 canonical cv5,20261107,7-16,450,450,0.9453781512605042,0.46231398720767014,0.03419346620337288
+rerun_legacy_leaky_global_seed7_full_predictions,Phase 1 canonical cv5,20261107,7,476,476,1.0,0.5157732725290995,
+rerun_legacy_leaky_global_seed7_identical_supported,Phase 1 canonical cv5,20261107,7,476,450,0.9453781512605042,0.4851458466046532,
+rerun_isolated_supported_seed7_full_predictions,Phase 1 canonical cv5,20261107,7,450,450,0.9453781512605042,0.5109971488879586,
+rerun_isolated_supported_seed7_identical_supported,Phase 1 canonical cv5,20261107,7,450,450,0.9453781512605042,0.5109971488879586,

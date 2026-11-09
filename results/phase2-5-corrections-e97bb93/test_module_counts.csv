@@ -1,0 +1,6 @@
+module,tests
+test_data,3
+test_folds,3
+test_leakage,8
+test_metrics,2
+test_phase2,5

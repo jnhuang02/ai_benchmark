@@ -1,0 +1,91 @@
+sensitivity_group_id,systems,measurements,suites,system_ids,reported_count_signatures
+Crusoe|NVIDIA GB200|NVIDIA Grace CPU,3,8,datacenter,datacenter|Crusoe|NVIDIA GB200 NVL72 (16x GB200-186GB_aarch64 Dynamo)|datacenter;datacenter|Crusoe|NVIDIA GB200 NVL72 (4x GB200-186GB_aarch64 Dynamo)|datacenter;datacenter|Crusoe|NVIDIA GB200 NVL72 (4x GB200-186GB_aarch64 TensorRT)|datacenter,16;4
+Nebius|NVIDIA GB300|NVIDIA Grace CPU,3,8,datacenter,datacenter|Nebius|Nebius GB300 NVL72 (4x GB300-288GB_aarch64 TensorRT)|datacenter;datacenter|Nebius|Nebius GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter;datacenter|Nebius|Nebius GB300 NVL72 (8x GB300-288GB_aarch64 TensorRT)|datacenter,4;72;8
+Oracle|NVIDIA GB300|NVIDIA Grace CPU,3,22,datacenter,datacenter|Oracle|NVIDIA GB300 NVL72 (4x GB300-288GB_aarch64 TensorRT)|datacenter;datacenter|Oracle|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter;datacenter|Oracle|NVIDIA GB300 NVL72 (8x GB300-288GB_aarch64 TensorRT)|datacenter,4;72;8
+AMD|AMD Instinct MI355X 288GB HBM3e|AMD EPYC 9575F,2,11,datacenter,datacenter|AMD|9x8xMI355X_2xEPYC_9575F|datacenter;datacenter|AMD|smci355-ccs-aus-m13-13 (AS -4126GS-NMR-LCC)|datacenter,72;8
+Azure|NVIDIA GB200|NVIDIA Grace CPU,2,4,datacenter,datacenter|Azure|Azure GB200 NVL72 (288x GB200-186GB_aarch64 TensorRT)|datacenter;datacenter|Azure|Azure GB200 NVL72 (72x GB200-186GB_aarch64 TensorRT)|datacenter,288;72
+CoreWeave|NVIDIA GB300|NVIDIA Grace (Neoverse-V2),2,8,datacenter,datacenter|CoreWeave|CoreWeave GB300 NVL72 (4x GB300-288GB_aarch64)|datacenter;datacenter|CoreWeave|CoreWeave GB300 NVL72 (72x GB300-288GB_aarch64)|datacenter,4;72
+Crusoe|AMD Instinct MI355X 288GB HBM3e|AMD EPYC 9575F,2,4,datacenter,datacenter|Crusoe|Crusoe Cloud 64x8 MI355X (512 GPU) — DeepSeek-R1 / SGLang|datacenter;datacenter|Crusoe|Crusoe Cloud 64x8 MI355X (512 GPU) — gpt-oss-120b / vLLM|datacenter,512
+Dell_MangoBoost|AMD Instinct MI355X 288GB HBM3e|AMD EPYC 9965,2,6,datacenter,datacenter|Dell_MangoBoost|PowerEdge XE9785L|datacenter;datacenter|Dell_MangoBoost|PowerEdge XE9785|datacenter,8
+HPE|NVIDIA RTX PRO 4500 Blackwell Server Edition|AMD EPYC 9375F,2,5,edge,edge|HPE|HPE ProLiant Compute DL345 Gen12 (1x NVIDIA RTX PRO 4500 Blackwell Server Edition 32GB TensorRT)|edge;edge|HPE|HPE ProLiant Compute DL345 Gen12 (4x NVIDIA RTX PRO 4500 Blackwell Server Edition 32GB TensorRT|edge,1;4
+HPE|NVIDIA RTX PRO 4500 Blackwell Server Edition|Intel(R) Xeon(R) 6762P,2,4,edge,edge|HPE|HPE ProLiant Compute DL380 Gen12 (1x NVIDIA RTX PRO 4500 Blackwell Server Edition 32GB)|edge;edge|HPE|HPE ProLiant Compute DL380 Gen12 (5x NVIDIA RTX PRO 4500 Blackwell Server Edition 32GB TensorRT)|edge,1;5
+NVIDIA|NVIDIA GB300|NVIDIA Grace CPU,2,19,datacenter,datacenter|NVIDIA|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter;datacenter|NVIDIA|NVIDIA GB300 NVL72 (8x GB300-288GB_aarch64 TensorRT)|datacenter,72;288;8
+RedHat_Supermicro|NVIDIA GB200|NVIDIA Grace CPU,2,4,datacenter,datacenter|RedHat_Supermicro|NVIDIA GB200 NVL4 (4x GB200-192GB_aarch64 vLLM)|datacenter;datacenter|RedHat_Supermicro|SMC Lab OpenShift GB200-NVL4 4xGB200-186GB|datacenter,4
+AMD|AMD Instinct MI350X 288GB HBM3e|AMD EPYC 9575F,1,2,datacenter,datacenter|AMD|8xMI350X_2xEPYC_9575F|datacenter,8
+AMD|AMD Instinct MI350X 288GB HBM3e|AMD EPYC 9655,1,2,datacenter,datacenter|AMD|Quanta Grand Teton 1.5 MI350|datacenter,8
+ASUSTeK|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) 6767P,1,6,datacenter,datacenter|ASUSTeK|XA NB3I-E12|datacenter,8
+Atlas_Inference|AMD Radeon 8060S Graphics|AMD Ryzen AI Max+ 395,1,1,edge,edge|Atlas_Inference|AMD Strix Halo desktop (Ryzen AI Max+ 395 / Radeon 8060S)|edge,1
+Atlas_Inference|NVIDIA GB10|NVIDIA Grace (20-core Arm v9.2),1,1,edge,edge|Atlas_Inference|NVIDIA DGX Spark (GB10 Grace Blackwell Superchip)|edge,1
+Azure|NVIDIA GB300|NVIDIA Grace CPU,1,3,datacenter,datacenter|Azure|Azure GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter,72
+Cisco|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) 6767P,1,8,datacenter,datacenter|Cisco|Cisco UCS C880A M8 (8x NVIDIA B300-SXM-270GB TensorRT)|datacenter,8
+Cisco|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) 6776P,1,6,datacenter,datacenter|Cisco|Cisco_UCS_B300x16_G200_4x2_RO|datacenter,16
+Cisco|NVIDIA H200-SXM-141GB + AMD Instinct MI350X 288GB HBM3e|AMD EPYC,1,8,datacenter,datacenter|Cisco|Cisco UCS H200 x8 + MI350X x8 G200 2x2 TOR|datacenter,16
+Cisco|NVIDIA RTX PRO 4500 Blackwell|AMD EPYC 9655,1,4,datacenter,datacenter|Cisco|Cisco UCS C845A M8 (8x NVIDIA RTX PRO 4500 Blackwell-32GB TensorRT)|datacenter,8
+Cisco|NVIDIA RTX PRO 4500 Blackwell|Intel(R) Xeon(R) 6747P,1,4,datacenter,datacenter|Cisco|Cisco UCS X210 M8 - X580P PCIe Node (4x NVIDIA RTX PRO 4500 Blackwell-32GB TensorRT)|datacenter,4
+Cisco|NVIDIA RTX PRO 4500 Blackwell|Intel(R) Xeon(R) 6787P,1,4,datacenter,datacenter|Cisco|Cisco UCS C240 M8 - (5x NVIDIA RTX PRO 4500 Blackwell-32GB TensorRT)|datacenter,5
+Cisco|NVIDIA RTX PRO 6000 Blackwell Server Edition|AMD EPYC 9575F,1,8,datacenter,datacenter|Cisco|Cisco UCS C845A M8 (8x RTXPro6000-PCIe-96GB TensorRT)|datacenter,8
+Cisco|NVIDIA RTX PRO 6000 Blackwell Server Edition|AMD EPYC 9845,1,4,datacenter,datacenter|Cisco|Cisco UCS X215c M8 - X580P PCIe Node (4x RTXPro6000-PCIe-96GB TensorRT)|datacenter,4
+Cisco|NVIDIA RTX PRO 6000 Blackwell Server Edition|Intel(R) Xeon(R) 6747P,1,4,datacenter,datacenter|Cisco|Cisco UCS X210c M8 - X580P PCIe Node (4x RTXPro6000-PCIe-96GB TensorRT)|datacenter,4
+Cisco||Intel(R) Xeon(R) 6788P,1,3,datacenter,datacenter|Cisco|X410M8_1_node_4S_GNR_86C|datacenter,0
+CoreWeave|NVIDIA B200-SXM-180GB|Intel(R) Xeon(R) Platinum 8562Y+,1,6,datacenter,datacenter|CoreWeave|CoreWeave B200 SXM (8x B200-SXM-180GB)|datacenter,8
+CoreWeave|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) 6747P,1,4,datacenter,datacenter|CoreWeave|CoreWeave B300 SXM (8x B300-SXM-270GB)|datacenter,8
+CoreWeave|NVIDIA GB200|NVIDIA Grace (Neoverse-V2),1,6,datacenter,datacenter|CoreWeave|CoreWeave GB200 NVL72 (72x GB200-186GB_aarch64)|datacenter,72
+Dell_AMD|AMD Instinct MI350P|AMD EPYC 9455,1,12,datacenter,datacenter|Dell_AMD|XE7745_8xMI350P_2xEPYC_9455|datacenter,8
+Dell_MangoBoost|AMD Instinct MI300X 192GB HBM3 (x2x8) and AMD Instinct MI355X 288GB HBM3e (x2x8)|AMD EPYC 9534 (on MI300X node) and AMD EPYC 9965 (on MI355X node),1,2,datacenter,datacenter|Dell_MangoBoost|Heterogeneous Four-Cluster (2x8x MI300X + 2x8x MI355X LLMBoost)|datacenter,32
+Dell|AMD Instinct MI355X 288GB HBM3e|AMD EPYC 9655,1,8,datacenter,datacenter|Dell|XE9785L_8xMI355X|datacenter,8
+Dell|NVIDIA B300-SXM-270GB|AMD EPYC 9965,1,2,datacenter,datacenter|Dell|Dell XE9785L (8x B300-SXM-270GB TensorRT)|datacenter,8
+Dell|NVIDIA GB10|Cortex-X925,1,6,edge,edge|Dell|Dell Pro Max (1x GB10)|edge,1
+Dell|NVIDIA GB300|NVIDIA Grace CPU,1,2,datacenter,datacenter|Dell|Dell PowerEdge XE9712|datacenter,72
+Dell|NVIDIA RTX PRO 4500 Blackwell|AMD EPYC 9655,1,2,datacenter,datacenter|Dell|PowerEdge XE7745 (8x NVIDIA RTX PRO 4500 Blackwell TensorRT)|datacenter,8
+Dell|NVIDIA RTX PRO 6000 Blackwell Server Edition|Intel(R) Xeon(R) 6767P,1,2,datacenter,datacenter|Dell|PowerEdge XE7740 (8x RTXPro6000-PCIe-96GB TensorRT)|datacenter,8
+Dell|Nvidia B300-SXM-270GB|Intel(R) Xeon(R) 6747P,1,4,datacenter,datacenter|Dell|Dell XE9780 (8x B300-SXM-270GB TensorRT)|datacenter,8
+Dell||Intel(R) Xeon(R) 6787P,1,4,datacenter,datacenter|Dell|PowerEdge R770_86C 16x64GB (6400 MT/s)|datacenter,0
+Dell||Intel(R) Xeon(R) 6980P,1,2,datacenter,datacenter|Dell|PowerEdge R770AP_128C 24x96GB (6400 MT/s)|datacenter,0
+Fujitsu|NVIDIA RTX PRO 6000 Blackwell|Intel(R) Xeon(R) Platinum 8592+,1,2,datacenter,datacenter|Fujitsu|PRIMERGY_CDI_RTX_PRO_6000_PCIE_96GBx8 TensorRT)|datacenter,8
+GigaComputing|NVIDIA B300-SXM-270GB|AMD EPYC 9575F,1,11,datacenter,datacenter|GigaComputing|G894-ZD3-AAX7|datacenter,8
+GigaComputing|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) 6979P,1,11,datacenter,datacenter|GigaComputing|G894-AD3-AAX7|datacenter,8
+Google|NVIDIA GB200|NVIDIA Grace CPU,1,3,datacenter,datacenter|Google|NVIDIA GB200 NVL72 (72x GB200-186GB_aarch64 TensorRT)|datacenter,72
+HPE|AMD Instinct MI355X 288GB HBM3e|AMD EPYC 9575F,1,10,datacenter,datacenter|HPE|HPE ProLiant Compute XD685 (8x AMD MI355X-288GB vLLM)|datacenter,8
+HPE|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) 6776P,1,4,datacenter,datacenter|HPE|HPE Compute XD690 (8x NVIDIA B300-SXM-270GB TensorRT)|datacenter,8;16
+HPE|NVIDIA GB200|NVIDIA Grace CPU (Arm Neoverse-V2),1,2,datacenter,datacenter|HPE|NVIDIA GB200 NVL72 by HPE (8x GB200-186GB_aarch64 TensorRT)|datacenter,8
+HPE|NVIDIA RTX PRO 4500 Blackwell Server Edition|AMD EPYC 8535P,1,1,edge,edge|HPE|HPE ProLiant DL145 Gen11 (1x NVIDIA RTX PRO 4500 Blackwell Server Edition 32GB TensorRT)|edge,1
+HPE|NVIDIA RTX PRO 6000 Blackwell Server Edition|Intel(R) Xeon(R) 6787P,1,8,datacenter,datacenter|HPE|HPE ProLiant Compute DL380a Gen12 (8x RTX Pro 6000 Blackwell Server Edition 96GB TensorRT)|datacenter,8
+Intel|Intel(R) Arc(TM) Pro B70|Intel(R) Xeon(R) 6787P,1,2,datacenter,datacenter|Intel|1-node-2S-Xeon_6787P|datacenter,4
+Intel|Intel(R) Arc(TM) Pro B70|Intel(R) Xeon(R) 698X,1,7,datacenter,datacenter|Intel|1-node-4x-BMG-B70|datacenter,4
+Intel||Intel(R) Xeon(R) 6980P,1,4,datacenter,datacenter|Intel|1-node-2S-GNR_128C|datacenter,0
+Inventec|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) 6767P,1,6,datacenter,datacenter|Inventec|Inventec P9000G7(AC) (8x B300-SXM-270GB TensorRT)|datacenter,8
+Inventec|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) 6787P,1,6,datacenter,datacenter|Inventec|Inventec P5800G7(LC) (8x B300-SXM-270GB TensorRT)|datacenter,8
+Lambda|NVIDIA B200-SXM-180GB|Intel(R) Xeon(R) Platinum 8570,1,2,datacenter,datacenter|Lambda|Lambda Cloud 8x B200-SXM-180GB|datacenter,8
+Lambda|NVIDIA GB300|NVIDIA Grace CPU (Arm Neoverse-V2),1,4,datacenter,datacenter|Lambda|Lambda 4x GB300-288GB (GB300 NVL4 aarch64)|datacenter,4
+MangoBoost|AMD Instinct MI300X 192GB HBM3|AMD EPYC 9534,1,2,datacenter,datacenter|MangoBoost|8xMI300X_2xEPYC_9534|datacenter,8
+MangoBoost|AMD Instinct MI355X 288GB HBM3e|AMD EPYC 9575F,1,2,datacenter,datacenter|MangoBoost|MangoBoost 2x8 MI355X (16x MI355X LLMBoost P/D Disaggregated Interactive Engine)|datacenter,16
+MiTAC|AMD Instinct MI350X 288GB HBM3e|AMD EPYC 9755,1,8,datacenter,datacenter|MiTAC|G8825Z5|datacenter,8
+MiTAC|AMD Instinct MI355X 288GB HBM3e|AMD EPYC 9755,1,8,datacenter,datacenter|MiTAC|G4826|datacenter,8
+MiTAC|NVIDIA RTX PRO 6000 Blackwell Server Edition|Intel(R) Xeon(R) 6787P,1,2,datacenter,datacenter|MiTAC|MiTAC_G4520G6_RTX_PRO_6000_PCIE_96GBx8|datacenter,8
+NVIDIA|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) Platinum 8570,1,11,datacenter,datacenter|NVIDIA|NVIDIA DGX B300 (8x B300-SXM-270GB TensorRT)|datacenter,8
+NVIDIA|NVIDIA GB200|NVIDIA Grace CPU,1,8,datacenter,datacenter|NVIDIA|NVIDIA GB200 NVL72 (72x GB200-186GB_aarch64 TensorRT)|datacenter,72
+NVIDIA|NVIDIA Jetson AGX Thor 128G|14-core ARM Poseidon-AE CPU,1,1,edge,edge|NVIDIA|NVIDIA Jetson AGX Thor Developer Kit 128G (TensorRT)|edge,1
+NVIDIA|NVIDIA VR200|NVIDIA Vera CPU,1,6,datacenter,datacenter|NVIDIA|NVIDIA Vera Rubin NVL72 (72x VR-288GB_aarch64)|datacenter,72
+Naeem Khoshnevis|NVIDIA H200-SXM-141GB|AMD EPYC 9374F 32-Core Processor,1,2,datacenter,datacenter|Naeem Khoshnevis|H200-1xGPU|datacenter,1
+Nebius|NVIDIA B200-SXM-180GB|Intel(R) Xeon(R) Platinum 8580,1,4,datacenter,datacenter|Nebius|Nebius B200 n1 (8x B200-SXM-180GB TensorRT)|datacenter,8
+Nebius|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) Platinum 8570,1,6,datacenter,datacenter|Nebius|Nebius B300 n1 (8x B300-SXM-270GB TensorRT)|datacenter,8
+Nebius|NVIDIA RTX PRO 6000 Blackwell Server Edition|Intel(R) Xeon(R) 6776P,1,2,datacenter,datacenter|Nebius|Nebius RTX PRO 6000 n1 (8x RTX-PRO-6000-PCIE-96GB TensorRT)|datacenter,8
+Nebius|NVIDIA VR200|NVIDIA Vera CPU,1,2,datacenter,datacenter|Nebius|Nebius VR200 NVL72 (36x VR200-288GB_aarch64 TensorRT)|datacenter,36
+Oracle|AMD Instinct MI355X 288GB HBM3e|AMD EPYC 9575F,1,10,datacenter,datacenter|Oracle|8xMI355X_2xEPYC_9575F|datacenter,8
+Oracle|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) Platinum 8570,1,8,datacenter,datacenter|Oracle|NVIDIA DGX B300 (8x B300-SXM-270GB TensorRT)|datacenter,8
+Oracle||Intel(R) Xeon(R) 6987P-C,1,3,datacenter,datacenter|Oracle|BM.Standard4.Ax.120|datacenter,0
+Quanta_Cloud_Technology|Intel(R) Arc(TM) Pro B70|Intel(R) Xeon(R) 6788P,1,3,datacenter,datacenter|Quanta_Cloud_Technology|1-node-4x-BMG-B70|datacenter,4
+Quanta_Cloud_Technology|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) 6776P,1,9,datacenter,datacenter|Quanta_Cloud_Technology|QuantaGrid D75H-10U (8x B300-SXM-270GB TensorRT)|datacenter,8
+Quanta_Cloud_Technology||Intel(R) Xeon(R) 6788P,1,4,datacenter,datacenter|Quanta_Cloud_Technology|1-node-2S-GNR_86C|datacenter,0
+RedHat_Intel||Intel(R) Xeon(R) 6972P,1,3,datacenter,datacenter|RedHat_Intel|1-node-2S-GNR_96C|datacenter,0
+Supermicro|AMD Instinct MI355X 288GB HBM3e|AMD EPYC 9575F,1,7,datacenter,datacenter|Supermicro|AS-4126GS-NMR-LCC|datacenter,8
+Supermicro|Intel(R) Arc(TM) Pro B70|Intel(R) Xeon(R) 6731P,1,7,datacenter,datacenter|Supermicro|1-node-4x-BMG-B70|datacenter,4
+Supermicro|NVIDIA B300-SXM-270GB|AMD EPYC 9575F,1,6,datacenter,datacenter|Supermicro|AS-8126GS-NB3RT|datacenter,8
+Supermicro|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) 6767P,1,8,datacenter,datacenter|Supermicro|SYS-822GS-NB3RT|datacenter,8
+Supermicro||Intel(R) Xeon(R) 6787P,1,4,datacenter,datacenter|Supermicro|1-node-2S-GNR_86C|datacenter,0
+Supermicro||Intel(R) Xeon(R) 6788P,1,3,datacenter,datacenter|Supermicro|1-node-4S-GNR_86C|datacenter,0
+Supermicro||Intel(R) Xeon(R) 6980P,1,3,datacenter,datacenter|Supermicro|1-node-2S-GNR_128C|datacenter,0
+TTA|NVIDIA RTX PRO 6000 Blackwell Server Edition|AMD EPYC 9124,1,2,datacenter,datacenter|TTA|ManyCoreSoft DeepGadget dg5W (4x NVIDIA RTX PRO 6000 Blackwell 96GB TensorRT)|datacenter,4
+VibeHPC|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) 6776P,1,7,datacenter,datacenter|VibeHPC|NVIDIA DGX B300 (8x B300-SXM-270GB TensorRT)|datacenter,8
+VibeHPC|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) Platinum 8570,1,7,datacenter,datacenter|VibeHPC|B300-SXM-270GBx1_TRT|datacenter,1
+Wiwynn|NVIDIA GB300|NVIDIA Grace CPU,1,2,datacenter,datacenter|Wiwynn|OneW GB300 NVL72 (4x GB300-288GB_aarch64 TensorRT)|datacenter,4

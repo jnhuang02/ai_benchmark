@@ -1,0 +1,9 @@
+left,right,role,mean_difference,difference_95ci_low,difference_95ci_high,probability_left_better,status,secondary_holm_status,bootstrap_p_value,protocol,holm_adjusted_p_value,significant_after_holm
+graphsage,random_forest,secondary,0.1715292169008427,0.1118626623688532,0.2373391460077388,0.0,worse,pending_LOSO,0.0,cv5_partitioned,0.0,True
+gat,graphsage,secondary,0.2670674831167907,0.1450768261792554,0.4501143724404768,0.0,worse,pending_LOSO,0.0,cv5_partitioned,0.0,True
+graphsage,random_forest,secondary,0.163959644396029,0.1051632016586558,0.2239943930673797,0.0,worse,pending_LOSO,0.0,loso,0.0,True
+gat,graphsage,secondary,0.3284094586288962,0.192822882304313,0.4988886813735725,0.0,worse,pending_LOSO,0.0,loso,0.0,True
+graphsage,graphsage_shuffled,secondary,0.0245232510821941,0.0045901048703259,0.0450188830686113,0.012,equivalent,pending_LOSO,0.024,cv5_partitioned,0.096,False
+graphsage,graphsage_shuffled,secondary,-0.0321990903629073,-0.077126885394698,0.0124501888745288,0.9355,inconclusive,pending_LOSO,0.129,loso,0.387,False
+gcn,graphsage,secondary,-0.0166377837737606,-0.0451457474132634,0.0074821803182869,0.9055,equivalent,pending_LOSO,0.189,cv5_partitioned,0.387,False
+gcn,graphsage,secondary,0.0225098248652022,-0.0308772773589548,0.0957081578671728,0.2425,inconclusive,pending_LOSO,0.485,loso,0.485,False

@@ -1,0 +1,19 @@
+\begin{table*}[htbp]
+\centering
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrcccccccc}
+\toprule
+\textbf{Family} & \textbf{Sys.} & \textbf{Sup. sys.} & \textbf{Sup. rows} & \textbf{Group median} & \textbf{Ridge} & \textbf{RF} & \textbf{MLP} & \textbf{GraphSAGE} & \textbf{GCN} & \textbf{GAT} & \textbf{Best GNN} \\
+\midrule
+amd\_cdna4\_mi350x & 4 & 3 & 20 & 0.764164 & 0.372809 & 0.330457 & 0.223854 & 0.877529 & 0.811681 & 0.735374 & 0.796515 \\
+amd\_cdna4\_mi355x & 12 & 12 & 61 & 0.153894 & 0.534892 & 0.681118 & 0.404295 & 0.341609 & 0.288889 & 0.284788 & 0.288889 \\
+intel\_xe2\_battlemage\_arc\_pro\_b70 & 4 & 3 & 17 & 1.691060 & 1.643861 & 0.836444 & 1.750370 & 1.419600 & 1.151481 & 1.698588 & 1.359058 \\
+nvidia\_blackwell\_b200 & 14 & 14 & 45 & 0.808193 & 0.325631 & 0.300555 & 0.201595 & 0.303524 & 0.289497 & 0.827602 & 0.303524 \\
+nvidia\_blackwell\_b300 & 33 & 33 & 198 & 0.938501 & 1.095572 & 1.008014 & 0.796966 & 0.852926 & 0.794819 & 0.992099 & 0.856458 \\
+nvidia\_blackwell\_rtx\_pro & 18 & 15 & 50 & 1.287673 & 1.067957 & 1.263829 & 1.358398 & 1.667265 & 1.663046 & 1.538275 & 1.693099 \\
+\bottomrule
+\end{tabular}}
+\caption{Descriptive leave-one-family-out results for the six headline families. No pooled estimate is formed. MI350X has four systems, of which three are supported; Intel Arc Pro B70 also has four systems, of which three are supported.}
+\label{tab:loafo-headline}
+\end{table*}

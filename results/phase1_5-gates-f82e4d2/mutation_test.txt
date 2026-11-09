@@ -1,0 +1,8 @@
+leak_reintroduced=yes
+isolation_guard_failed_as_expected=True
+weight_hash_changed=True
+differing_weight_tensors=56
+production_weight_comparison_folds=1
+production_epochs=150
+production_patience=20
+structural_fold_checks=130

@@ -1,0 +1,7 @@
+commit,policy,predictions_all_finite,primary_error
+d3bc835,legacy_leaky_global,True,0.3681494726358673
+d3bc835,audit_supported_leaky,False,
+d3bc835,isolated_supported,True,0.5109971488879586
+f82e4d2,legacy_leaky_global,True,0.3681494726358673
+f82e4d2,audit_supported_leaky,True,0.46390627618293134
+f82e4d2,isolated_supported,True,0.5109971488879586

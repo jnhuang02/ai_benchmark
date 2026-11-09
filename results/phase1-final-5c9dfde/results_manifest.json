@@ -1,0 +1,128 @@
+{
+  "arguments": {
+    "bootstrap_replicates": 2000,
+    "fold_seed": 20261107,
+    "gnn_config": {
+      "dropout": 0.2,
+      "epochs": 150,
+      "hidden": 64,
+      "layers": 2,
+      "learning_rate": 0.01,
+      "patience": 20,
+      "unknown_mask_probability": 0.1,
+      "weight_decay": 0.0001
+    },
+    "model": "graphsage",
+    "policies": [
+      "legacy_leaky_global",
+      "isolated_supported"
+    ],
+    "protocol": "cv5",
+    "seeds": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ]
+  },
+  "code_sha256": "eea1c91459f185310ae0833def34b01db7c588b56d51fd4435a72838f4950f95",
+  "command": [
+    "run_phase1.py",
+    "--output",
+    "results/phase1-final-5c9dfde"
+  ],
+  "created_utc": "2026-11-07T22:23:03.283170+00:00",
+  "data_sha256": "a6853e1e2dc777404ddf9f5e0546679fef758df38bc4ebe5bba21e0c0bb735dd",
+  "git_branch": "phase-1-evaluation",
+  "git_commit": "5c9dfde854d258d6848d1636564861d66e16a146",
+  "git_dirty": false,
+  "hashes": {
+    "accelerator_family_map_sha256": "f52b4021cadbec2582d5b2b5fa5931c146630db068b9ac4ba871b21bc1703c2d",
+    "accelerator_review_cases_sha256": "fd1c0a8fb8ceb7b6c8f1102e17ba86d4c5d289759a3b19dfa79170548f18d469",
+    "bootstrap_by_seed_sha256": "516da50695f904d44bad6518035839c193911d047b7e8eb3454d0868ca6f6e42",
+    "bootstrap_summary_sha256": "d83a48123bd27e3ca128b46f454f53da9911350fd251b767b11f590c32ac0b23",
+    "figure_bootstrap_pdf_sha256": "0f4b341345861b3828747bc9eb046e41baa1091cbe12c485f0683b9f1673f77f",
+    "figure_bootstrap_png_sha256": "42a3c33397e2fa2ca050f9dad5603d219aa683787f52a066a73042a06776e1a3",
+    "figure_folds_pdf_sha256": "2c1ae609219f13b42640e594d4a6a9d55d765b263032687651a29b5bc052d713",
+    "figure_folds_png_sha256": "d5b928a5bde1448fd496f2f0a397c26ad8133e6e6a77d4ae347d61b08f916d87",
+    "figure_old_vs_new_pdf_sha256": "f15fd133fbe9c1955db0a053230d7829ada191d8fb8be3733eb40c478486091e",
+    "figure_old_vs_new_png_sha256": "0867189720677bdf7a1f17c921caed5f8e5b86a2526181769a2cb3b8e17db147",
+    "fold_assignments_sha256": "42860b7ccc838a583154eed814e9ee46acccf4890f4f7bb556cdb871abb07f0e",
+    "fold_summary_sha256": "a1f7c1782b70a5551362dd8528a7bcc490b7839234f3e24757111b9872bcfab9",
+    "group_metrics_by_seed_sha256": "1e7d776f877c0ab56e2a1bfaed83cc0eef43a46a0e56f578b0dc0ddecca2979b",
+    "leakage_test_output_sha256": "056d01afc89a61595afe0a8dbab4e338d8af696d482d44eefb8246b06390883c",
+    "legacy_diagnostics_sha256": "9c500c31cf0692b2db3738ada696337e8d47a4ceb0d0c0c1d613d32710a65ecd",
+    "metrics_by_seed_sha256": "05aac36c12f9951717bf37df839c2b0ff77068c47969a8fa57a27be42e25c271",
+    "metrics_summary_sha256": "d9867ae6051fc7e6a7c1357349569ebee594e0efd968986632f3e95b48b590b9",
+    "paired_by_seed_sha256": "c9e8d3f9281af1a18c86edccf72e2742af70f47df1d54019b32f9d354dcff4b5",
+    "paired_differences_sha256": "7e131ac0d4e14b8d39747ffd3cfd8fb676c52d9a6894bfab13a949409ba1fb50",
+    "phase1_report_sha256": "0c5d67f864735ae37cd146d01a157e10a9e2f607b42aadc65de3678476ebc1df",
+    "predictions_sha256": "aab906d1d911dd993f59f4a82f372325732be6c3a7e8de4d0e9bf8d515d8a9a0",
+    "system_counts_sha256": "6cd3e509bb38badfc31f02b4c5bd8e7760f69756e2b99ab496250c40c70cc223",
+    "unsupported_sha256": "f7f7fe2f3612763d110ff7ac4279d1242b8279d95aec5d16d6893e028a463736"
+  },
+  "interpretation": "Development analysis of published MLPerf Inference v6.1 Closed results; not an official MLPerf submission or benchmark run.",
+  "output_sha256": {
+    "accelerator_review_cases.csv": "fd1c0a8fb8ceb7b6c8f1102e17ba86d4c5d289759a3b19dfa79170548f18d469",
+    "bootstrap_by_seed.csv": "516da50695f904d44bad6518035839c193911d047b7e8eb3454d0868ca6f6e42",
+    "bootstrap_summary.csv": "d83a48123bd27e3ca128b46f454f53da9911350fd251b767b11f590c32ac0b23",
+    "figures/bootstrap_by_seed.pdf": "0f4b341345861b3828747bc9eb046e41baa1091cbe12c485f0683b9f1673f77f",
+    "figures/bootstrap_by_seed.png": "42a3c33397e2fa2ca050f9dad5603d219aa683787f52a066a73042a06776e1a3",
+    "figures/fold_assignment.pdf": "2c1ae609219f13b42640e594d4a6a9d55d765b263032687651a29b5bc052d713",
+    "figures/fold_assignment.png": "d5b928a5bde1448fd496f2f0a397c26ad8133e6e6a77d4ae347d61b08f916d87",
+    "figures/old_vs_new_graphsage.pdf": "f15fd133fbe9c1955db0a053230d7829ada191d8fb8be3733eb40c478486091e",
+    "figures/old_vs_new_graphsage.png": "0867189720677bdf7a1f17c921caed5f8e5b86a2526181769a2cb3b8e17db147",
+    "fold_assignments.csv": "42860b7ccc838a583154eed814e9ee46acccf4890f4f7bb556cdb871abb07f0e",
+    "fold_summary.csv": "a1f7c1782b70a5551362dd8528a7bcc490b7839234f3e24757111b9872bcfab9",
+    "group_metrics_by_seed.csv": "1e7d776f877c0ab56e2a1bfaed83cc0eef43a46a0e56f578b0dc0ddecca2979b",
+    "leakage_test_output.txt": "056d01afc89a61595afe0a8dbab4e338d8af696d482d44eefb8246b06390883c",
+    "legacy_diagnostics_by_seed.csv": "9c500c31cf0692b2db3738ada696337e8d47a4ceb0d0c0c1d613d32710a65ecd",
+    "metrics_by_seed.csv": "05aac36c12f9951717bf37df839c2b0ff77068c47969a8fa57a27be42e25c271",
+    "metrics_seed_summary.csv": "d9867ae6051fc7e6a7c1357349569ebee594e0efd968986632f3e95b48b590b9",
+    "paired_bootstrap_by_seed.csv": "c9e8d3f9281af1a18c86edccf72e2742af70f47df1d54019b32f9d354dcff4b5",
+    "paired_bootstrap_differences.csv": "7e131ac0d4e14b8d39747ffd3cfd8fb676c52d9a6894bfab13a949409ba1fb50",
+    "phase1_report.md": "0c5d67f864735ae37cd146d01a157e10a9e2f607b42aadc65de3678476ebc1df",
+    "predictions_by_seed.csv": "aab906d1d911dd993f59f4a82f372325732be6c3a7e8de4d0e9bf8d515d8a9a0",
+    "system_counts.csv": "6cd3e509bb38badfc31f02b4c5bd8e7760f69756e2b99ab496250c40c70cc223",
+    "unsupported_groups.csv": "f7f7fe2f3612763d110ff7ac4279d1242b8279d95aec5d16d6893e028a463736"
+  },
+  "software_versions": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.2",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "torch": "2.11.0",
+    "torch_geometric": "2.7.0"
+  },
+  "system_counts": [
+    {
+      "accelerator_families": 12,
+      "measurements": 457,
+      "sensitivity_groups": 92,
+      "suite": "datacenter",
+      "systems": 96
+    },
+    {
+      "accelerator_families": 4,
+      "measurements": 19,
+      "sensitivity_groups": 9,
+      "suite": "edge",
+      "systems": 9
+    },
+    {
+      "accelerator_families": 15,
+      "measurements": 476,
+      "sensitivity_groups": 101,
+      "suite": "total",
+      "systems": 105
+    }
+  ]
+}

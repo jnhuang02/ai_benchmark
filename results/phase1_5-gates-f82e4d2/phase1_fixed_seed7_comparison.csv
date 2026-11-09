@@ -1,0 +1,2 @@
+policy,seed,rows,systems,saved_primary_error,current_primary_error,saved_median_group_spearman,current_median_group_spearman,max_abs_prediction_difference,max_abs_normalized_prediction_difference
+isolated_supported,7,450,99,0.5109971488879594,0.5109971488879586,0.5127216323343433,0.5127216323343433,1.1641532182693481e-10,4.9560546777627223e-08

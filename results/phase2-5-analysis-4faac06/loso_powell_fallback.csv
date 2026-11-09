@@ -1,0 +1,2 @@
+protocol,fold_id,system_id,supported_rows,converged,optimizer,formula,prediction_finite
+loso,holdout_089,datacenter|Supermicro|AS-4126GS-NMR-LCC|datacenter,7,True,powell,y ~ C(target_group) + log_total + is_cpu + accelerator_memory,True

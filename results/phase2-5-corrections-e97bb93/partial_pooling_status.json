@@ -1,0 +1,9 @@
+{
+  "analysis": "sparse_group_partial_pooling_secondary",
+  "decision": "Do not invent an empirical-Bayes convention after results are known. Record the secondary analysis as not executable from the frozen specification and retain primary exclusion results.",
+  "deviation_id": "S3A-SHRINK-001",
+  "label": "secondary protocol item; not a primary analysis",
+  "reason": "Protocol v2.1 names a 'shrinkage posterior' but does not define the prior or posterior formula, the group-size shrinkage parameter, variance estimation, whether both center and scale are shrunk independently, or how the normalized primary error is evaluated after shrinkage.",
+  "specified_in_hashed_protocol": true,
+  "status": "not_run"
+}

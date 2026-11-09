@@ -1,0 +1,11 @@
+left_policy,right_policy,metric,mean_difference,difference_95ci_low,difference_95ci_high,probability_left_better,bootstrap_replicates,seed
+legacy_leaky_global,isolated_supported,median_absolute_log_ratio,-0.0200567479217547,-0.09410618352369338,0.062249687875525234,0.6945,2000,7
+legacy_leaky_global,isolated_supported,median_absolute_log_ratio,-0.016215746054971746,-0.11690151780200161,0.0718183099190063,0.623,2000,8
+legacy_leaky_global,isolated_supported,median_absolute_log_ratio,-0.05589457605232056,-0.1320865437104391,0.029997111390067863,0.908,2000,9
+legacy_leaky_global,isolated_supported,median_absolute_log_ratio,-0.03368659608242219,-0.1216890028371594,0.061677465093885296,0.788,2000,10
+legacy_leaky_global,isolated_supported,median_absolute_log_ratio,0.0656176518098311,-0.022238328174175058,0.1450079857265678,0.0705,2000,11
+legacy_leaky_global,isolated_supported,median_absolute_log_ratio,0.0649765194854436,-0.04095555856246164,0.20180811428525294,0.147,2000,12
+legacy_leaky_global,isolated_supported,median_absolute_log_ratio,0.029377037114015896,-0.061734911460996134,0.12667287788455872,0.2575,2000,13
+legacy_leaky_global,isolated_supported,median_absolute_log_ratio,0.024888772790776812,-0.04635876924197221,0.08461914570719391,0.2135,2000,14
+legacy_leaky_global,isolated_supported,median_absolute_log_ratio,0.028809395353961792,-0.055401174979680425,0.11587210413367412,0.2545,2000,15
+legacy_leaky_global,isolated_supported,median_absolute_log_ratio,-0.045309901396665124,-0.15640221543385333,0.04525904414903331,0.798,2000,16

@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{0.24\textwidth}p{0.66\textwidth}}
+\toprule
+\textbf{Parameter} & \textbf{v6.1 rule or published-test setting} \\
+\midrule
+Scenario & Offline, Server, SingleStream, MultiStream, or Interactive as supported by the workload \\
+Accuracy target & Workload-specific; Closed-division targets are normally 99\% or 99.9\% of reference accuracy \\
+Minimum duration & 600,000 ms by default; some published runs used 1,200,000 ms \\
+SingleStream / MultiStream & 90th / 99th percentile; base timing limits are workload-specific \\
+Server / Offline & 99th / 90th percentile; target QPS is system-specific \\
+LLM latency limits & TTFT and TPOT limits are specified per workload and scenario \\
+Precision and parallelism & Record weight and KV-cache precision, batch size, sequence length, and parallel degree \\
+Random seeds and artifacts & Preserve QSL, sample-index, schedule, summary, detail, accuracy, and compliance artifacts \\
+\bottomrule
+\end{tabular}}
+\caption{Parameters required to reproduce an MLPerf Inference v6.1 Closed-division measurement.}
+\label{tab:mlperf-parameters}
+\end{table}

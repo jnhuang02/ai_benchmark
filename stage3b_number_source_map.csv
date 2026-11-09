@@ -1,0 +1,280 @@
+map_id,number,context,source_file,source_column,row_filter,derivation
+T0001,476,Published v6.1 measurements,mlperf_gnn/data/mlperf_long.csv,row count,all rows,row count
+T0002,105,Submitter-aware systems,mlperf_gnn/data/mlperf_long.csv,system_id,all rows,nunique
+T0003,5,Repeated-CV partitions,mlperf_gnn/folds/phase2_fold_assignments.csv,protocol,protocol starts with cv5_partition_,nunique
+T0004,20261107,First repeated-CV partition seed,mlperf_gnn/folds/phase2_fold_assignments.csv,split_seed,protocol starts with cv5_partition_,minimum
+T0005,20261111,Last repeated-CV partition seed,mlperf_gnn/folds/phase2_fold_assignments.csv,split_seed,protocol starts with cv5_partition_,maximum
+T0006,25,Repeated-CV outer folds,mlperf_gnn/folds/phase2_fold_assignments.csv,fold_id,protocol starts with cv5_partition_,group count across five partitions
+T0007,105,LOSO outer folds,mlperf_gnn/folds/phase2_fold_assignments.csv,fold_id,protocol == loso,nunique
+T0008,5,Sensitivity outer folds,mlperf_gnn/folds/phase2_fold_assignments.csv,fold_id,protocol == sensitivity,nunique
+T0009,13,LOAFO family folds,mlperf_gnn/folds/phase2_fold_assignments.csv,family_id,protocol == loafo,nunique
+T0010,10,Repeated-CV and sensitivity neural seeds,mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,neural_seeds,method == mlp,direct total
+T0011,7,LOSO neural seed 7,mlperf_gnn/protocol.md,Metrics,LOSO seeds paragraph,direct
+T0012,11,LOSO neural seed 11,mlperf_gnn/protocol.md,Metrics,LOSO seeds paragraph,direct
+T0013,16,LOSO neural seed 16,mlperf_gnn/protocol.md,Metrics,LOSO seeds paragraph,direct
+T0014,2000,System-cluster bootstrap resamples,mlperf_gnn/results/phase2-loafo-final-1a65664/results_manifest.json,bootstrap_replicates,manifest root,direct
+T0015,0.050000,Equivalence margin,mlperf_gnn/protocol.md,Single primary hypothesis,margin paragraph,direct
+T0016,0,Earlier analysis phase 0,mlperf_gnn/protocol_history.md,Version headings,Phase 0 audit corresponds to the earliest documented phase,phase label
+T0017,1,Earlier analysis phase 1,mlperf_gnn/protocol_history.md,Version headings,Phase 1 audit corresponds to the first evaluation phase,phase label
+T0018,25,Within-25% tail window label,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,within_25pct,all tail rows,window label
+T0019,50,Within-50% tail window label,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,within_50pct,all tail rows,window label
+T0020,v1,Protocol record v1,mlperf_gnn/protocol_history.md,Version headings,protocol version v1,direct
+T0021,v2,Protocol record v2,mlperf_gnn/protocol_history.md,Version headings,protocol version v2,direct
+T0022,v2.1,Protocol record v2.1,mlperf_gnn/protocol_history.md,Version headings,protocol version v2.1,direct
+T0023,v2.2,Protocol record v2.2,mlperf_gnn/protocol_history.md,Version headings,protocol version v2.2,direct
+T0024,2.200000,Numeric protocol version 2.2,mlperf_gnn/protocol_history.md,Version 2.2,Version 2.2 heading,direct
+T0025,4,Secondary comparison families,mlperf_gnn/protocol.md,Secondary comparisons,numbered comparison list,row count
+T0026,8,Holm-corrected secondary tests,mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,protocol,all rows,row count
+T0027,3,Minimum training rows for a supported workload group,mlperf_gnn/protocol.md,Evaluated set,training partition support rule,direct
+T0028,12,Approximate training-only validation percentage,mlperf_gnn/protocol.md,Fold protocols and reuse,validation selection description,direct
+T0029,0.100000,Categorical unknown-mask probability,mlperf_gnn/protocol.md,Data and identity,masking paragraph,direct
+T0030,2,Graph-network layer count,mlperf_gnn/protocol.md,Model fitting policy,GraphSAGE/GCN/GAT paragraph,direct
+T0031,64,Graph-network hidden width,mlperf_gnn/protocol.md,Model fitting policy,GraphSAGE/GCN/GAT paragraph,direct
+T0032,0.200000,Graph-network dropout,mlperf_gnn/protocol.md,Model fitting policy,GraphSAGE/GCN/GAT paragraph,direct
+T0033,0.010000,Graph-network learning rate,mlperf_gnn/protocol.md,Model fitting policy,GraphSAGE/GCN/GAT paragraph,direct
+T0034,0.000100,Graph-network weight decay,mlperf_gnn/protocol.md,Model fitting policy,GraphSAGE/GCN/GAT paragraph,direct
+T0035,150,Maximum neural epochs,mlperf_gnn/protocol.md,Model fitting policy,neural model paragraphs,direct
+T0036,20,Early-stopping patience,mlperf_gnn/protocol.md,Model fitting policy,neural model paragraphs,direct
+T0037,4,GAT attention heads,mlperf_gnn/protocol.md,Model fitting policy,GAT paragraph,direct
+T0038,16,GAT channels per head,mlperf_gnn/protocol.md,Model fitting policy,GAT paragraph,direct
+T0039,16,Maximum embedding width,mlperf_gnn/protocol.md,Model fitting policy,embedding paragraph,direct
+T0040,2,Minimum embedding width,mlperf_gnn/protocol.md,Model fitting policy,embedding paragraph,direct
+T0041,95,Confidence level,mlperf_gnn/protocol.md,Metrics,system-clustered inference,direct
+T0042,90,90th percentile label,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p90,all tail rows,direct
+T0043,95,95th percentile label,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p95,all tail rows,direct
+T0044,78,Singleton sensitivity groups,mlperf_gnn/protocol.md,Fold protocols and reuse,sensitivity paragraph,direct
+T0045,90,Sensitivity groups,mlperf_gnn/protocol.md,Fold protocols and reuse,sensitivity paragraph,direct
+T0046,11.56,Mean validation-system count across outer folds,mlperf_gnn/folds/phase2_fold_assignments.csv,system_id,role == validation; grouped by protocol and fold_id,mean group size
+T0047,6210,Corrected planning fit total,mlperf_gnn/protocol_history.md,Version 2.2 compute erratum,Total fits,direct
+T0048,135,Outer folds covered by the corrected planning total,mlperf_gnn/folds/phase2_fold_assignments.csv,fold_id,"protocol in repeated CV, LOSO, and sensitivity",sum of unique outer folds across the three protocols
+T0049,195,Separate LOAFO planning fits,mlperf_gnn/results/phase2-loafo-final-1a65664/results_manifest.json,folds; neural_seeds; reported_methods,manifest root,13 folds * (3 deterministic entries + 3 seeds * 4 trained neural models)
+T0050,37.26,Corrected planning minutes,mlperf_gnn/protocol_history.md,Version 2.2 compute erratum,Total planning runtime,direct
+T0051,0.10,Rounded lower primary difference,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,mean_difference,"protocol in cv5_partitioned,loso",approximation of +0.104155/+0.115597
+T0052,0.12,Rounded upper primary difference,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,mean_difference,"protocol in cv5_partitioned,loso",approximation of +0.104155/+0.115597
+T0053,0.02,Rounded smallest excluded practical difference,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,mean_difference,"protocol in cv5_partitioned,loso",assessment relative to +0.05 margin and lower confidence bounds
+T0054,449.8,Mean repeated-CV supported rows,mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/coverage_reconciliation.csv,rows,protocol == mean,direct
+T0055,0.944958,Mean repeated-CV coverage,mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/coverage_reconciliation.csv,coverage,protocol == mean,direct
+T0056,94.495798,Displayed mean repeated-CV coverage percentage,mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/coverage_reconciliation.csv,coverage,protocol == mean,"coverage × 100, displayed to six decimals"
+T0057,454,LOSO supported rows,mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,rows,method == best_gnn,direct
+T0058,6,LOSO folds with no supported held-out row,mlperf_gnn/results/phase2-5-analysis-4faac06/loso_empty_folds.csv,fold_id,all rows,row count
+T0059,0.953782,LOSO coverage,mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,coverage,method == best_gnn,direct
+T0060,95.378151,Displayed LOSO coverage percentage,mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,coverage,method == best_gnn,"coverage × 100, displayed to six decimals"
+T0061,449,Sensitivity supported rows,mlperf_gnn/results/phase2-final-f51e57a/sensitivity_main_table.csv,rows,method == best_gnn,direct
+T0062,0.943277,Sensitivity coverage,mlperf_gnn/results/phase2-final-f51e57a/sensitivity_main_table.csv,coverage,method == best_gnn,direct
+T0063,94.327731,Displayed sensitivity coverage percentage,mlperf_gnn/results/phase2-final-f51e57a/sensitivity_main_table.csv,coverage,method == best_gnn,"coverage × 100, displayed to six decimals"
+T0064,0.201853,"cv primary error, random_forest",mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == random_forest,direct
+T0065,0.261071,"cv primary error, mlp",mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == mlp,direct
+T0066,0.617066,"cv primary error, group_median",mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == group_median,direct
+T0067,0.370271,"cv primary error, graphsage",mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == graphsage,direct
+T0068,0.341685,"cv primary error, graphsage_shuffled",mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == graphsage_shuffled,direct
+T0069,0.354737,"cv primary error, gcn",mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == gcn,direct
+T0070,0.632643,"cv primary error, gat",mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == gat,direct
+T0071,0.376393,"cv primary error, best_gnn",mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == best_gnn,direct
+T0072,0.165012,"loso primary error, random_forest",mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == random_forest,direct
+T0073,0.246446,"loso primary error, mlp",mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == mlp,direct
+T0074,0.580975,"loso primary error, group_median",mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == group_median,direct
+T0075,0.338161,"loso primary error, graphsage",mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == graphsage,direct
+T0076,0.366378,"loso primary error, graphsage_shuffled",mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == graphsage_shuffled,direct
+T0077,0.356236,"loso primary error, gcn",mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == gcn,direct
+T0078,0.658164,"loso primary error, gat",mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == gat,direct
+T0079,0.340865,"loso primary error, best_gnn",mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == best_gnn,direct
+T0080,0.174637,"sens primary error, random_forest",mlperf_gnn/results/phase2-final-f51e57a/sensitivity_main_table.csv,primary_error,method == random_forest,direct
+T0081,0.251640,"sens primary error, mlp",mlperf_gnn/results/phase2-final-f51e57a/sensitivity_main_table.csv,primary_error,method == mlp,direct
+T0082,0.631946,"sens primary error, group_median",mlperf_gnn/results/phase2-final-f51e57a/sensitivity_main_table.csv,primary_error,method == group_median,direct
+T0083,0.365091,"sens primary error, graphsage",mlperf_gnn/results/phase2-final-f51e57a/sensitivity_main_table.csv,primary_error,method == graphsage,direct
+T0084,0.386209,"sens primary error, graphsage_shuffled",mlperf_gnn/results/phase2-final-f51e57a/sensitivity_main_table.csv,primary_error,method == graphsage_shuffled,direct
+T0085,0.417344,"sens primary error, gcn",mlperf_gnn/results/phase2-final-f51e57a/sensitivity_main_table.csv,primary_error,method == gcn,direct
+T0086,0.742656,"sens primary error, gat",mlperf_gnn/results/phase2-final-f51e57a/sensitivity_main_table.csv,primary_error,method == gat,direct
+T0087,0.416584,"sens primary error, best_gnn",mlperf_gnn/results/phase2-final-f51e57a/sensitivity_main_table.csv,primary_error,method == best_gnn,direct
+T0088,22.37,RF CV typical multiplicative miss,mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == random_forest,100*(exp(primary_error)-1)
+T0089,17.94,RF LOSO typical multiplicative miss,mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == random_forest,100*(exp(primary_error)-1)
+T0090,85.35,Group-median CV typical multiplicative miss,mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == group_median,100*(exp(primary_error)-1)
+T0091,78.78,Group-median LOSO typical multiplicative miss,mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == group_median,100*(exp(primary_error)-1)
+T0092,22,Rounded RF CV typical miss,mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == random_forest,rounded rf_cv_pct
+T0093,18,Rounded RF LOSO typical miss,mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == random_forest,rounded rf_loso_pct
+T0094,85,Rounded group-median CV typical miss,mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == group_median,rounded gm_cv_pct
+T0095,79,Rounded group-median LOSO typical miss,mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == group_median,rounded gm_loso_pct
+T0096,0.115597,cv best GNN minus MLP mean_difference,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,mean_difference,protocol == cv5_partitioned,direct
+T0097,0.047136,cv best GNN minus MLP difference_95ci_low,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,difference_95ci_low,protocol == cv5_partitioned,direct
+T0098,0.198051,cv best GNN minus MLP difference_95ci_high,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,difference_95ci_high,protocol == cv5_partitioned,direct
+T0099,0.104155,loso best GNN minus MLP mean_difference,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,mean_difference,protocol == loso,direct
+T0100,0.023774,loso best GNN minus MLP difference_95ci_low,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,difference_95ci_low,protocol == loso,direct
+T0101,0.192784,loso best GNN minus MLP difference_95ci_high,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,difference_95ci_high,protocol == loso,direct
+T0102,0.158657,sens best GNN minus MLP mean_difference,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,mean_difference,protocol == sensitivity,direct
+T0103,0.058606,sens best GNN minus MLP difference_95ci_low,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,difference_95ci_low,protocol == sensitivity,direct
+T0104,0.257561,sens best GNN minus MLP difference_95ci_high,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,difference_95ci_high,protocol == sensitivity,direct
+T0105,0.171529,"cv5_partitioned: graphsage minus random_forest, mean_difference",mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == cv5_partitioned and left == graphsage and right == random_forest,direct
+T0106,0.163960,"loso: graphsage minus random_forest, mean_difference",mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == loso and left == graphsage and right == random_forest,direct
+T0107,0.267067,"cv5_partitioned: gat minus graphsage, mean_difference",mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == cv5_partitioned and left == gat and right == graphsage,direct
+T0108,0.328409,"loso: gat minus graphsage, mean_difference",mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == loso and left == gat and right == graphsage,direct
+T0109,0.024523,"cv5_partitioned: graphsage minus graphsage_shuffled, mean_difference",mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == cv5_partitioned and left == graphsage and right == graphsage_shuffled,direct
+T0110,0.096000,"cv5_partitioned: graphsage minus graphsage_shuffled, holm_adjusted_p_value",mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,holm_adjusted_p_value,protocol == cv5_partitioned and left == graphsage and right == graphsage_shuffled,direct
+T0111,-0.032199,"loso: graphsage minus graphsage_shuffled, mean_difference",mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == loso and left == graphsage and right == graphsage_shuffled,direct
+T0112,0.387000,"loso: graphsage minus graphsage_shuffled, holm_adjusted_p_value",mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,holm_adjusted_p_value,protocol == loso and left == graphsage and right == graphsage_shuffled,direct
+T0113,-0.016638,"cv5_partitioned: gcn minus graphsage, mean_difference",mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == cv5_partitioned and left == gcn and right == graphsage,direct
+T0114,0.022510,"loso: gcn minus graphsage, mean_difference",mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == loso and left == gcn and right == graphsage,direct
+T0115,0.201853,cv5_partitioned random_forest tail median,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,median,protocol == cv5_partitioned and method == random_forest,direct
+T0116,1.147904,cv5_partitioned random_forest tail p90,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p90,protocol == cv5_partitioned and method == random_forest,direct
+T0117,1.824215,cv5_partitioned random_forest tail p95,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p95,protocol == cv5_partitioned and method == random_forest,direct
+T0118,0.525196,cv5_partitioned random_forest tail within_25pct,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,within_25pct,protocol == cv5_partitioned and method == random_forest,direct
+T0119,0.261071,cv5_partitioned mlp tail median,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,median,protocol == cv5_partitioned and method == mlp,direct
+T0120,1.089365,cv5_partitioned mlp tail p90,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p90,protocol == cv5_partitioned and method == mlp,direct
+T0121,1.415805,cv5_partitioned mlp tail p95,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p95,protocol == cv5_partitioned and method == mlp,direct
+T0122,0.449975,cv5_partitioned mlp tail within_25pct,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,within_25pct,protocol == cv5_partitioned and method == mlp,direct
+T0123,0.165012,loso random_forest tail median,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,median,protocol == loso and method == random_forest,direct
+T0124,1.101461,loso random_forest tail p90,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p90,protocol == loso and method == random_forest,direct
+T0125,1.588001,loso random_forest tail p95,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p95,protocol == loso and method == random_forest,direct
+T0126,0.577093,loso random_forest tail within_25pct,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,within_25pct,protocol == loso and method == random_forest,direct
+T0127,0.246446,loso mlp tail median,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,median,protocol == loso and method == mlp,direct
+T0128,1.102937,loso mlp tail p90,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p90,protocol == loso and method == mlp,direct
+T0129,1.359019,loso mlp tail p95,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p95,protocol == loso and method == mlp,direct
+T0130,0.471366,loso mlp tail within_25pct,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,within_25pct,protocol == loso and method == mlp,direct
+T0131,6,Trained non-baseline models,mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_group_median_comparisons.csv,method,headline families and six trained methods,nunique
+T0132,36,Trained-model and headline-family combinations,mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_group_median_comparisons.csv,method,headline families and six trained methods,six families times six trained models
+T0133,4,"Trained models beating group median, amd_cdna4_mi350x",mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_group_median_comparisons.csv,model_better_than_group_median,family_id == amd_cdna4_mi350x and method in six trained models,sum of true
+T0134,3,"Supported systems, amd_cdna4_mi350x",mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_family_support.csv,supported_systems,family_id == amd_cdna4_mi350x,direct
+T0135,0.572661,"Best GNN minus MLP point difference, amd_cdna4_mi350x",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,point_difference,family_id == amd_cdna4_mi350x and left == best_gnn,direct
+T0136,0,"Trained models beating group median, amd_cdna4_mi355x",mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_group_median_comparisons.csv,model_better_than_group_median,family_id == amd_cdna4_mi355x and method in six trained models,sum of true
+T0137,12,"Supported systems, amd_cdna4_mi355x",mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_family_support.csv,supported_systems,family_id == amd_cdna4_mi355x,direct
+T0138,-0.115406,"Best GNN minus MLP point difference, amd_cdna4_mi355x",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,point_difference,family_id == amd_cdna4_mi355x and left == best_gnn,direct
+T0139,-0.504774,"Best GNN minus MLP interval, amd_cdna4_mi355x, difference_95ci_low",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,difference_95ci_low,family_id == amd_cdna4_mi355x and left == best_gnn,direct
+T0140,-0.038053,"Best GNN minus MLP interval, amd_cdna4_mi355x, difference_95ci_high",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,difference_95ci_high,family_id == amd_cdna4_mi355x and left == best_gnn,direct
+T0141,4,"Trained models beating group median, intel_xe2_battlemage_arc_pro_b70",mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_group_median_comparisons.csv,model_better_than_group_median,family_id == intel_xe2_battlemage_arc_pro_b70 and method in six trained models,sum of true
+T0142,3,"Supported systems, intel_xe2_battlemage_arc_pro_b70",mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_family_support.csv,supported_systems,family_id == intel_xe2_battlemage_arc_pro_b70,direct
+T0143,-0.391312,"Best GNN minus MLP point difference, intel_xe2_battlemage_arc_pro_b70",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,point_difference,family_id == intel_xe2_battlemage_arc_pro_b70 and left == best_gnn,direct
+T0144,5,"Trained models beating group median, nvidia_blackwell_b200",mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_group_median_comparisons.csv,model_better_than_group_median,family_id == nvidia_blackwell_b200 and method in six trained models,sum of true
+T0145,14,"Supported systems, nvidia_blackwell_b200",mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_family_support.csv,supported_systems,family_id == nvidia_blackwell_b200,direct
+T0146,0.101929,"Best GNN minus MLP point difference, nvidia_blackwell_b200",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,point_difference,family_id == nvidia_blackwell_b200 and left == best_gnn,direct
+T0147,-0.024416,"Best GNN minus MLP interval, nvidia_blackwell_b200, difference_95ci_low",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,difference_95ci_low,family_id == nvidia_blackwell_b200 and left == best_gnn,direct
+T0148,0.243393,"Best GNN minus MLP interval, nvidia_blackwell_b200, difference_95ci_high",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,difference_95ci_high,family_id == nvidia_blackwell_b200 and left == best_gnn,direct
+T0149,3,"Trained models beating group median, nvidia_blackwell_b300",mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_group_median_comparisons.csv,model_better_than_group_median,family_id == nvidia_blackwell_b300 and method in six trained models,sum of true
+T0150,33,"Supported systems, nvidia_blackwell_b300",mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_family_support.csv,supported_systems,family_id == nvidia_blackwell_b300,direct
+T0151,0.059492,"Best GNN minus MLP point difference, nvidia_blackwell_b300",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,point_difference,family_id == nvidia_blackwell_b300 and left == best_gnn,direct
+T0152,-0.135334,"Best GNN minus MLP interval, nvidia_blackwell_b300, difference_95ci_low",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,difference_95ci_low,family_id == nvidia_blackwell_b300 and left == best_gnn,direct
+T0153,0.239440,"Best GNN minus MLP interval, nvidia_blackwell_b300, difference_95ci_high",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,difference_95ci_high,family_id == nvidia_blackwell_b300 and left == best_gnn,direct
+T0154,2,"Trained models beating group median, nvidia_blackwell_rtx_pro",mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_group_median_comparisons.csv,model_better_than_group_median,family_id == nvidia_blackwell_rtx_pro and method in six trained models,sum of true
+T0155,15,"Supported systems, nvidia_blackwell_rtx_pro",mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_family_support.csv,supported_systems,family_id == nvidia_blackwell_rtx_pro,direct
+T0156,0.334701,"Best GNN minus MLP point difference, nvidia_blackwell_rtx_pro",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,point_difference,family_id == nvidia_blackwell_rtx_pro and left == best_gnn,direct
+T0157,-0.291528,"Best GNN minus MLP interval, nvidia_blackwell_rtx_pro, difference_95ci_low",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,difference_95ci_low,family_id == nvidia_blackwell_rtx_pro and left == best_gnn,direct
+T0158,0.520475,"Best GNN minus MLP interval, nvidia_blackwell_rtx_pro, difference_95ci_high",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,difference_95ci_high,family_id == nvidia_blackwell_rtx_pro and left == best_gnn,direct
+T0159,10,"Supported systems, CPU-only family",mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_family_support.csv,supported_systems,family_id == cpu_only_intel_xeon6_granite_rapids,direct
+T0160,-0.398394,"Best GNN minus MLP point difference, CPU-only family",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,point_difference,family_id == cpu_only_intel_xeon6_granite_rapids and left == best_gnn,direct
+T0161,-0.802894,"Best GNN minus MLP interval, CPU-only family, difference_95ci_low",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,difference_95ci_low,family_id == cpu_only_intel_xeon6_granite_rapids and left == best_gnn,direct
+T0162,-0.040203,"Best GNN minus MLP interval, CPU-only family, difference_95ci_high",mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,difference_95ci_high,family_id == cpu_only_intel_xeon6_granite_rapids and left == best_gnn,direct
+T0163,18,Trained-model and headline-family combinations beating group median,mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_group_median_comparisons.csv,model_better_than_group_median,headline families and six trained models,sum of true
+T0164,2,Headline families where best GNN beats MLP on point estimate,mlperf_gnn/results/phase2-5-corrections-e97bb93/headline_claim_counts.csv,value,quantity == best_gnn_point_better_than_mlp,direct
+T0165,6,Headline family count,mlperf_gnn/results/phase2-5-corrections-e97bb93/headline_claim_counts.csv,value,quantity == headline_families,direct
+T0166,5,Families with at least eight supported systems,mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_family_support.csv,interval_eligible,all families,sum of true
+T0167,0.093310,"CV5 partition SD, graphsage",mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/partition_primary_errors.csv,primary_error,method == graphsage,sample SD across five partitions
+T0168,0.032297,"CV5 partition SD, random_forest",mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/partition_primary_errors.csv,primary_error,method == random_forest,sample SD across five partitions
+T0169,0.019410,"CV5 partition SD, mlp",mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/partition_primary_errors.csv,primary_error,method == mlp,sample SD across five partitions
+T0170,54.016086,"Top normalized residual 1, random_forest",mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/top_abs_z_residuals.csv,abs_z,method == random_forest and rank == 1,direct
+T0171,25.720372,"Top normalized residual 2, random_forest",mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/top_abs_z_residuals.csv,abs_z,method == random_forest and rank == 2,direct
+T0172,2,Shared interactive-throughput extrapolation rows,mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/top_abs_z_residuals.csv,row_uid,top residuals for every model family,distinct recurring row count
+T0173,0.779098,Lowest top-ten squared normalized error share,mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/top_abs_z_residuals.csv,z_residual,rank == top10_sse_share,minimum across methods
+T0174,0.871018,Highest top-ten squared normalized error share,mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/top_abs_z_residuals.csv,z_residual,rank == top10_sse_share,maximum across methods
+T0175,78,Rounded lowest top-ten squared normalized error share,mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/top_abs_z_residuals.csv,z_residual,rank == top10_sse_share,rounded minimum across methods
+T0176,87,Rounded highest top-ten squared normalized error share,mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/top_abs_z_residuals.csv,z_residual,rank == top10_sse_share,rounded maximum across methods
+T0177,54,Rounded first interactive extrapolation residual,mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/top_abs_z_residuals.csv,abs_z,method == random_forest and rank == 1,rounded absolute residual
+T0178,26,Rounded second interactive extrapolation residual,mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/top_abs_z_residuals.csv,abs_z,method == random_forest and rank == 2,rounded absolute residual
+T0179,0.004251,Leak effect mean_difference,mlperf_gnn/results/phase1-final-5c9dfde/paired_bootstrap_differences.csv,mean_difference,left_policy == legacy_leaky_global and right_policy == isolated_supported,direct
+T0180,-0.077921,Leak effect difference_95ci_low,mlperf_gnn/results/phase1-final-5c9dfde/paired_bootstrap_differences.csv,difference_95ci_low,left_policy == legacy_leaky_global and right_policy == isolated_supported,direct
+T0181,0.078219,Leak effect difference_95ci_high,mlperf_gnn/results/phase1-final-5c9dfde/paired_bootstrap_differences.csv,difference_95ci_high,left_policy == legacy_leaky_global and right_policy == isolated_supported,direct
+T0182,0.0043,Rounded leak effect,mlperf_gnn/results/phase1-final-5c9dfde/paired_bootstrap_differences.csv,mean_difference,left_policy == legacy_leaky_global and right_policy == isolated_supported,rounded displayed value
+T0183,-0.0779,Rounded leak interval lower bound,mlperf_gnn/results/phase1-final-5c9dfde/paired_bootstrap_differences.csv,difference_95ci_low,left_policy == legacy_leaky_global and right_policy == isolated_supported,rounded displayed value
+T0184,0.0782,Rounded leak interval upper bound,mlperf_gnn/results/phase1-final-5c9dfde/paired_bootstrap_differences.csv,difference_95ci_high,left_policy == legacy_leaky_global and right_policy == isolated_supported,rounded displayed value
+T0185,0.711303,Historical single-run Spearman,mlperf_gnn/results/phase1_5-gates-f82e4d2/spearman_reconciliation.csv,mean,dataset == exact_phase0_graphsage and definition == table_6_4_minimum_3_rows,direct
+T0186,0.484192,Pinned ten-seed Spearman mean,mlperf_gnn/results/phase1_5-gates-f82e4d2/spearman_reconciliation.csv,mean,dataset == attribution_baseline and definition == table_6_4_minimum_3_rows,direct
+T0187,22,Accelerator node cardinality including unknown,mlperf_gnn/data/mlperf_long.csv,accelerator,all rows; blank normalized to <unknown>,nunique after normalization
+T0188,30,Organization cardinality,mlperf_gnn/data/mlperf_long.csv,organization,all rows,nunique
+T0189,2,System-type cardinality,mlperf_gnn/data/mlperf_long.csv,system_type,all rows,nunique
+T0190,37,Processor-node identity cardinality,mlperf_gnn/data/mlperf_long.csv,processor_id,all rows,nunique
+T0191,37,Host-processor field cardinality,mlperf_gnn/data/mlperf_long.csv,host_processor,all rows,nunique
+T0192,31,Workload-node cardinality,mlperf_gnn/data/mlperf_long.csv,target_group,all rows,nunique
+T0193,476,Result-node identity cardinality,mlperf_gnn/data/mlperf_long.csv,row count,all rows,one row_uid per row
+T0194,12,Precision-field cardinality,mlperf_gnn/data/mlperf_long.csv,precision,all rows,nunique
+T0195,7,Numeric nodes cardinality,mlperf_gnn/data/mlperf_long.csv,nodes,all rows,nunique
+T0196,5,Accelerators-per-node cardinality,mlperf_gnn/data/mlperf_long.csv,accelerators_per_node,all rows,nunique
+T0197,5,Processors-per-node cardinality,mlperf_gnn/data/mlperf_long.csv,processors_per_node,all rows,nunique
+T0198,20,Host-processor-core-count cardinality,mlperf_gnn/data/mlperf_long.csv,host_processor_cores,all rows,nunique
+T0199,11,Total-accelerator-count cardinality,mlperf_gnn/data/mlperf_long.csv,total_accelerators,all rows,nunique
+T0200,2,CPU-only indicator cardinality,mlperf_gnn/data/mlperf_long.csv,total_accelerators,all rows,total_accelerators == 0
+T0201,10,Ridge alpha,mlperf_gnn/evaluation/phase2.py,Ridge(alpha=10.0),fixed deterministic estimator,direct
+T0202,300,Random-forest tree count,mlperf_gnn/evaluation/phase2.py,n_estimators=300,random_forest,direct
+T0203,2,Random-forest minimum leaf size,mlperf_gnn/evaluation/phase2.py,min_samples_leaf=2,random_forest,direct
+T0204,0.7,Random-forest maximum feature fraction,mlperf_gnn/evaluation/phase2.py,max_features=0.7,random_forest,direct
+T0205,7,Fixed tabular random state,mlperf_gnn/evaluation/phase2.py,random_state=7,random_forest and gradient_boosting,direct
+T0206,300,Gradient-boosting maximum iterations,mlperf_gnn/evaluation/phase2.py,max_iter=300,gradient_boosting,direct
+T0207,0.05,Gradient-boosting learning rate,mlperf_gnn/evaluation/phase2.py,learning_rate=0.05,gradient_boosting,direct
+T0208,15,Gradient-boosting maximum leaf nodes,mlperf_gnn/evaluation/phase2.py,max_leaf_nodes=15,gradient_boosting,direct
+T0209,1.0,Gradient-boosting L2 regularization,mlperf_gnn/evaluation/phase2.py,l2_regularization=1.0,gradient_boosting,direct
+T0210,64,Neural hidden width,mlperf_gnn/evaluation/evaluate.py,hidden,GNNConfig,direct
+T0211,2,Neural hidden-layer count,mlperf_gnn/evaluation/evaluate.py,layers,GNNConfig and MLP architecture,direct
+T0212,0.2,Neural dropout,mlperf_gnn/evaluation/evaluate.py,dropout,GNNConfig,direct
+T0213,0.01,Neural learning rate,mlperf_gnn/evaluation/evaluate.py,learning_rate,GNNConfig,direct
+T0214,0.0001,Neural AdamW weight decay,mlperf_gnn/evaluation/evaluate.py,weight_decay,GNNConfig,direct
+T0215,1,Huber loss delta,mlperf_gnn/evaluation/phase2.py,delta=1.0,MLP and GNN training,direct
+T0216,150,Maximum neural epochs,mlperf_gnn/evaluation/evaluate.py,epochs,GNNConfig,direct
+T0217,20,Neural early-stopping patience,mlperf_gnn/evaluation/evaluate.py,patience,GNNConfig,direct
+T0218,4,GAT attention heads,mlperf_gnn/train_graphsage.py,attention_heads,fixed GAT configuration,direct
+T0219,16,GAT channels per attention head,mlperf_gnn/train_graphsage.py,channels,fixed GAT configuration,direct
+T0220,1,Lowest selected GAT best epoch,mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/gat_training_summary.csv,best_epoch_min,all repeated-CV GAT fold cells,minimum
+T0221,1.5,Rounded GAT mean final validation loss maximum,mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/gat_training_summary.csv,final_validation_loss_mean,all repeated-CV GAT fold cells,maximum rounded to one decimal
+T0222,0.025,Rounded repeated-CV real-edge minus shuffled-edge difference,mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == cv5_partitioned and left == graphsage and right == graphsage_shuffled,rounded from 0.024523
+T0223,0.005,Rounded repeated-CV real-edge minus shuffled-edge interval lower bound,mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,difference_95ci_low,protocol == cv5_partitioned and left == graphsage and right == graphsage_shuffled,rounded from 0.004590
+T0224,0.045,Rounded repeated-CV real-edge minus shuffled-edge interval upper bound,mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,difference_95ci_high,protocol == cv5_partitioned and left == graphsage and right == graphsage_shuffled,rounded from 0.045019
+T0225,-0.032,Rounded LOSO real-edge minus shuffled-edge difference,mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == loso and left == graphsage and right == graphsage_shuffled,rounded from -0.032199
+T0226,-0.077,Rounded LOSO real-edge minus shuffled-edge interval lower bound,mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,difference_95ci_low,protocol == loso and left == graphsage and right == graphsage_shuffled,rounded from -0.077127
+T0227,0.012,Rounded LOSO real-edge minus shuffled-edge interval upper bound,mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,difference_95ci_high,protocol == loso and left == graphsage and right == graphsage_shuffled,rounded from 0.012450
+T0228,0.116,Rounded repeated-CV best GNN minus MLP difference,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,mean_difference,protocol == cv5_partitioned,rounded from 0.115597
+T0229,0.047,Rounded repeated-CV best GNN minus MLP interval lower bound,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,difference_95ci_low,protocol == cv5_partitioned,rounded from 0.047136
+T0230,0.198,Rounded repeated-CV best GNN minus MLP interval upper bound,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,difference_95ci_high,protocol == cv5_partitioned,rounded from 0.198051
+T0231,0.104,Rounded LOSO best GNN minus MLP difference,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,mean_difference,protocol == loso,rounded from 0.104155
+T0232,0.024,Rounded LOSO best GNN minus MLP interval lower bound,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,difference_95ci_low,protocol == loso,rounded from 0.023774
+T0233,0.193,Rounded LOSO best GNN minus MLP interval upper bound,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,difference_95ci_high,protocol == loso,rounded from 0.192784
+T0234,0.096,Rounded Holm p-value for repeated-CV edge ablation,mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,holm_adjusted_p_value,protocol == cv5_partitioned and left == graphsage and right == graphsage_shuffled,rounded from 0.096000
+T0235,0.202,Rounded repeated-CV random-forest primary error,mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == random_forest,rounded from 0.201853
+T0236,0.165,Rounded LOSO random-forest primary error,mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == random_forest,rounded from 0.165012
+T0237,0.261,Rounded repeated-CV MLP primary error,mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == mlp,rounded from 0.261071
+T0238,0.246,Rounded LOSO MLP primary error,mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == mlp,rounded from 0.246446
+T0239,0.617,Rounded repeated-CV group-median primary error,mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == group_median,rounded from 0.617066
+T0240,0.581,Rounded LOSO group-median primary error,mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == group_median,rounded from 0.580975
+T0241,0.370,Rounded repeated-CV GraphSAGE primary error,mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == graphsage,rounded from 0.370271
+T0242,0.338,Rounded LOSO GraphSAGE primary error,mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == graphsage,rounded from 0.338161
+T0243,0.355,Rounded repeated-CV GCN primary error,mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == gcn,rounded from 0.354737
+T0244,0.356,Rounded LOSO GCN primary error,mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == gcn,rounded from 0.356236
+T0245,0.633,Rounded repeated-CV GAT primary error,mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == gat,rounded from 0.632643
+T0246,0.658,Rounded LOSO GAT primary error,mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == gat,rounded from 0.658164
+T0247,0.342,Rounded repeated-CV shuffled-edge GraphSAGE primary error,mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == graphsage_shuffled,rounded from 0.341685
+T0248,0.366,Rounded LOSO shuffled-edge GraphSAGE primary error,mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == graphsage_shuffled,rounded from 0.366378
+T0249,0.376,Rounded repeated-CV best-GNN primary error,mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv,primary_error_mean,method == best_gnn,rounded from 0.376393
+T0250,0.341,Rounded LOSO best-GNN primary error,mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv,primary_error,method == best_gnn,rounded from 0.340865
+T0251,0.172,Rounded repeated-CV GraphSAGE minus random-forest difference,mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == cv5_partitioned and left == graphsage and right == random_forest,rounded from 0.171529
+T0252,0.164,Rounded LOSO GraphSAGE minus random-forest difference,mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == loso and left == graphsage and right == random_forest,rounded from 0.163960
+T0253,0.267,Rounded repeated-CV GAT minus GraphSAGE difference,mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == cv5_partitioned and left == gat and right == graphsage,rounded from 0.267067
+T0254,0.328,Rounded LOSO GAT minus GraphSAGE difference,mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == loso and left == gat and right == graphsage,rounded from 0.328409
+T0255,-0.017,Rounded repeated-CV GCN minus GraphSAGE difference,mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == cv5_partitioned and left == gcn and right == graphsage,rounded from -0.016638
+T0256,0.023,Rounded LOSO GCN minus GraphSAGE difference,mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv,mean_difference,protocol == loso and left == gcn and right == graphsage,rounded from 0.022510
+T0257,1.416,Rounded repeated-CV MLP p95,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p95,protocol == cv5_partitioned and method == mlp,rounded from 1.415805
+T0258,1.824,Rounded repeated-CV random-forest p95,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p95,protocol == cv5_partitioned and method == random_forest,rounded from 1.824215
+T0259,1.359,Rounded LOSO MLP p95,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p95,protocol == loso and method == mlp,rounded from 1.359019
+T0260,1.588,Rounded LOSO random-forest p95,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p95,protocol == loso and method == random_forest,rounded from 1.588001
+T0261,1.089,Rounded repeated-CV MLP p90,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p90,protocol == cv5_partitioned and method == mlp,rounded from 1.089365
+T0262,1.148,Rounded repeated-CV random-forest p90,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p90,protocol == cv5_partitioned and method == random_forest,rounded from 1.147904
+T0263,1.101,Rounded LOSO random-forest p90,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p90,protocol == loso and method == random_forest,rounded from 1.101461
+T0264,1.103,Rounded LOSO MLP p90,mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv,p90,protocol == loso and method == mlp,rounded from 1.102937
+T0265,-0.115,Rounded MI355X best-GNN minus MLP point difference,mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,point_difference,family_id == amd_cdna4_mi355x and left == best_gnn,rounded from -0.115406
+T0266,-0.505,Rounded MI355X best-GNN interval lower bound,mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,difference_95ci_low,family_id == amd_cdna4_mi355x and left == best_gnn,rounded from -0.504774
+T0267,-0.038,Rounded MI355X best-GNN interval upper bound,mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,difference_95ci_high,family_id == amd_cdna4_mi355x and left == best_gnn,rounded from -0.038053
+T0268,-0.398,Rounded CPU-only best-GNN minus MLP point difference,mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,point_difference,family_id == cpu_only_intel_xeon6_granite_rapids and left == best_gnn,rounded from -0.398394
+T0269,-0.803,Rounded CPU-only best-GNN interval lower bound,mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,difference_95ci_low,family_id == cpu_only_intel_xeon6_granite_rapids and left == best_gnn,rounded from -0.802894
+T0270,-0.040,Rounded CPU-only best-GNN interval upper bound,mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,difference_95ci_high,family_id == cpu_only_intel_xeon6_granite_rapids and left == best_gnn,rounded from -0.040203
+T0271,0.573,Rounded MI350X best-GNN minus MLP point difference,mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv,point_difference,family_id == amd_cdna4_mi350x and left == best_gnn,rounded from 0.572661
+T0272,0.159,Rounded sensitivity best GNN minus MLP difference,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,mean_difference,protocol == sensitivity,rounded from 0.158657
+T0273,0.059,Rounded sensitivity interval lower bound,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,difference_95ci_low,protocol == sensitivity,rounded from 0.058606
+T0274,0.258,Rounded sensitivity interval upper bound,mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv,difference_95ci_high,protocol == sensitivity,rounded from 0.257561
+T0275,0.093,Rounded GraphSAGE partition-level primary-error SD,mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/partition_primary_errors.csv,primary_error,method == graphsage,sample SD across five partitions rounded from 0.093310
+T0276,0.032,Rounded random-forest partition-level primary-error SD,mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/partition_primary_errors.csv,primary_error,method == random_forest,sample SD across five partitions rounded from 0.032297
+T0277,0.019,Rounded MLP partition-level primary-error SD,mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/partition_primary_errors.csv,primary_error,method == mlp,sample SD across five partitions rounded from 0.019410
+T0278,0.6,Capped color-scale magnitude in Figure 7.4,mlperf_gnn/generate_thesis_results.py,limit,LOAFO group-median heatmap,presentation cap chosen below raw maximum to preserve contrast
+T0279,21,Observed nonmissing accelerator identities,mlperf_gnn/data/mlperf_long.csv,accelerator,all rows; exclude blank,documented observed count before adding <unknown> category

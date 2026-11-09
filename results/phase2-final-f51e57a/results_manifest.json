@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-11-08T00:25:45.552274+00:00",
+  "data_sha256": "a6853e1e2dc777404ddf9f5e0546679fef758df38bc4ebe5bba21e0c0bb735dd",
+  "git_branch": "phase-1-evaluation",
+  "git_commit": "f51e57a89832216a2b1851b0ff2cccd13c95b7f6",
+  "git_dirty": false,
+  "input_manifests": {
+    "cv5": "af85d70f5a5887252e8e775a5dbb7f545ab708c77ccfb4b262c5c3a655e0c103",
+    "diagnostics": "48be5b81808bb1d802ac9d6e946c926b3094b62cda42793d0445ec272a281438",
+    "loso": "bdbb20b9e86140c9ecd25d1203111249edb97c2357819af7a048d8d0a16f47d3",
+    "sensitivity": "1a160ec1c38cd8b838dd4db702c0bba2b3a137fdaae54975a5512ce07a1e8566"
+  },
+  "loafo_run": false,
+  "output_sha256": {
+    "co_primary_decision.json": "3908b790d87c854eb1f0a0f0d4a77b2d3512dfd635ac94865711ba4f97b9b9b2",
+    "cv5_main_table.csv": "a154463d89dbf1b720f967b20bd56e4e9fe5e57b1b271f8a3bd559c38cecdf20",
+    "cv5_paired_differences.csv": "859c21732c551d6b0a94c2f3969f642964e97e4511560f681713ff94cf416a6c",
+    "loso_main_table.csv": "643788d486d2199b1d9bda7ece0b72f2c0067d862281f3d70e9d5330ba450455",
+    "primary_decision.csv": "29f50db2190612a089b3fe3243a944148ec31b73d84467fa69186c006523ec67",
+    "secondary_holm.csv": "fc23d3e0d815daef3b4caf7b258f7b1027b1408ee18f1aefb1058d6855ef9958",
+    "sensitivity_main_table.csv": "7b9c362e4be5482b4e7df50252a08216506460bf0555258da364f7f6c626a37a"
+  },
+  "protocol_sha256": "d4c5930477b54f6b3a65bbc1be98b755bc4a2335efcc2261294469d6f0123f3e"
+}

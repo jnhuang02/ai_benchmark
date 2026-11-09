@@ -1,0 +1,401 @@
+target_group,rows,systems,median_absolute_log_ratio,mape,median_mape,spearman,protocol,model,evaluation_policy,seed
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,1.193919668850068,3.778807278198853,0.9352947058919536,0.31666666666666665,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.33814559691173063,0.4030465128627559,0.4006061142444282,0.6543859649122807,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.405918887244928,0.4227631108930981,0.43383114108292986,0.7481940144478844,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.3661387992476497,0.46654135402009267,0.37220456801738594,-0.5428571428571429,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.6663214331991361,1.2795895985866659,0.6295070971191812,0.345674486803519,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.5507122610574848,0.9572794122884158,0.6304145233364458,0.3519061583577712,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,3.077510422160607,17.105643320401963,20.704300533114207,-0.5,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.34878200176323215,2.2581043049496166,0.36264285345965386,0.6141795311606633,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.3116153760231235,2.255787066857647,0.3459921655696024,0.5792614094500886,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.04020143199124959,0.30182317192700464,0.04102044789593451,-0.2333333333333333,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.5155743704045062,2.4706329700568666,0.4689469862509626,0.20263157894736844,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.48338297037174094,2.680219930515983,0.3833063972346142,0.29595141700404864,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,0.806440330610692,2.966071125805128,0.6212187108304237,-0.2043956043956044,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.0923634201318606,0.952044549458581,0.7042077555388007,0.7012096774193549,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.2121146176748052,1.30398263204946,0.800840909231035,0.7710454722116238,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.1437512646122272,0.1853762967347139,0.1338968482278612,0.5,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.30748599582874236,0.6347979432618645,0.3600017626710054,0.6785714285714285,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.17281219123741076,0.30378576359932385,0.15870439730547867,0.6928571428571427,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.5702948991057486,0.5188079743063528,0.5392879371463352,0.7322134387351779,cv5,graphsage,legacy_leaky_global,7
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.796087049297201,1.246184752749636,0.9241707901802463,-0.8999999999999998,cv5,graphsage,legacy_leaky_global,7
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,0.5688388002725993,1.8583205122785253,0.7662149319065433,0.5499999999999999,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.40390692353528523,0.3769924638756415,0.3746114731560328,0.6105263157894737,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.3818738078831365,0.38427299279131855,0.340443807123082,0.7853457172342622,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.48197854475094193,0.5476334103407351,0.5022590324243017,-0.5428571428571429,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.5516768836557864,1.2551821001338117,0.5261325091653215,0.531158357771261,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.3857519313374844,0.8815765995282513,0.32260251902756,0.5520527859237535,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.437112565854628,8.622823625915641,10.439960874156949,0.5,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.4568246473200883,2.1579795478776527,0.3732329651997403,0.49830379264341523,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.4294874665057584,2.7384302670758034,0.3978596836814552,0.514916948879213,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.03252517398108168,0.30872658651897816,0.03305989904698974,0.0,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.4843772184927797,1.640392640128933,0.42082633545449044,0.4427125506072874,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.4590109538761986,2.2913210043134082,0.3680916769839542,0.5105263157894737,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,1.0158646229709598,2.57750225695749,0.7184190669687429,-0.3626373626373627,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.157962476941984,0.9263516032695093,0.9012760613234937,0.651209677419355,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.4997289814904704,1.5202967127244573,0.9015769424713367,0.5972376277957191,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.16740785118470924,0.19563681155087534,0.15414544180684614,0.5,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.4669147549302206,0.7498396154996918,0.3914582520960986,0.4392857142857142,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.24985073160029958,0.30520466105256155,0.28324146038643383,0.575,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.6678579848674238,0.5104618270229352,0.5109275064827702,0.8112648221343874,cv5,graphsage,isolated_supported,7
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.7652403420553195,1.0232869987505702,1.033114884582909,0.0,cv5,graphsage,isolated_supported,7
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,0.8878333161617782,6.465705286177051,0.9293271089241036,0.35,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.3093944056219531,0.45980655151904404,0.3625996815120758,0.6736842105263158,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.4142093346543172,0.4528879585938664,0.34618108972132966,0.7275541795665634,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.615185381815361,0.6687981032705744,0.7029131532014175,-0.5428571428571429,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.4453011624885459,1.5026716882613893,0.41402092300079174,0.5835777126099706,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.383002283114954,1.2836452828974885,0.43557993736964096,0.5733137829912023,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.633002566713767,10.342223509490216,12.915489423312103,-0.5,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.29465384233202574,2.3533291523146267,0.27212902224751384,0.6501619973318087,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.3509024380228922,3.3245900370770087,0.33247976481292246,0.6105466860183841,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.034069113907508,0.30653800311924895,0.03465611338395989,-0.2333333333333333,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.35685347414037594,2.83850428391709,0.30012495998625316,0.2945344129554656,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.32179685122267365,3.6459499353922067,0.3266654632242009,0.43117408906882587,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,1.0956080564785493,2.8045143075136747,0.70830981745834,-0.18681318681318684,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.0056914313669871,1.2715796727348694,0.8505036314708925,0.5754032258064516,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.2868251099700654,2.0544158752958386,0.893892427934016,0.6315152769264659,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.12847701809361922,0.18543514987029844,0.12056622674918174,1.0,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.17164759793129436,0.8623226288784208,0.18725936682706623,0.6392857142857141,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.22348298430621893,0.25557639074884686,0.2002715003129188,0.5392857142857141,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.5061023101123929,0.4774048469090054,0.3971593083502584,0.7964426877470356,cv5,graphsage,legacy_leaky_global,8
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.8345522156353784,1.083887334787279,1.3037822196284403,-0.6,cv5,graphsage,legacy_leaky_global,8
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,0.9373157783889052,2.789798248038158,0.8636995905752598,0.38333333333333336,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.2875736294491382,0.3513589914381105,0.25378005856483266,0.6842105263157895,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.22859464365471727,0.31524628385371045,0.20419877328051286,0.8596491228070176,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.4217166559617018,0.549906507932624,0.5008440686523029,-0.3714285714285715,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.5386790000559767,1.3347216333519818,0.5903064665232182,0.5271260997067448,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.3669580671066086,0.7540873604144307,0.34815819298501943,0.5531524926686217,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.373024548308207,8.382655031141974,9.729796042510333,-0.5,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.32644053609902723,1.7230036825819157,0.32857490389733235,0.6203544882790164,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.3153839312879789,2.3408382109028363,0.2714581110398135,0.591759393646186,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.03473444185314456,0.2997136351927143,0.03534472806221081,-0.06666666666666667,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.36636683708467643,2.0223812932551937,0.39862300415256974,0.3036437246963563,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.3844269416835999,2.5460673879285998,0.31915931414951265,0.34089068825910934,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,1.0221296681781018,2.759117893481497,0.6949427283898721,-0.3186813186813187,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.07673041854179,0.8728823276622227,0.7482430586689344,0.7197580645161291,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.2095476242046974,1.2756922202006948,0.8568621640377447,0.6528883993256376,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.18984277337463418,0.2036544405271594,0.1729108358408541,0.5,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.4448974980309002,0.6857662317167456,0.3795434639602762,0.5392857142857141,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.2017402196164051,0.2644692411135432,0.1965161734007765,0.6714285714285713,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.6563275495690357,0.514166134260558,0.49667829089313115,0.8053359683794467,cv5,graphsage,isolated_supported,8
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.7024351895488756,1.1298593231972371,0.9869057984617752,-0.39999999999999997,cv5,graphsage,isolated_supported,8
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,1.3155506026952941,3.534929819687387,0.8878692416668417,0.38333333333333336,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.2728081692447022,0.3483858137662605,0.31364822252197594,0.7789473684210525,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.29313400293758196,0.3278270383216375,0.2755749839525488,0.8142414860681115,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.44138360454629044,0.47755686164914585,0.45615885157510877,-0.5428571428571429,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.48813087449641124,1.335640424588713,0.5615756165502099,0.4736070381231671,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.49949724642851123,1.1010769893232735,0.43048579838835166,0.46847507331378296,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.7952830561210593,12.313756017353697,15.367260950937451,-0.5,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.3130713031500587,1.9667530679677734,0.28318208393750477,0.773432437583381,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.3423555570301833,2.242218726890521,0.3067498677528108,0.6428801806160297,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.03397745597792934,0.3063277001007368,0.03456128329281257,-0.31666666666666665,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.4319769476393063,2.1209675761967612,0.35077565733363564,0.4018218623481782,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.37888684489665536,2.5800277513902032,0.3153769231215231,0.4414979757085021,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,0.9766624044542356,2.6671559985581763,0.6933243425893246,-0.3802197802197802,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.119312326777358,0.9579471021485524,0.7870048363559846,0.744758064516129,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.5821367584082004,1.8019421350684108,0.8708562804003606,0.739590688303409,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.21478532395626537,0.20927703993756863,0.19328539611080253,0.5,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.3538782073326514,0.6551997251835376,0.3363912292087747,0.5464285714285714,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.1678195917575187,0.3070177279749419,0.1544936427580014,0.5678571428571427,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.6636743905088318,0.47326838661136106,0.4850442943731165,0.8794466403162056,cv5,graphsage,legacy_leaky_global,9
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.7483058397030575,1.1041237096858354,0.8490669355593192,-0.8999999999999998,cv5,graphsage,legacy_leaky_global,9
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,0.9386674495504765,2.0153037381844405,0.9357281258964257,0.5166666666666667,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.25655114775514853,0.3019095459704534,0.22628458025944423,0.7543859649122807,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.25768563544642076,0.3365441592550964,0.2271019187564569,0.8658410732714137,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.5398676301477972,0.6149596216058436,0.6135109121420643,-0.2,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.6282490770312634,1.0861959977045053,0.5355431814022023,0.5751466275659823,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.3061335100109419,0.7834386668626475,0.3582039492949731,0.6403958944281524,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.0311194883677803,7.4554767021579,6.622615012863707,0.5,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.40005084326081164,2.0400348937582566,0.3543504309977464,0.5788069372975033,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.41424228476348546,2.7712877896771104,0.33915917979378757,0.6307047250443477,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.03600457395734402,0.29735123818367776,0.03666058812138978,0.16666666666666669,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.5073415281610814,2.0091931543226,0.4503833414714742,0.40101214574898786,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.506560281971602,2.6268426401592766,0.39743532921290203,0.295748987854251,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,1.1931425555864177,3.0040135888219504,0.7413111022712524,-0.3142857142857143,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.1441847556755214,0.8782346127356638,0.7978390556617357,0.6334677419354839,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.085136242959809,1.1594680929476824,0.8377992755917535,0.6516785999445524,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.20225093748382683,0.21895743226845013,0.18311008607910167,0.5,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.37318459736999054,0.688891506978151,0.3674325894003043,0.6249999999999999,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.2687344253508215,0.27764208842676297,0.2504763848284192,0.6035714285714285,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.6278164176933192,0.531496697773758,0.46624397032777337,0.7559288537549407,cv5,graphsage,isolated_supported,9
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.7682778393589098,1.1731313279183793,1.1560499902685568,-0.39999999999999997,cv5,graphsage,isolated_supported,9
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,0.8901171963343315,4.244510195687154,0.8975024118162888,0.41666666666666663,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.2618162081779323,0.3517319343357401,0.2788008309462708,0.6684210526315789,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.2663115481540834,0.330932123974813,0.2517050525213903,0.7936016511867906,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.4759880291333305,0.5779430288071236,0.4085672113345063,-0.3714285714285715,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.598068397453452,1.4694933932413563,0.48769115333969315,0.4626099706744868,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.4164106989963887,1.055921942529785,0.4680413498274686,0.45197947214076245,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,3.0480125519686396,14.059533031134931,20.07342044749716,-0.5,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.3797836989841086,2.1750830003025126,0.3731016900938703,0.5505241090146751,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.30639518707817537,2.3548348872902425,0.2689501854659139,0.6025641025641026,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.025602991116009832,0.3023935556597139,0.025278013909103753,-0.03333333333333333,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.5601207680436069,2.5530258646252317,0.45571194022968486,0.148582995951417,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.40996137927942833,2.8392306172354487,0.3869156480007979,0.3882591093117409,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,0.9826444252075675,2.837159343975879,0.7226169863837808,-0.1384615384615385,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.1923236575682612,1.0382978755383812,0.8828069493477774,0.6342741935483872,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.3681167638050358,1.4904834909202542,0.8058465365658679,0.7337433246281639,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.23009909340075474,0.19927974481099728,0.20554512663251853,0.5,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.1812561606074845,0.534524114323841,0.16577836339784122,0.6428571428571428,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.19058696378524864,0.2829763204428463,0.17352611869334889,0.5249999999999999,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.4959242196397655,0.4219405135242682,0.3909922098459989,0.8764822134387351,cv5,graphsage,legacy_leaky_global,10
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.711247883648058,1.4319609286626782,0.8848781167395544,-0.49999999999999994,cv5,graphsage,legacy_leaky_global,10
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,0.888169135599834,2.2553840173475646,0.8569738523149444,0.3666666666666667,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.24459685497510897,0.31138913771767507,0.22122256536483734,0.8035087719298245,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.2432651904478078,0.3444358723160377,0.2481650289059853,0.8864809081527348,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.42422476050160185,0.5057246591687055,0.3720966145339935,-0.3714285714285715,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.6094758007239429,1.3193686270110716,0.8111127614587911,0.45344574780058644,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.47925588354451243,0.7588782289120101,0.4963089324441461,0.5,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.8380777965445,11.027007243741286,16.082897153467535,-0.5,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.4307421915372105,2.0629390808253065,0.3774340608368925,0.6445969125214407,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.3141679599583753,2.582533042095034,0.2782705480827428,0.5100790195129817,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.03791645684333922,0.2946766043599373,0.038644457617170724,0.16666666666666669,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.40038274495423387,1.9235273980720167,0.437272051642413,0.30121457489878545,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.41434310380451045,2.455748509591154,0.39403006499074394,0.19453441295546559,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,0.9375948783863128,2.66744468253684,0.6522052776271642,-0.3450549450549451,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.0330998264097637,0.8562533971786757,0.7394986338407056,0.6967741935483872,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.3951717754756405,1.4826941273997023,0.9033319202473838,0.6518802331747333,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.24523311292060512,0.23061281332654948,0.217477899033943,0.5,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.1729087448195239,0.6247100594773067,0.18875761984304634,0.575,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.2109894447388707,0.2692250884886141,0.19021738569688193,0.5678571428571427,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.5881642485459544,0.4902668082091087,0.44999616512406776,0.8458498023715416,cv5,graphsage,isolated_supported,10
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.6392446548687367,1.0855124368873006,0.7600813631419895,-0.3,cv5,graphsage,isolated_supported,10
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,1.0602078888994364,2.0627179668198554,0.6536162065010461,0.5166666666666667,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.3044507682461264,0.33098084329650607,0.3558801060557288,0.5877192982456141,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.30760983044445167,0.32145288612264666,0.2999121815196266,0.7275541795665634,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.34759537468198065,0.48837926455866176,0.37930457198513745,-0.3714285714285715,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.5369430981400543,1.1518251685609293,0.619853014689129,0.47727272727272724,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.5937154042182113,1.0032814528697624,0.6768920219013428,0.4200879765395894,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.9387263618112485,14.69219189218709,17.891769703717898,-0.5,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.3516030223675388,1.7767588471011837,0.3496502617543476,0.6591576138745949,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.3312375342810867,2.1929966213478114,0.339334219760381,0.6530398322851153,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.024430947284614035,0.28823306998202786,0.024134927275014373,0.03333333333333333,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.5624894704608412,2.1961904271675916,0.43021117568692585,0.17955465587044536,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.4272074747827652,2.261093302117363,0.34806486187254176,0.27004048582995954,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,0.8283654804623,2.3436664891604693,0.7129950398652322,-0.032967032967032975,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.0437964405649645,0.9639090779063346,0.8469935749108515,0.7060483870967743,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.343576315612781,1.3867599634896028,0.8717304781828048,0.7793124346490393,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.3461952209676724,0.25188979256263816,0.2926256206846645,0.5,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.24758190117890688,0.537300557943477,0.21931372093410256,0.5607142857142856,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.18021144880521933,0.3098484354329576,0.17532060334396465,0.6178571428571428,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.6716329581201936,0.4923550323923191,0.4891263390131138,0.8310276679841897,cv5,graphsage,legacy_leaky_global,11
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.7015691297884352,1.2365072736488014,0.7398455776943382,-0.8999999999999998,cv5,graphsage,legacy_leaky_global,11
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,1.0531278270456292,2.4568093821039714,0.9482878786064023,0.41666666666666663,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.35608719566266434,0.38956437354132434,0.29958845527624883,0.6175438596491227,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.3145025330800806,0.37929065168920423,0.28272072248094415,0.8390092879256965,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.40377539391835526,0.4670236459950834,0.4216263599336716,-0.3714285714285715,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.6173593779405282,1.3145005257915428,0.6843326450224457,0.45821114369501453,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.3497490796329421,0.7461358058984199,0.37103836038187465,0.5461876832844574,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,3.0757148413783195,14.216386240534518,20.665363675781716,-0.5,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.30060260875545897,1.9833978944055348,0.2649382461959267,0.6641890604154754,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.28820514576222855,2.4860268333642193,0.25039220239859045,0.5677310111272375,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.020001733650227393,0.28967248250852484,0.019803026013424263,0.11666666666666665,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.47312027600159645,2.121920211104143,0.400835820028556,0.31437246963562754,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.38309349656923253,2.6396267492999437,0.31825084490097383,0.40040485829959516,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,0.9408189547010855,2.904370620757838,0.6728975563201938,-0.46373626373626364,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.0415778954523365,0.8662709606192107,0.7652745210115246,0.7379032258064517,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.1951921893945041,1.4950348996808298,0.8349029851183694,0.7155963339118863,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.12765441451646176,0.19010471217520708,0.11984250375368052,1.0,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.2966254112632538,0.5054865394504476,0.25667759958286296,0.6749999999999999,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.23369817736150322,0.31352747903014117,0.2083992971442041,0.6714285714285713,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.5709272585987968,0.4796876848214967,0.4662413575349598,0.7737154150197629,cv5,graphsage,isolated_supported,11
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.7473115418752734,1.0205429202750262,1.111316194500298,-0.3,cv5,graphsage,isolated_supported,11
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,0.8736833026862536,2.4908141175576577,0.8769205076943578,0.3666666666666667,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.3373248896769292,0.3477485550567218,0.30991902716197683,0.6385964912280702,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.30152440317424434,0.3487992932524889,0.2601867047372255,0.7440660474716203,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.3733233637190292,0.47254113080702664,0.379765521829992,-0.2,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.598006252398438,1.0520805528481187,0.5187615510699082,0.4230205278592375,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.47855903285063217,0.9926167437127558,0.47414575616803534,0.3632697947214076,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.982139655573345,17.228668131510123,18.729986890185288,-0.5,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.39224031538490944,1.9737850285744696,0.3491268923105888,0.602439489231942,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.3645600974201759,2.157490092144704,0.3284764308603705,0.6204644412191581,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.04212094109746545,0.305290048114202,0.043020615180949115,-0.11666666666666665,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.6349634497271364,2.3418348761714727,0.5148616018843345,0.10222672064777329,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.5413742779412143,2.5098118463885304,0.4293357440170584,0.3376518218623482,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,0.8574703381509421,2.684245108010651,0.6898990215048905,-0.2967032967032967,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.1232123063628343,1.206679156921849,0.8990092340138378,0.47983870967741943,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.4190969591636176,1.540462256814989,0.8758099776910652,0.7075310047046517,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.2201068952997165,0.20179669270113543,0.19756698294008845,0.5,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.28637212606412543,0.5617912962231941,0.31019345277929145,0.6749999999999999,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.25109496166691514,0.3140783178556055,0.2259298881800034,0.5857142857142856,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.621686019971925,0.44226014703084393,0.4675437718121831,0.8122529644268776,cv5,graphsage,legacy_leaky_global,12
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.80754912867003,1.351452029054438,1.2424053992607815,-0.7,cv5,graphsage,legacy_leaky_global,12
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,1.251375863392155,3.243092488380912,0.8825105636751533,0.5,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.3353121590214263,0.3641423635761672,0.34699195819366396,0.6596491228070176,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.2856493088207308,0.3547424083417035,0.28375216160815075,0.8596491228070176,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.7363435182991065,0.8344279969386675,0.9191875070094664,-0.3142857142857143,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.33330692519705707,1.4161307371310983,0.32441271419076395,0.6770527859237536,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.25326718547730476,0.8646483271281568,0.2235696756760619,0.7232404692082111,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.2933450280493393,6.651485553770738,8.908024932742785,0.5,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.4614730066063286,2.447008586152507,0.40172143634534074,0.48686868686868684,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.4588367891007685,3.2598291233852446,0.3799535208208789,0.4930656345750685,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.021889135132331816,0.3051269104429628,0.02165130646257629,-0.25,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.4331953495371277,2.2802867154816386,0.3879787269261035,0.3465587044534413,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.4203285475406666,2.916420120563062,0.3558944261940181,0.3925101214574899,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,1.1130596520659246,2.9362710937047956,0.7560175839200649,-0.3450549450549451,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.3558595971759502,1.2652586092185267,0.7887075842189871,0.5520161290322582,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.4413075450470672,1.6617123935786358,0.8982358959197665,0.49420304717329766,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.10861108608603232,0.1903475884096285,0.10967566137704265,0.5,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.24966317774483648,0.5528219039210882,0.2209368553103823,0.6285714285714286,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.22157209534816502,0.2548857759547151,0.22430187900133855,0.6285714285714286,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.5024481673290548,0.4643711440275169,0.39495241268711156,0.7598814229249011,cv5,graphsage,isolated_supported,12
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.7008021271020866,0.9759625127033515,0.968786896141986,0.0,cv5,graphsage,isolated_supported,12
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,0.8429720634296451,3.2462439959357696,0.9568658737223755,0.45,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.3300078410558971,0.3821730973141544,0.28108190366715313,0.4912280701754386,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.3329637597202426,0.363394069540968,0.316948097723982,0.6057791537667698,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.36925007915774444,0.48459597158252216,0.3594359807763166,-0.14285714285714288,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.5369593499868373,1.2604836371837282,0.6238457175201138,0.23004307676123145,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.3828549165170463,1.0599166102757305,0.3360097590494696,0.17412023460410556,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.5903106364141966,11.565906491308546,12.333912958843277,-0.5,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.25898817679224884,1.9449152247771886,0.23976303089796402,0.6577979379494262,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.24294852124083555,2.123190983109107,0.2156881118648641,0.5832930172552813,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.04601820479920349,0.2946759154390939,0.04497542399818098,0.09999999999999999,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.3589487436737997,2.2859723263412,0.35885095500078873,0.19716322176299614,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.27902721117932217,2.7091707738363073,0.2434806828478368,0.37044534412955465,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,0.9390790693607469,2.820378010831401,0.7333067743125699,-0.2882289972957653,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.296425950652342,1.3787038700496566,0.8826105317445322,0.5673387096774194,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.6265925205969562,2.3665805041674965,0.8793852365637995,0.5744530727852815,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.21508262534965716,0.2629675464913597,0.1935251978381481,-0.5,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.3460478658617312,0.7005915823847797,0.29252137777788695,0.3978520179166229,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.20571025882539562,0.3651753842565986,0.2241039475994468,0.2508976689564289,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.6603560538446995,0.5571909371552212,0.5129906627504902,0.6373517786561265,cv5,graphsage,legacy_leaky_global,13
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.9545456439428861,1.5209999604390745,1.5974901293931407,-0.6,cv5,graphsage,legacy_leaky_global,13
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,0.8553323483875208,3.085448812671123,0.87747384581909,0.39999999999999997,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.35279588861628586,0.3837514640073049,0.33009912796248586,0.6280701754385966,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.25960737341553886,0.3313870640262035,0.25670233125827574,0.7997936016511867,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.7658998692505632,0.8313295347042987,0.874356040893403,-0.08571428571428573,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.3127715420996422,1.2746054484905631,0.3106510369123039,0.7272727272727272,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.3196034795765783,0.8472285647863798,0.31965308114341506,0.7239736070381231,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.4448198110580623,9.777138681343606,10.528472108482688,-0.5,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.2869199347308866,2.566724263304126,0.2502991915326687,0.6070897655803316,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.3455022658787712,2.8536076298617177,0.334868471034425,0.5958716336074825,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.03561147916831686,0.2956568033135276,0.036253162329933517,0.11666666666666665,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.2683579475911717,2.1813113332909304,0.26349256145058353,0.4394736842105263,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.35626694948546245,3.43697344656018,0.30993593245499157,0.4305668016194333,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,0.909027102751855,2.830171547478485,0.7049309312587715,-0.2351648351648352,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.1687331067486433,1.3734910608174598,0.7393473318638494,0.6536290322580646,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.0843987085112445,2.5423870530267805,0.903126654024623,0.5978425274862618,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.16207638036969207,0.22316090993486784,0.17595005739098726,-0.5,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.284619672695531,0.5226636171858394,0.3210578048221594,0.5035714285714286,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.24754134551826512,0.24219907112470346,0.2393464057610104,0.5857142857142856,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.7134568978283191,0.5687552583006192,0.5275096985015535,0.6254940711462451,cv5,graphsage,isolated_supported,13
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.946375527815813,1.339540659549052,1.3727541692350973,-0.3,cv5,graphsage,isolated_supported,13
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,1.3480820415258012,2.5345893064294156,0.9047789959950332,0.4666666666666666,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.28829575344298597,0.32124453948423837,0.3135416727505839,0.5947368421052631,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.3912642554481751,0.3267789498576521,0.3575672251032489,0.7358101135190918,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.6752560825164151,0.76048631947639,0.8910968854867518,-0.14285714285714288,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.4161981399522183,1.216947391945599,0.38053247838944093,0.6458944281524925,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.3125615350505022,0.9739912658475226,0.2904433296268142,0.6759530791788856,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.3971622943799566,10.3929154701259,9.991940191591102,-0.5,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.4003659985455599,1.8225702290406847,0.3639075774271213,0.61936344577854,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.35059386921777325,1.9270435012897593,0.2957302786055715,0.6435252378648605,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.025240831938374342,0.29521123634889923,0.02492494546656856,-0.13333333333333333,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.5997977727813364,2.1748300398372526,0.45785838622267633,0.1404858299595142,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.4836878899769843,1.9940124615585666,0.3834944105385967,0.38036437246963567,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,1.1246163237864932,2.441672893021255,0.795677864849983,-0.16923076923076924,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.1549862008570795,0.9149943790845131,0.8130010726146182,0.6725806451612905,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.2825680759820024,1.4114991213764225,0.8714825392789479,0.6470410356503925,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.06014993797955093,0.156604955655092,0.061995768108143987,0.5,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.23066231402232606,0.5315203794455109,0.2582847592287113,0.7071428571428571,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.2179981034243199,0.2704927467294553,0.2001045164331129,0.6642857142857141,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.664414431194186,0.5290595465600891,0.4854252415708373,0.774703557312253,cv5,graphsage,legacy_leaky_global,14
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.7667607507869754,1.1820028057341596,0.7754594828139627,-0.39999999999999997,cv5,graphsage,legacy_leaky_global,14
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,1.066585562923117,3.725330778939638,0.9019420603415205,0.48333333333333334,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.20733551269939632,0.5374971856367078,0.23039531579017805,0.7315789473684211,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.1737109502258254,0.2477666096525473,0.17131892376493704,0.9174406604747163,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.7478710813860125,0.846062841730221,0.9779215056350219,-0.08571428571428573,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.43310997164331244,1.5076079801972146,0.49850501890272414,0.6550586510263928,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.2996759904718047,0.8143143092446541,0.2917441476535565,0.7247067448680351,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.6152916239361037,9.486571197137165,12.671202646546908,-0.5,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.35599311598295813,2.273068695912985,0.303861706797226,0.6028968934629311,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.37868000061293117,3.4200119705187983,0.331950151032068,0.47282696339300107,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.02109566282654285,0.2922209469488335,0.021319749298458417,-0.11666666666666665,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.4474310728876496,2.0268423746966047,0.3607317223518044,0.28643724696356276,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.4788834233694441,1.5903337565031748,0.3805253032435392,0.2856275303643725,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,1.0224487689104889,2.7507121700111985,0.6467507266714497,-0.27912087912087913,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,0.94019406868924,0.7336523553297989,0.7123321811799048,0.692741935483871,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.2023630696143766,1.381659738501139,0.9080711790630535,0.567799176189313,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.25005912402188457,0.25401029052645807,0.2841013356788742,0.5,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.47995238636738713,0.7422260716398549,0.39309336484757984,0.532142857142857,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.2834618744812383,0.28042816008896404,0.2699519960940836,0.6857142857142856,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.8029479187962032,0.5149808637717789,0.5519936707139056,0.6847826086956521,cv5,graphsage,isolated_supported,14
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.7930361123133078,1.0328204796936302,0.9155101292169632,-0.09999999999999999,cv5,graphsage,isolated_supported,14
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,1.1761407979071143,2.546664485424246,0.9352341997096334,0.45,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.26577464967057907,0.3111210183895364,0.23506199919550202,0.780701754385965,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.31965060515225874,0.3422830360026528,0.2992970904742501,0.7812177502579979,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.31857174744788175,0.41490313074438245,0.38746497840510424,-0.5428571428571429,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.5610060276927182,1.0668223255303335,0.529032584556931,0.531891495601173,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.44859506770749213,0.8494953442594056,0.4526286717092965,0.5106304985337243,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.691983850758861,12.053044148844705,13.760930375538463,-0.5,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.4307879940781465,1.6731240755827292,0.3652161572983806,0.6827901658090336,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.38488993906598523,1.939932554797446,0.31947446864140083,0.5837768101919044,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.03706942671465718,0.29270979289991794,0.037765066956350096,0.016666666666666666,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.5965880098054654,1.9495468060522636,0.44931262580469705,0.24635627530364373,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.5891299617657015,2.1938394664634466,0.4631812297854854,0.297165991902834,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,0.9882026327643825,2.515647013753349,0.6433877167776687,-0.1956043956043956,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.0682142454466526,0.8401399011054389,0.7751814500819416,0.6947580645161291,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.4185423472493834,1.0744457396540403,0.8550350164765133,0.7714487386719856,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.25610072909321424,0.2119612172795543,0.22593600589906127,0.5,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.26639529385611516,0.4490760259725453,0.25756237924319175,0.7357142857142855,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.2317211456099848,0.30767119982483293,0.2140830759491119,0.6642857142857141,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.6907748606675428,0.49629006668757386,0.498812431965122,0.8270750988142292,cv5,graphsage,legacy_leaky_global,15
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.7962045176122796,1.437123456997335,1.0767640888416423,-0.8999999999999998,cv5,graphsage,legacy_leaky_global,15
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,0.9650525176761953,3.687240541451758,0.6190368080875955,0.3666666666666667,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.1868250379272176,0.3376573840601537,0.17041112972312833,0.8350877192982457,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.2476943310466897,0.3451646714226504,0.24535033678852744,0.8683532391063594,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.4599746461029577,0.5325162874863628,0.49405854056034904,-0.3714285714285715,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.5299726543606562,1.3173820210657663,0.49684973505742935,0.5447214076246334,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.42857603139089306,0.7618690454497448,0.4040958883253254,0.6397213847782451,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.4206626558881634,10.105816483454467,10.253313919420318,-0.5,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.3868309762257143,2.4868546722135565,0.33882558123877515,0.563407661520869,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.3126935690501167,4.308614798831925,0.26852597549014307,0.4428318013223674,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.03354587899336359,0.29283311911351206,0.03411488678797803,0.09999999999999999,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.3873459770908063,2.6088013752765664,0.32114381439581263,0.31619433198380564,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.4463874682975746,3.1262100975875793,0.3600642308049217,0.3781376518218623,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,0.9691968418211028,3.131577202120536,0.6579923372908287,-0.3626373626373627,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.063301788926374,1.1297155098104148,0.863726342970982,0.5987903225806452,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.3453706226479465,2.0375185196339434,0.9002661713403548,0.5179957683346396,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.0720335356616637,0.14675348449705106,0.06950030963483321,1.0,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.3391577216469863,0.7026675341283912,0.322677065197071,0.5535714285714285,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.17233013781175588,0.26029557637893536,0.18806999530503934,0.657142857142857,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.541219963567503,0.4733103952246021,0.41796224578387875,0.7608695652173914,cv5,graphsage,isolated_supported,15
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.5011832095422788,0.9344899033901832,0.6497057660832107,0.09999999999999999,cv5,graphsage,isolated_supported,15
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,0.7409211483719669,3.788741689686671,0.8550596415303782,0.48333333333333334,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.30911331599777636,0.3774133020009047,0.2869908552032746,0.6631578947368422,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.22579666631011497,0.2964447640082048,0.20727788047364754,0.8844169246646028,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.743629895090061,0.8361096284163588,0.9194647197382664,0.08571428571428573,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.2586979840354875,1.49074932579045,0.22794347825221103,0.7137096774193548,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.3140185499318191,1.1029164254237913,0.36901720488512657,0.687683284457478,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.6611294108591323,9.58659974280976,13.312444604215344,0.5,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.3702694826695545,2.5116902326150714,0.33139965187215537,0.5867352773013149,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.33654711935985127,2.489410075539615,0.30247747160614274,0.6247379454926624,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.02899737856985496,0.2977239683639852,0.028580989029654245,0.016666666666666666,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.4926714499712883,2.612624378090584,0.3890080224755474,0.29473684210526313,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.3990781957825025,2.783776715903386,0.32906176523813807,0.5149797570850203,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,0.9341909901556846,2.7037659641080865,0.7373629195256338,-0.3802197802197802,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,0.9551526627388931,0.9789640960540015,0.8161872451069403,0.5846774193548387,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.3295289851779089,1.8446512166383258,0.88469391787747,0.7303155597150893,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.2302215507703398,0.19058541244664776,0.20564240753006227,0.5,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.14956911309175602,0.7360626609711123,0.13892107586356245,0.6714285714285713,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.1783554492621593,0.2149121901891155,0.16730817075966337,0.5035714285714286,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.5342395052723354,0.4684286005161541,0.4138851420433848,0.8043478260869565,cv5,graphsage,legacy_leaky_global,16
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.7289152718615535,1.0529624918215559,0.7127867112834805,-0.49999999999999994,cv5,graphsage,legacy_leaky_global,16
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,0.8842519116840384,2.4559369134916005,0.8543208784067292,0.43333333333333335,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,0.23557501771781464,0.3237109812630239,0.26563632284453736,0.7982456140350876,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,0.24760962842903167,0.32834081215142635,0.2604789837232578,0.8286893704850361,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,0.4122992730125148,0.4928747275250322,0.4303418345658653,-0.3714285714285715,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,31,0.4438864821399129,1.2341974302132812,0.5177576347524495,0.5384897360703812,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,31,0.30312033212580314,0.896729326506037,0.2649820576599474,0.5293255131964809,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,3,3,2.671853813861084,9.293655482881563,13.466763035571308,0.5,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,0.39691488290290255,1.9402171105380424,0.3321652522047057,0.6166190203926052,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,0.3933408713190243,2.7072197966450933,0.3275301660924072,0.5426544105789389,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,0.03640242620445555,0.3033172236515599,0.037073107921389244,-0.11666666666666665,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,0.3339857818291936,2.117676435125474,0.29008684139072927,0.3360323886639676,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,0.39252297184928686,2.7448444148101947,0.32464916788314174,0.28380566801619433,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,1.0597444785174526,2.9929214672926725,0.685268761926056,-0.432967032967033,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,1.0075597322297156,0.8168184308438866,0.7412440902163524,0.6649193548387098,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,31,1.3475891034143306,1.4441662693542248,0.8914802857838884,0.5857445336754098,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,3,3,0.16394452288689898,0.19299313196570314,0.15121089105653665,0.5,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,0.20709578114141847,0.5447099539734984,0.20360434897667368,0.5428571428571428,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,0.16904116139576475,0.28942347443983485,0.15552585706376545,0.475,cv5,graphsage,isolated_supported,16
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,0.5134256087313567,0.484869688104995,0.40155796475910127,0.83399209486166,cv5,graphsage,isolated_supported,16
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,0.9193966437760475,1.0695328348511866,1.507776850609426,-0.3,cv5,graphsage,isolated_supported,16

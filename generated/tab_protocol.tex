@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrp{0.45\textwidth}}
+\toprule
+\textbf{Protocol} & \textbf{Outer folds} & \textbf{Neural seeds} & \textbf{Purpose} \\
+\midrule
+Repeated CV5 & 25 & 7--16 & Co-primary estimate \\
+LOSO & 105 & 7, 11, 16 & Co-primary system extrapolation \\
+Sensitivity & 5 & 7--16 & Near-duplicate-group guard \\
+LOAFO & 13 & 7, 11, 16 & Descriptive family extrapolation \\
+\bottomrule
+\end{tabular}}
+\caption{Executed protocols. The repeated-CV design contains five partitions with five folds each.}
+\label{tab:protocol}
+\end{table}

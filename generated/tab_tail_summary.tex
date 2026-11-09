@@ -1,0 +1,19 @@
+\begin{table*}[htbp]
+\centering
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llccccccc}
+\toprule
+\textbf{Protocol} & \textbf{Method} & \textbf{Median} & \textbf{75th} & \textbf{90th} & \textbf{95th} & \textbf{Max} & \textbf{$\pm$25\%} & \textbf{$\pm$50\%} \\
+\midrule
+Repeated CV5 & Random forest & 0.201853 & 0.566923 & 1.147904 & 1.824215 & 3.384369 & 52.52\% & 66.52\% \\
+Repeated CV5 & MLP & 0.261071 & 0.588696 & 1.089365 & 1.415805 & 2.973499 & 45.00\% & 64.74\% \\
+Repeated CV5 & GraphSAGE & 0.370271 & 0.960684 & 1.765408 & 2.487238 & 3.757758 & 37.12\% & 52.51\% \\
+LOSO & Random forest & 0.165012 & 0.497415 & 1.101461 & 1.588001 & 3.877578 & 57.71\% & 68.72\% \\
+LOSO & MLP & 0.246446 & 0.494670 & 1.102937 & 1.359019 & 3.392854 & 47.14\% & 69.16\% \\
+LOSO & GraphSAGE & 0.338161 & 0.830410 & 1.627857 & 2.314123 & 3.901103 & 37.00\% & 56.83\% \\
+\bottomrule
+\end{tabular}}
+\caption{Absolute-log-ratio tails for random forest, MLP, and GraphSAGE. The CV5 maximum is the mean of five per-partition maxima; the LOSO maximum is the pooled out-of-fold maximum. The $\pm$25\% window is $|\log(\hat y/y)|\leq\log(1.25)$; the $\pm$50\% window uses $\log(1.5)$.}
+\label{tab:tail-summary}
+\end{table*}

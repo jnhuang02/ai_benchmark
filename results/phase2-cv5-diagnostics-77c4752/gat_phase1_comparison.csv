@@ -1,0 +1,3 @@
+run,prediction_variance,normalized_prediction_variance_mean,prediction_unique,best_epoch,epochs_run,final_train_loss,final_validation_loss,primary_error,best_validation_loss
+"Phase 2 GAT, p0_fold_0 seed 7",13811535191.97795,0.024403473362326622,103,2,22,0.3443410098552704,0.5101480484008789,0.6581303090984107,
+"Phase 1 feature path, four-head GAT, same fold/seed",22079200887.459156,0.02895609475672245,103,7,27,0.3117351233959198,0.48294687271118164,0.661536599443119,0.46415257453918457

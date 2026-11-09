@@ -1,0 +1,76 @@
+{
+  "bootstrap_replicates": 2000,
+  "created_utc": "2026-11-08T00:35:19.365885+00:00",
+  "data_sha256": "a6853e1e2dc777404ddf9f5e0546679fef758df38bc4ebe5bba21e0c0bb735dd",
+  "family_mapping_sha256": "1651770d0b6fd8d5c462bf1dd6f8b5fee5c44066cbf1fa1404d8d9745ffb3bd4",
+  "fold_assignments_sha256": "017edb2d7c7982855ae5a2effcdd4ba760b73abc57a5db67959e08ab0b763a6b",
+  "folds": 13,
+  "git_branch": "phase-2.5-loafo",
+  "git_commit": "1a65664dc5b25d13db72656cb10ad14acf2c7811",
+  "git_dirty": false,
+  "gnn_config": {
+    "dropout": 0.2,
+    "epochs": 150,
+    "hidden": 64,
+    "layers": 2,
+    "learning_rate": 0.01,
+    "patience": 20,
+    "unknown_mask_probability": 0.1,
+    "weight_decay": 0.0001
+  },
+  "mixed_always_train": true,
+  "neural_seeds": [
+    7,
+    11,
+    16
+  ],
+  "output_sha256": {
+    "bootstrap_by_family.csv": "0272a45f03266e4a00b354e998641791e5fdb6c95248c6e77a34fc61b03a3b0e",
+    "fold_runtime.csv": "45f0761a07d08cbcfd3a2947cd38676e06a50d382020c852816916fe4ff01877",
+    "main_table_by_family.csv": "a18ee08a239b790079d9a6858ff0361b91b27b0a8af97ab52b887076f38ded3c",
+    "paired_differences_by_family.csv": "3547d4ac6b6c7516f20d27177f2443ba398761ca9d56bd162893af86ec2867d0",
+    "predictions_by_fold_seed.csv": "55bb110d65e68444dd5138c576e733059d4ad6c660a20bd2d9d5aad204fd43c8",
+    "selected_gnn_by_family.csv": "7d578bcbd2125c0f069df461f7ee8f39a59cad0cc6b2c5315fb2e712c6086fbf"
+  },
+  "protocol": "loafo",
+  "protocol_sha256": "d4c5930477b54f6b3a65bbc1be98b755bc4a2335efcc2261294469d6f0123f3e",
+  "reported_methods": [
+    "group_median",
+    "ridge",
+    "random_forest",
+    "mlp",
+    "graphsage",
+    "gcn",
+    "gat",
+    "best_gnn"
+  ],
+  "software_versions": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.2",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "statsmodels": "0.15.0",
+    "torch": "2.11.0",
+    "torch_geometric": "2.7.0"
+  },
+  "supported_rows_by_fold": {
+    "family_00_amd_cdna3_mi300x": 2,
+    "family_01_amd_cdna4_mi350x": 20,
+    "family_02_amd_cdna4_mi355x": 61,
+    "family_03_amd_rdna35_integrated_radeon_8060s": 1,
+    "family_04_cpu_only_intel_xeon6_granite_rapids": 28,
+    "family_05_intel_xe2_battlemage_arc_pro_b70": 17,
+    "family_08_nvidia_blackwell_b200": 45,
+    "family_09_nvidia_blackwell_b300": 198,
+    "family_10_nvidia_blackwell_integrated_gb10": 1,
+    "family_11_nvidia_blackwell_integrated_thor": 1,
+    "family_12_nvidia_blackwell_rtx_pro": 50,
+    "family_13_nvidia_hopper_h200": 2,
+    "family_14_nvidia_rubin_vr200": 8
+  },
+  "system_assignment_sha256": "2ef7874fa8352ebac63047f3582eb434e43e200c853cd207b321c80f98e04fe5",
+  "systems": 97,
+  "total_runtime_seconds": 50.141939333989285
+}
