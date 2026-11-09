@@ -1,0 +1,7 @@
+protocol,system_id,measurements_x,test_opportunities,supported_test_opportunities,measurements_y,ever_supported_rows,never_supported_rows,unsupported_test_opportunities,fully_dropped,submitter,accelerator_family,suite
+cv5_all,datacenter|AMD|8xMI350X_2xEPYC_9575F|datacenter,2,10,0,2,0,2,10,True,AMD,amd_mi350x,datacenter
+cv5_all,datacenter|Intel|1-node-2S-Xeon_6787P|datacenter,2,10,0,2,0,2,10,True,Intel,intel_arc_pro_b70,datacenter
+cv5_all,edge|Dell|Dell Pro Max (1x GB10)|edge,6,30,0,6,0,6,30,True,Dell,nvidia_blackwell_gb10,edge
+cv5_all,edge|HPE|HPE ProLiant Compute DL345 Gen12 (1x NVIDIA RTX PRO 4500 Blackwell Server Edition 32GB TensorRT)|edge,3,15,0,3,0,3,15,True,HPE,nvidia_blackwell_rtx_pro,edge
+cv5_all,edge|HPE|HPE ProLiant Compute DL380 Gen12 (1x NVIDIA RTX PRO 4500 Blackwell Server Edition 32GB)|edge,3,15,0,3,0,3,15,True,HPE,nvidia_blackwell_rtx_pro,edge
+cv5_all,edge|HPE|HPE ProLiant Compute DL380 Gen12 (5x NVIDIA RTX PRO 4500 Blackwell Server Edition 32GB TensorRT)|edge,1,5,0,1,0,1,5,True,HPE,nvidia_blackwell_rtx_pro,edge

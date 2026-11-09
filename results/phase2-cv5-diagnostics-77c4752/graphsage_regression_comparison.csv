@@ -1,0 +1,8 @@
+quantity,value
+Phase 2 GraphSAGE full-feature seed mean,0.47384906566032514
+Phase 2 GraphSAGE full-feature seed SD,0.03945167885909153
+Phase 2 GraphSAGE full-feature seed-ensemble primary,0.4451437094179056
+"Phase 2 code, Phase 1 numeric-feature seed mean",0.4623139872076701
+"Phase 2 code, Phase 1 numeric-feature seed SD",0.03419346620337274
+Phase 1.5 fixed-isolation seed mean,0.46231398720767014
+Phase 2 minus Phase 1.5 seed-mean difference,0.011535078452655001

@@ -1,0 +1,18 @@
+row_uid,system_id,public_id,benchmark,model,task_code,scenario,units,nodes,accelerators_per_node,total_accelerators,result,scalar_source
+row:0009,datacenter|HPE|HPE Compute XD690 (8x NVIDIA B300-SXM-270GB TensorRT)|datacenter,6.1-0048,Inference,deepseek-r1,,Server,Tokens/s,2,8,16,80536.9,exported Total Accelerators value for this result row
+row:0081,datacenter|HPE|HPE Compute XD690 (8x NVIDIA B300-SXM-270GB TensorRT)|datacenter,6.1-0049,Inference,gpt-oss-120b,,Server,Tokens/s,1,8,8,113685.0,exported Total Accelerators value for this result row
+row:0318,datacenter|HPE|HPE Compute XD690 (8x NVIDIA B300-SXM-270GB TensorRT)|datacenter,6.1-0049,Inference,gpt-oss-120b,,Offline,Tokens/s,1,8,8,114569.0,exported Total Accelerators value for this result row
+row:0435,datacenter|HPE|HPE Compute XD690 (8x NVIDIA B300-SXM-270GB TensorRT)|datacenter,6.1-0048,Inference,deepseek-r1,,Offline,Tokens/s,2,8,16,136854.0,exported Total Accelerators value for this result row
+row:0010,datacenter|NVIDIA|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter,6.1-0074,Inference,VLM,,Server,Queries/s,18,4,72,1210.48823483,exported Total Accelerators value for this result row
+row:0042,datacenter|NVIDIA|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter,6.1-0073,Inference,deepseek-r1,,Server,Tokens/s,72,4,288,2028030.0,exported Total Accelerators value for this result row
+row:0050,datacenter|NVIDIA|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter,6.1-0074,Inference,gpt-oss-120b,,Server,Tokens/s,18,4,72,1120710.0,exported Total Accelerators value for this result row
+row:0106,datacenter|NVIDIA|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter,6.1-0074,Inference,text_to_video,,SingleStream,Latency (s),18,4,72,5.953906686,exported Total Accelerators value for this result row
+row:0126,datacenter|NVIDIA|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter,6.1-0074,Inference,gpt-oss-120b,,Offline,Tokens/s,18,4,72,1124500.0,exported Total Accelerators value for this result row
+row:0157,datacenter|NVIDIA|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter,6.1-0074,Inference,deepseek-r1,,Interactive,Tokens/s,18,4,72,253506.0,exported Total Accelerators value for this result row
+row:0234,datacenter|NVIDIA|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter,6.1-0074,Inference,VLM,,Offline,Samples/s,18,4,72,1304.98526258,exported Total Accelerators value for this result row
+row:0241,datacenter|NVIDIA|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter,6.1-0074,Inference,deepseek-r1,,Offline,Tokens/s,18,4,72,679740.0,exported Total Accelerators value for this result row
+row:0316,datacenter|NVIDIA|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter,6.1-0074,Inference,text_to_video,,Offline,Samples/s,18,4,72,0.65461116,exported Total Accelerators value for this result row
+row:0343,datacenter|NVIDIA|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter,6.1-0073,Inference,deepseek-r1,,Offline,Tokens/s,72,4,288,2705130.0,exported Total Accelerators value for this result row
+row:0349,datacenter|NVIDIA|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter,6.1-0074,Inference,deepseek-r1,,Server,Tokens/s,18,4,72,596944.0,exported Total Accelerators value for this result row
+row:0392,datacenter|NVIDIA|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter,6.1-0074,Inference,VLM,,Interactive,Queries/s,18,4,72,349.292198847,exported Total Accelerators value for this result row
+row:0416,datacenter|NVIDIA|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter,6.1-0074,Inference,gpt-oss-120b,,Interactive,Tokens/s,18,4,72,669305.0,exported Total Accelerators value for this result row

@@ -1,0 +1,5 @@
+bundle_manifest_commit=5c9dfde854d258d6848d1636564861d66e16a146
+phase1_results_commit=fb36169
+
+git diff --stat 5c9dfde fb36169 -- run-affecting files:
+No run-affecting files differ between the manifest commit 5c9dfde and HEAD fb36169. The intervening commit changed only CHANGELOG.md and result-report metadata.

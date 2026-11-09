@@ -1,0 +1,240 @@
+file,numeric_token,normalized,map_ids,status,context
+main.tex:abstract,0.10,0.1,"T0029,T0051",COVERED,"orse than the multilayer perceptron by about 0.10 to 0.12 log units, and the data could not ex"
+main.tex:abstract,0.12,0.12,T0052,COVERED,"n the multilayer perceptron by about 0.10 to 0.12 log units, and the data could not exclude a"
+main.tex:abstract,0.02,0.02,T0053,COVERED,a could not exclude a difference as small as 0.02 to 0.05. Repeated cross-validation estimated
+main.tex:abstract,0.05,0.05,T0015,COVERED,not exclude a difference as small as 0.02 to 0.05. Repeated cross-validation estimated best-GN
+main.tex:abstract,0.115597,0.115597,T0096,COVERED,ation estimated best-GNN minus MLP error at +0.115597 (95 +0.104155 (95 cross the frozen +0.05 equ
+main.tex:abstract,95,95,"T0041,T0043",COVERED,mated best-GNN minus MLP error at +0.115597 (95 +0.104155 (95 cross the frozen +0.05 equival
+main.tex:abstract,0.104155,0.104155,T0099,COVERED,d best-GNN minus MLP error at +0.115597 (95 +0.104155 (95 cross the frozen +0.05 equivalence bound
+main.tex:abstract,95,95,"T0041,T0043",COVERED,"minus MLP error at +0.115597 (95 +0.104155 (95 cross the frozen +0.05 equivalence boundary,"
+main.tex:abstract,0.05,0.05,T0015,COVERED,"0.115597 (95 +0.104155 (95 cross the frozen +0.05 equivalence boundary, so the combined co-pri"
+main.tex:abstract,0.10,0.1,"T0029,T0051",COVERED,best GNN is worse than MLP by approximately 0.10 to 0.12 log units. Metadata prediction itse
+main.tex:abstract,0.12,0.12,T0052,COVERED,N is worse than MLP by approximately 0.10 to 0.12 log units. Metadata prediction itself is in
+main.tex:abstract,0.201853,0.201853,"T0064,T0115",COVERED,ve. Random forest achieved primary errors of 0.201853 under repeated cross-validation and 0.165012
+main.tex:abstract,0.165012,0.165012,"T0072,T0123",COVERED,"0.201853 under repeated cross-validation and 0.165012 under leave-one-system-out, corresponding to"
+main.tex:abstract,22,22,T0092,COVERED,"pical multiplicative misses of approximately 22 0.580975, corresponding to approximately 85"
+main.tex:abstract,0.580975,0.580975,T0074,COVERED,"al multiplicative misses of approximately 22 0.580975, corresponding to approximately 85 percentag"
+main.tex:abstract,85,85,T0094,COVERED,"22 0.580975, corresponding to approximately 85 percentage figures convert \exp( )-1 to perc"
+main.tex:abstract,1,1,T0017,COVERED,mately 85 percentage figures convert \exp( )-1 to percent for primary error . The analysis
+main.tex:abstract,476,476,T0001,COVERED,rcent for primary error . The analysis uses 476 published MLPerf Inference v6.1 Closed-divis
+main.tex:abstract,105,105,"T0002,T0007",COVERED,rence v6.1 Closed-division measurements from 105 submitter-aware systems in the Datacenter an
+main.tex:abstract,0.024523,0.024523,T0109,COVERED,"GraphSAGE minus shuffled-edge GraphSAGE is +0.024523 under repeated cross-validation, labeled *eq"
+main.tex:abstract,0.032199,0.032199,T0111,COVERED,"cross-validation, labeled *equivalent*, and -0.032199 under leave-one-system-out, labeled *inconcl"
+main.tex:abstract,0.016638,0.016638,T0113,COVERED,"eled *inconclusive*. GCN minus GraphSAGE is -0.016638 under repeated cross-validation, labeled *eq"
+main.tex:abstract,0.022510,0.02251,T0114,COVERED,"cross-validation, labeled *equivalent*, and +0.022510 under leave-one-system-out, labeled *inconcl"
+main.tex:abstract,0.158657,0.158657,T0102,COVERED,ivity guard estimates best GNN minus MLP at +0.158657 (95 co-primary protocol. The sensitivity spl
+main.tex:abstract,95,95,"T0041,T0043",COVERED,d estimates best GNN minus MLP at +0.158657 (95 co-primary protocol. The sensitivity split i
+main.tex:abstract,78,78,"T0044,T0175",COVERED,sensitivity split is a modest check because 78 of its 90 groups are singleton systems. The
+main.tex:abstract,90,90,"T0042,T0045",COVERED,ty split is a modest check because 78 of its 90 groups are singleton systems. The family-le
+main.tex:abstract,18,18,"T0093,T0163",COVERED,"le. For the six trained non-baseline models, 18 of 36 model--headline-family combinations be"
+main.tex:abstract,36,36,T0132,COVERED,"r the six trained non-baseline models, 18 of 36 model--headline-family combinations beat the"
+main.tex:abstract,4,4,"T0025,T0037,T0133,T0141",COVERED,"rather than following one narrative: MI350X 4 of 6, MI355X 0 of 6, Intel Arc Pro B70 4 of"
+main.tex:abstract,6,6,"T0058,T0131,T0165",COVERED,"er than following one narrative: MI350X 4 of 6, MI355X 0 of 6, Intel Arc Pro B70 4 of 6, B2"
+main.tex:abstract,0,0,"T0016,T0136",COVERED,"llowing one narrative: MI350X 4 of 6, MI355X 0 of 6, Intel Arc Pro B70 4 of 6, B200 5 of 6,"
+main.tex:abstract,6,6,"T0058,T0131,T0165",COVERED,"ng one narrative: MI350X 4 of 6, MI355X 0 of 6, Intel Arc Pro B70 4 of 6, B200 5 of 6, B300"
+main.tex:abstract,4,4,"T0025,T0037,T0133,T0141",COVERED,"50X 4 of 6, MI355X 0 of 6, Intel Arc Pro B70 4 of 6, B200 5 of 6, B300 3 of 6, and RTX PRO"
+main.tex:abstract,6,6,"T0058,T0131,T0165",COVERED,"of 6, MI355X 0 of 6, Intel Arc Pro B70 4 of 6, B200 5 of 6, B300 3 of 6, and RTX PRO 2 of"
+main.tex:abstract,5,5,"T0003,T0008,T0144,T0166",COVERED,"I355X 0 of 6, Intel Arc Pro B70 4 of 6, B200 5 of 6, B300 3 of 6, and RTX PRO 2 of 6. Neith"
+main.tex:abstract,6,6,"T0058,T0131,T0165",COVERED,"0 of 6, Intel Arc Pro B70 4 of 6, B200 5 of 6, B300 3 of 6, and RTX PRO 2 of 6. Neither MI"
+main.tex:abstract,3,3,"T0027,T0134,T0142,T0149",COVERED,"Intel Arc Pro B70 4 of 6, B200 5 of 6, B300 3 of 6, and RTX PRO 2 of 6. Neither MI355X nor"
+main.tex:abstract,6,6,"T0058,T0131,T0165",COVERED,"l Arc Pro B70 4 of 6, B200 5 of 6, B300 3 of 6, and RTX PRO 2 of 6. Neither MI355X nor B200"
+main.tex:abstract,2,2,"T0030,T0040,T0154,T0164,T0172",COVERED,"of 6, B200 5 of 6, B300 3 of 6, and RTX PRO 2 of 6. Neither MI355X nor B200 should be trea"
+main.tex:abstract,6,6,"T0058,T0131,T0165",COVERED,", B200 5 of 6, B300 3 of 6, and RTX PRO 2 of 6. Neither MI355X nor B200 should be treated a"
+main.tex:abstract,0.115406,0.115406,T0138,COVERED,"xcludes zero in the GNN's favor for MI355X (-0.115406, 95 95 family intervals receive no multiplic"
+main.tex:abstract,95,95,"T0041,T0043",COVERED,"ro in the GNN's favor for MI355X (-0.115406, 95 95 family intervals receive no multiplicity"
+main.tex:abstract,95,95,"T0041,T0043",COVERED,"in the GNN's favor for MI355X (-0.115406, 95 95 family intervals receive no multiplicity cor"
+main.tex:abstract,95,95,"T0041,T0043",COVERED,depends on the statistic. MLP has the lower 95th-percentile absolute-log error under both p
+main.tex:abstract,1.415805,1.415805,T0121,COVERED,ile absolute-log error under both protocols (1.415805 versus 1.824215 for random forest under repe
+main.tex:abstract,1.824215,1.824215,T0117,COVERED,error under both protocols (1.415805 versus 1.824215 for random forest under repeated cross-valid
+main.tex:abstract,1.359019,1.359019,T0129,COVERED,"forest under repeated cross-validation, and 1.359019 versus 1.588001 under leave-one-system-out)."
+main.tex:abstract,1.588001,1.588001,T0125,COVERED,"peated cross-validation, and 1.359019 versus 1.588001 under leave-one-system-out). MLP also has th"
+main.tex:abstract,90,90,"T0042,T0045",COVERED,eave-one-system-out). MLP also has the lower 90th percentile under repeated cross-validation
+main.tex:abstract,1.089365,1.089365,T0120,COVERED,percentile under repeated cross-validation (1.089365 versus 1.147904); the leave-one-system-out 9
+main.tex:abstract,1.147904,1.147904,T0116,COVERED,r repeated cross-validation (1.089365 versus 1.147904); the leave-one-system-out 90th percentiles
+main.tex:abstract,90,90,"T0042,T0045",COVERED,5 versus 1.147904); the leave-one-system-out 90th percentiles are effectively tied (1.101461
+main.tex:abstract,1.101461,1.101461,T0124,COVERED,m-out 90th percentiles are effectively tied (1.101461 for random forest and 1.102937 for MLP). Two
+main.tex:abstract,1.102937,1.102937,T0128,COVERED,ctively tied (1.101461 for random forest and 1.102937 for MLP). Two interactive-throughput rows ar
+chapters/02_background.tex,3,3,"T0027,T0134,T0142,T0149",COVERED,"hiplet architectures, and three-dimensional (3D) integration. These techniques allow manufa"
+chapters/04_data.tex,476,476,T0001,COVERED,dy. The canonical analysis file contains 476 measurements from 105 submitter-aware system
+chapters/04_data.tex,105,105,"T0002,T0007",COVERED,analysis file contains 476 measurements from 105 submitter-aware systems. The system identifi
+chapters/04_data.tex,0.1,0.1,"T0029,T0051",COVERED,aced by that representation with probability 0.1. \section{Supported rows} A workload group
+chapters/04_data.tex,449.8,449.8,T0054,COVERED,"epeated-CV partitions evaluate an average of 449.8 rows, or 94.495798\ the 476 measurements. LO"
+chapters/04_data.tex,94.495798,94.495798,T0056,COVERED,"itions evaluate an average of 449.8 rows, or 94.495798\ the 476 measurements. LOSO evaluates 454 ro"
+chapters/04_data.tex,476,476,T0001,COVERED,"an average of 449.8 rows, or 94.495798\ the 476 measurements. LOSO evaluates 454 rows, or 95"
+chapters/04_data.tex,454,454,T0057,COVERED,"495798\ the 476 measurements. LOSO evaluates 454 rows, or 95.378151\ split evaluates 449 rows"
+chapters/04_data.tex,95.378151,95.378151,T0060,COVERED,"76 measurements. LOSO evaluates 454 rows, or 95.378151\ split evaluates 449 rows, or 94.327731\ hel"
+chapters/04_data.tex,449,449,T0061,COVERED,"ates 454 rows, or 95.378151\ split evaluates 449 rows, or 94.327731\ held-out row. The suppor"
+chapters/04_data.tex,94.327731,94.327731,T0063,COVERED,", or 95.378151\ split evaluates 449 rows, or 94.327731\ held-out row. The supported-row rule is a d"
+chapters/05_graph_models.tex,1,1,T0017,COVERED,ate is written as \begin{equation} h_v^{(l+1)} = \sigma\left( W_{ }h_v^{(l)}
+chapters/05_graph_models.tex,64,64,T0031,COVERED,"CN, and GAT use two layers with hidden width 64 and dropout 0.2. Each model is trained with"
+chapters/05_graph_models.tex,0.2,0.2,T0032,COVERED,two layers with hidden width 64 and dropout 0.2. Each model is trained with Huber loss and A
+chapters/05_graph_models.tex,0.01,0.01,T0033,COVERED,d with Huber loss and AdamW at learning rate 0.01 with weight decay $0.0001$. Training runs fo
+chapters/05_graph_models.tex,0.0001,0.0001,T0034,COVERED,amW at learning rate 0.01 with weight decay $0.0001$. Training runs for at most 150 epochs with
+chapters/05_graph_models.tex,150,150,T0035,COVERED,ht decay $0.0001$. Training runs for at most 150 epochs with patience 20. GAT uses four atten
+chapters/05_graph_models.tex,20,20,T0036,COVERED,ng runs for at most 150 epochs with patience 20. GAT uses four attention heads of 16 channel
+chapters/05_graph_models.tex,16,16,"T0013,T0038,T0039",COVERED,atience 20. GAT uses four attention heads of 16 channels. The budget is fixed and no model i
+chapters/05_graph_models.tex,16,16,"T0013,T0038,T0039",COVERED,"ng width is \begin{equation} d_k=\min\left(16,\max\left(2, (\sqrt{c_k})\right)\right), \en"
+chapters/05_graph_models.tex,2,2,"T0030,T0040,T0154,T0164,T0172",COVERED,"begin{equation} d_k=\min\left(16,\max\left(2, (\sqrt{c_k})\right)\right), \end{equation}"
+chapters/06_evaluation_protocol.tex,20261107,20261107,T0004,COVERED,e-fold cross-validation uses partition seeds 20261107--20261111. Neural seeds 7--16 are used for t
+chapters/06_evaluation_protocol.tex,20261111,20261111,T0005,COVERED,ss-validation uses partition seeds 20261107--20261111. Neural seeds 7--16 are used for the core re
+chapters/06_evaluation_protocol.tex,7,7,T0011,COVERED,ition seeds 20261107--20261111. Neural seeds 7--16 are used for the core repeated-CV ladder
+chapters/06_evaluation_protocol.tex,16,16,"T0013,T0038,T0039",COVERED,on seeds 20261107--20261111. Neural seeds 7--16 are used for the core repeated-CV ladder. Ea
+chapters/06_evaluation_protocol.tex,105,105,"T0002,T0007",COVERED,"are averaged. Leave-one-system-out contains 105 folds. For each fold, one complete submitter"
+chapters/06_evaluation_protocol.tex,12,12,"T0028,T0137",COVERED,"tter-aware system is held out, approximately 12\ form a training-only validation partition,"
+chapters/06_evaluation_protocol.tex,7,7,T0011,COVERED,"tems train the model. LOSO uses neural seeds 7, 11, and 16. The sensitivity split groups b"
+chapters/06_evaluation_protocol.tex,11,11,T0012,COVERED,"s train the model. LOSO uses neural seeds 7, 11, and 16. The sensitivity split groups by"
+chapters/06_evaluation_protocol.tex,16,16,"T0013,T0038,T0039",COVERED,"the model. LOSO uses neural seeds 7, 11, and 16. The sensitivity split groups by and uses"
+chapters/06_evaluation_protocol.tex,7,7,T0011,COVERED,s by and uses five folds with neural seeds 7--16. It is a modest check because 78 of its
+chapters/06_evaluation_protocol.tex,16,16,"T0013,T0038,T0039",COVERED,y and uses five folds with neural seeds 7--16. It is a modest check because 78 of its 90 g
+chapters/06_evaluation_protocol.tex,78,78,"T0044,T0175",COVERED,al seeds 7--16. It is a modest check because 78 of its 90 groups are singleton systems. \se
+chapters/06_evaluation_protocol.tex,90,90,"T0042,T0045",COVERED,--16. It is a modest check because 78 of its 90 groups are singleton systems. \section{Metr
+chapters/06_evaluation_protocol.tex,"2,000",2000,T0014,COVERED,"P}). \end{equation} Confidence intervals use 2,000 bootstrap resamples of complete systems. Wit"
+chapters/06_evaluation_protocol.tex,0.05,0.05,T0015,COVERED,claim is made. An interval entirely below $-0.05$ is ; one entirely above $+0.05$ is ; one
+chapters/06_evaluation_protocol.tex,0.05,0.05,T0015,COVERED,"ely below $-0.05$ is ; one entirely above $+0.05$ is ; one entirely inside $[-0.05,+0.05]$ i"
+chapters/06_evaluation_protocol.tex,0.05,0.05,T0015,COVERED,"y above $+0.05$ is ; one entirely inside $[-0.05,+0.05]$ is , even if it excludes zero; and"
+chapters/06_evaluation_protocol.tex,0.05,0.05,T0015,COVERED,"e $+0.05$ is ; one entirely inside $[-0.05,+0.05]$ is , even if it excludes zero; and one cr"
+chapters/06_evaluation_protocol.tex,450,450,N0023,COVERED,"canonical five-fold partition, with the same 450 supported rows and ten neural seeds, gives a"
+chapters/06_evaluation_protocol.tex,0.0043,0.0043,T0182,COVERED,cy-minus-fixed primary-error difference of $+0.0043$ (95\ no detectable benefit from the leak. T
+chapters/06_evaluation_protocol.tex,95,95,"T0041,T0043",COVERED,fixed primary-error difference of $+0.0043$ (95\ no detectable benefit from the leak. The GC
+chapters/06_evaluation_protocol.tex,2.2,2.2,T0024,COVERED,"tocol compute table was corrected in version 2.2. Repeated CV contains 25 outer folds, LOSO c"
+chapters/06_evaluation_protocol.tex,25,25,"T0006,T0018",COVERED,"rrected in version 2.2. Repeated CV contains 25 outer folds, LOSO contains 105, and sensitiv"
+chapters/06_evaluation_protocol.tex,105,105,"T0002,T0007",COVERED,"ed CV contains 25 outer folds, LOSO contains 105, and sensitivity contains 5. The planning es"
+chapters/06_evaluation_protocol.tex,5,5,"T0003,T0008,T0144,T0166",COVERED,"LOSO contains 105, and sensitivity contains 5. The planning estimate of 6,210 fits and 37."
+chapters/06_evaluation_protocol.tex,"6,210",6210,T0047,COVERED,"itivity contains 5. The planning estimate of 6,210 fits and 37.26 minutes at the documented rat"
+chapters/06_evaluation_protocol.tex,37.26,37.26,T0050,COVERED,"s 5. The planning estimate of 6,210 fits and 37.26 minutes at the documented rate covers those"
+chapters/06_evaluation_protocol.tex,25,25,"T0006,T0018",COVERED,minutes at the documented rate covers those $25+105+5=135$ outer folds only. The 13 LOAFO fo
+chapters/06_evaluation_protocol.tex,105,105,"T0002,T0007",COVERED,utes at the documented rate covers those $25+105+5=135$ outer folds only. The 13 LOAFO folds
+chapters/06_evaluation_protocol.tex,5,5,"T0003,T0008,T0144,T0166",COVERED,at the documented rate covers those $25+105+5=135$ outer folds only. The 13 LOAFO folds ar
+chapters/06_evaluation_protocol.tex,135,135,T0048,COVERED,t the documented rate covers those $25+105+5=135$ outer folds only. The 13 LOAFO folds are se
+chapters/06_evaluation_protocol.tex,13,13,T0009,COVERED,s those $25+105+5=135$ outer folds only. The 13 LOAFO folds are separate and contribute 195
+chapters/06_evaluation_protocol.tex,195,195,T0049,COVERED,e 13 LOAFO folds are separate and contribute 195 planning fits under the same compute-table c
+chapters/07_results.tex,0.10,0.1,"T0029,T0051",COVERED,"y protocols. The difference is approximately 0.10 to 0.12 log units, and the intervals cannot"
+chapters/07_results.tex,0.12,0.12,T0052,COVERED,"ols. The difference is approximately 0.10 to 0.12 log units, and the intervals cannot exclude"
+chapters/07_results.tex,0.02,0.02,T0053,COVERED,vals cannot exclude a difference as small as 0.02 to 0.05 because they cross the frozen $+0.05
+chapters/07_results.tex,0.05,0.05,T0015,COVERED,not exclude a difference as small as 0.02 to 0.05 because they cross the frozen $+0.05$ bounda
+chapters/07_results.tex,0.05,0.05,T0015,COVERED,0.02 to 0.05 because they cross the frozen $+0.05$ boundary. The label is therefore ; it does
+chapters/07_results.tex,95,95,"T0041,T0043",COVERED,\caption{Best-GNN-minus-MLP differences with 95\ Vertical lines mark zero and the frozen equ
+chapters/07_results.tex,0.115597,0.115597,T0096,COVERED,"uation*} (\text{best GNN})- (\text{MLP}) = +0.115597,\quad 95\ \end{equation*} Under LOSO the est"
+chapters/07_results.tex,95,95,"T0041,T0043",COVERED,"t{best GNN})- (\text{MLP}) = +0.115597,\quad 95\ \end{equation*} Under LOSO the estimate is"
+chapters/07_results.tex,0.104155,0.104155,T0099,COVERED,"uation*} (\text{best GNN})- (\text{MLP}) = +0.104155,\quad 95\ \end{equation*} Both intervals exc"
+chapters/07_results.tex,95,95,"T0041,T0043",COVERED,"t{best GNN})- (\text{MLP}) = +0.104155,\quad 95\ \end{equation*} Both intervals exclude zero"
+chapters/07_results.tex,0.201853,0.201853,"T0064,T0115",COVERED,primary error in both co-primary protocols: $0.201853$ under repeated CV and $0.165012$ under LOSO
+chapters/07_results.tex,0.165012,0.165012,"T0072,T0123",COVERED,protocols: $0.201853$ under repeated CV and $0.165012$ under LOSO. MLP is second at $0.261071$ and
+chapters/07_results.tex,0.261071,0.261071,"T0065,T0119",COVERED,and $0.165012$ under LOSO. MLP is second at $0.261071$ and $0.246446$. The corresponding group-med
+chapters/07_results.tex,0.246446,0.246446,"T0073,T0127",COVERED,under LOSO. MLP is second at $0.261071$ and $0.246446$. The corresponding group-median errors are
+chapters/07_results.tex,0.617066,0.617066,T0066,COVERED,. The corresponding group-median errors are $0.617066$ and $0.580975$. A primary error of $0.20185
+chapters/07_results.tex,0.580975,0.580975,T0074,COVERED,ding group-median errors are $0.617066$ and $0.580975$. A primary error of $0.201853$ corresponds
+chapters/07_results.tex,0.201853,0.201853,"T0064,T0115",COVERED,.617066$ and $0.580975$. A primary error of $0.201853$ corresponds to a typical multiplicative mis
+chapters/07_results.tex,22,22,T0092,COVERED,typical multiplicative miss of approximately 22\ 85\ approximately 18\ \begin{figure}[htb
+chapters/07_results.tex,85,85,T0094,COVERED,cal multiplicative miss of approximately 22\ 85\ approximately 18\ \begin{figure}[htbp] \
+chapters/07_results.tex,18,18,"T0093,T0163",COVERED,miss of approximately 22\ 85\ approximately 18\ \begin{figure}[htbp] \centering \include
+chapters/07_results.tex,0.370271,0.370271,T0067,COVERED,l and relation variation. GraphSAGE reaches $0.370271$ under repeated CV and $0.338161$ under LOSO
+chapters/07_results.tex,0.338161,0.338161,T0075,COVERED,GE reaches $0.370271$ under repeated CV and $0.338161$ under LOSO. GCN reaches $0.354737$ and $0.3
+chapters/07_results.tex,0.354737,0.354737,T0069,COVERED,"d CV and $0.338161$ under LOSO. GCN reaches $0.354737$ and $0.356236$. GAT is substantially worse,"
+chapters/07_results.tex,0.356236,0.356236,T0077,COVERED,"161$ under LOSO. GCN reaches $0.354737$ and $0.356236$. GAT is substantially worse, at $0.632643$"
+chapters/07_results.tex,0.632643,0.632643,T0070,COVERED,"$0.356236$. GAT is substantially worse, at $0.632643$ and $0.658164$. The shuffled-edge GraphSAGE"
+chapters/07_results.tex,0.658164,0.658164,T0078,COVERED,"T is substantially worse, at $0.632643$ and $0.658164$. The shuffled-edge GraphSAGE reaches $0.341"
+chapters/07_results.tex,0.341685,0.341685,T0068,COVERED,58164$. The shuffled-edge GraphSAGE reaches $0.341685$ and $0.366378$. The validation-selected bes
+chapters/07_results.tex,0.366378,0.366378,T0076,COVERED,ffled-edge GraphSAGE reaches $0.341685$ and $0.366378$. The validation-selected best GNN reaches $
+chapters/07_results.tex,0.376393,0.376393,T0071,COVERED,$. The validation-selected best GNN reaches $0.376393$ and $0.340865$. \section{Secondary compari
+chapters/07_results.tex,0.340865,0.340865,T0079,COVERED,on-selected best GNN reaches $0.376393$ and $0.340865$. \section{Secondary comparisons} Graph
+chapters/07_results.tex,0.171529,0.171529,T0105,COVERED,GraphSAGE is worse than random forest by $+0.171529$ under repeated CV and $+0.163960$ under LOS
+chapters/07_results.tex,0.163960,0.16396,T0106,COVERED,orest by $+0.171529$ under repeated CV and $+0.163960$ under LOSO; both differences remain worse a
+chapters/07_results.tex,0.267067,0.267067,T0107,COVERED,"correction. GAT is worse than GraphSAGE by $+0.267067$ and $+0.328409$, also worse after Holm corr"
+chapters/07_results.tex,0.328409,0.328409,T0108,COVERED,"is worse than GraphSAGE by $+0.267067$ and $+0.328409$, also worse after Holm correction. Real-ed"
+chapters/07_results.tex,0.024523,0.024523,T0109,COVERED,"GraphSAGE minus shuffled-edge GraphSAGE is $+0.024523$ under repeated CV, labeled with Holm-adju"
+chapters/07_results.tex,0.096000,0.096,T0110,COVERED,"repeated CV, labeled with Holm-adjusted $p=0.096000$. Under LOSO the difference is $-0.032199$ a"
+chapters/07_results.tex,0.032199,0.032199,T0111,COVERED,$p=0.096000$. Under LOSO the difference is $-0.032199$ and the label is (Holm-adjusted $p=0.3870
+chapters/07_results.tex,0.387000,0.387,T0112,COVERED,032199$ and the label is (Holm-adjusted $p=0.387000$). The result does not establish that graph
+chapters/07_results.tex,0.016638,0.016638,T0113,COVERED,"ph edges add value. GCN minus GraphSAGE is $-0.016638$ under repeated CV, labeled , and $+0.02251"
+chapters/07_results.tex,0.022510,0.02251,T0114,COVERED,".016638$ under repeated CV, labeled , and $+0.022510$ under LOSO, labeled . \section{Tail behav"
+chapters/07_results.tex,90,90,"T0042,T0045",COVERED,textwidth]{fig_tail_errors.pdf} \caption{The 90th and 95th percentiles of absolute log error
+chapters/07_results.tex,95,95,"T0041,T0043",COVERED,]{fig_tail_errors.pdf} \caption{The 90th and 95th percentiles of absolute log error for rand
+chapters/07_results.tex,90,90,"T0042,T0045",COVERED,"random forest, MLP, and GraphSAGE. The LOSO 90th percentiles are effectively tied.} \end{"
+chapters/07_results.tex,95,95,"T0041,T0043",COVERED,ely tied.} \end{figure} MLP has the lower 95th percentile under both protocols: $1.415805
+chapters/07_results.tex,1.415805,1.415805,T0121,COVERED,lower 95th percentile under both protocols: $1.415805$ versus $1.824215$ for random forest under r
+chapters/07_results.tex,1.824215,1.824215,T0117,COVERED,"ile under both protocols: $1.415805$ versus $1.824215$ for random forest under repeated CV, and $1"
+chapters/07_results.tex,1.359019,1.359019,T0129,COVERED,"5$ for random forest under repeated CV, and $1.359019$ versus $1.588001$ under LOSO. MLP also has"
+chapters/07_results.tex,1.588001,1.588001,T0125,COVERED,"st under repeated CV, and $1.359019$ versus $1.588001$ under LOSO. MLP also has the lower 90th per"
+chapters/07_results.tex,90,90,"T0042,T0045",COVERED,1.588001$ under LOSO. MLP also has the lower 90th percentile under repeated CV ($1.089365$ v
+chapters/07_results.tex,1.089365,1.089365,T0120,COVERED,"he lower 90th percentile under repeated CV ($1.089365$ versus $1.147904$). Under LOSO, the 90th pe"
+chapters/07_results.tex,1.147904,1.147904,T0116,COVERED,"entile under repeated CV ($1.089365$ versus $1.147904$). Under LOSO, the 90th percentiles are effe"
+chapters/07_results.tex,90,90,"T0042,T0045",COVERED,".089365$ versus $1.147904$). Under LOSO, the 90th percentiles are effectively tied: $1.10146"
+chapters/07_results.tex,1.101461,1.101461,T0124,COVERED,the 90th percentiles are effectively tied: $1.101461$ for random forest and $1.102937$ for MLP.
+chapters/07_results.tex,1.102937,1.102937,T0128,COVERED,vely tied: $1.101461$ for random forest and $1.102937$ for MLP. RF has the lower median and the l
+chapters/07_results.tex,18,18,"T0093,T0163",COVERED,"ne. For the six trained non-baseline models, 18 of 36 model--headline-family combinations im"
+chapters/07_results.tex,36,36,T0132,COVERED,"r the six trained non-baseline models, 18 of 36 model--headline-family combinations improve"
+chapters/07_results.tex,4,4,"T0025,T0037,T0133,T0141",COVERED,"e group median. The family counts are MI350X 4 of 6, MI355X 0 of 6, Intel Arc Pro B70 4 of"
+chapters/07_results.tex,6,6,"T0058,T0131,T0165",COVERED,"up median. The family counts are MI350X 4 of 6, MI355X 0 of 6, Intel Arc Pro B70 4 of 6, B2"
+chapters/07_results.tex,0,0,"T0016,T0136",COVERED,"The family counts are MI350X 4 of 6, MI355X 0 of 6, Intel Arc Pro B70 4 of 6, B200 5 of 6,"
+chapters/07_results.tex,6,6,"T0058,T0131,T0165",COVERED,"family counts are MI350X 4 of 6, MI355X 0 of 6, Intel Arc Pro B70 4 of 6, B200 5 of 6, B300"
+chapters/07_results.tex,4,4,"T0025,T0037,T0133,T0141",COVERED,"50X 4 of 6, MI355X 0 of 6, Intel Arc Pro B70 4 of 6, B200 5 of 6, B300 3 of 6, and RTX PRO"
+chapters/07_results.tex,6,6,"T0058,T0131,T0165",COVERED,"of 6, MI355X 0 of 6, Intel Arc Pro B70 4 of 6, B200 5 of 6, B300 3 of 6, and RTX PRO 2 of"
+chapters/07_results.tex,5,5,"T0003,T0008,T0144,T0166",COVERED,"I355X 0 of 6, Intel Arc Pro B70 4 of 6, B200 5 of 6, B300 3 of 6, and RTX PRO 2 of 6. Thus"
+chapters/07_results.tex,6,6,"T0058,T0131,T0165",COVERED,"0 of 6, Intel Arc Pro B70 4 of 6, B200 5 of 6, B300 3 of 6, and RTX PRO 2 of 6. Thus neith"
+chapters/07_results.tex,3,3,"T0027,T0134,T0142,T0149",COVERED,"Intel Arc Pro B70 4 of 6, B200 5 of 6, B300 3 of 6, and RTX PRO 2 of 6. Thus neither MI355"
+chapters/07_results.tex,6,6,"T0058,T0131,T0165",COVERED,"l Arc Pro B70 4 of 6, B200 5 of 6, B300 3 of 6, and RTX PRO 2 of 6. Thus neither MI355X, wh"
+chapters/07_results.tex,2,2,"T0030,T0040,T0154,T0164,T0172",COVERED,"of 6, B200 5 of 6, B300 3 of 6, and RTX PRO 2 of 6. Thus neither MI355X, where the group m"
+chapters/07_results.tex,6,6,"T0058,T0131,T0165",COVERED,", B200 5 of 6, B300 3 of 6, and RTX PRO 2 of 6. Thus neither MI355X, where the group median"
+chapters/07_results.tex,0.115406,0.115406,T0138,COVERED,"cludes zero in the GNN's favor for MI355X ($-0.115406$, 95\ $[-0.504774,-0.038053]$) and the CPU-o"
+chapters/07_results.tex,95,95,"T0041,T0043",COVERED,"in the GNN's favor for MI355X ($-0.115406$, 95\ $[-0.504774,-0.038053]$) and the CPU-only s"
+chapters/07_results.tex,0.504774,0.504774,T0139,COVERED,"GNN's favor for MI355X ($-0.115406$, 95\ $[-0.504774,-0.038053]$) and the CPU-only stress case ($"
+chapters/07_results.tex,0.038053,0.038053,T0140,COVERED,"or for MI355X ($-0.115406$, 95\ $[-0.504774,-0.038053]$) and the CPU-only stress case ($-0.398394$"
+chapters/07_results.tex,0.398394,0.398394,T0160,COVERED,"-0.038053]$) and the CPU-only stress case ($-0.398394$, 95\ $[-0.802894,-0.040203]$). The B200, B3"
+chapters/07_results.tex,95,95,"T0041,T0043",COVERED,") and the CPU-only stress case ($-0.398394$, 95\ $[-0.802894,-0.040203]$). The B200, B300, a"
+chapters/07_results.tex,0.802894,0.802894,T0161,COVERED,"he CPU-only stress case ($-0.398394$, 95\ $[-0.802894,-0.040203]$). The B200, B300, and RTX PRO in"
+chapters/07_results.tex,0.040203,0.040203,T0162,COVERED,"y stress case ($-0.398394$, 95\ $[-0.802894,-0.040203]$). The B200, B300, and RTX PRO intervals cr"
+chapters/07_results.tex,0.572661,0.572661,T0135,COVERED,"has a large unfavorable point difference ($+0.572661$) but only three supported systems, so no in"
+chapters/07_results.tex,0.158657,0.158657,T0102,COVERED,vity guard estimates best-GNN minus MLP at $+0.158657$ (95\ larger than under either co-primary pr
+chapters/07_results.tex,95,95,"T0041,T0043",COVERED,estimates best-GNN minus MLP at $+0.158657$ (95\ larger than under either co-primary protoco
+chapters/07_results.tex,78,78,"T0044,T0175",COVERED,"an under either co-primary protocol. Because 78 of its 90 groups are singletons, this result"
+chapters/07_results.tex,90,90,"T0042,T0045",COVERED,"ither co-primary protocol. Because 78 of its 90 groups are singletons, this result is report"
+chapters/07_results.tex,0.093310,0.09331,T0167,COVERED,"-level primary error has standard deviation $0.093310$, compared with $0.032297$ for random forest"
+chapters/07_results.tex,0.032297,0.032297,T0168,COVERED,"tandard deviation $0.093310$, compared with $0.032297$ for random forest and $0.019410$ for MLP. T"
+chapters/07_results.tex,0.019410,0.01941,T0169,COVERED,pared with $0.032297$ for random forest and $0.019410$ for MLP. The graph result is therefore more
+chapters/07_results.tex,54,54,T0177,COVERED,ute normalized residuals reach approximately 54 and 26 for random forest and remain extreme
+chapters/07_results.tex,26,26,T0178,COVERED,malized residuals reach approximately 54 and 26 for random forest and remain extreme for MLP
+chapters/07_results.tex,78,78,"T0044,T0175",COVERED,hSAGE. The top ten residuals contain roughly 78--87\ normalized error. These failures motiva
+chapters/07_results.tex,87,87,T0176,COVERED,E. The top ten residuals contain roughly 78--87\ normalized error. These failures motivate r
+chapters/08_discussion.tex,18,18,"T0093,T0163",COVERED,ction fails. Random forest has approximately 18--22\ approximately 79--85\ implemented heter
+chapters/08_discussion.tex,22,22,T0092,COVERED,n fails. Random forest has approximately 18--22\ approximately 79--85\ implemented heterogen
+chapters/08_discussion.tex,79,79,T0095,COVERED,rest has approximately 18--22\ approximately 79--85\ implemented heterogeneous metadata grap
+chapters/08_discussion.tex,85,85,T0094,COVERED,has approximately 18--22\ approximately 79--85\ implemented heterogeneous metadata graph do
+chapters/08_discussion.tex,1,1,T0017,COVERED,isplayed percentage figures convert $\exp( )-1$ to percent for primary error $ $. \section
+chapters/08_discussion.tex,18,18,"T0093,T0163",COVERED,"provide no single typical family effect. In 18 of 36 model--headline-family comparisons, a"
+chapters/08_discussion.tex,36,36,T0132,COVERED,"de no single typical family effect. In 18 of 36 model--headline-family comparisons, a traine"
+chapters/08_discussion.tex,95,95,"T0041,T0043",COVERED,this median-error criterion. MLP has a lower 95th percentile than random forest under both p
+chapters/08_discussion.tex,90,90,"T0042,T0045",COVERED,ndom forest under both protocols and a lower 90th percentile under repeated CV; the LOSO 90t
+chapters/08_discussion.tex,90,90,"T0042,T0045",COVERED,90th percentile under repeated CV; the LOSO 90th percentiles are effectively tied. These su
+chapters/08_discussion.tex,78,78,"T0044,T0175",COVERED,sensitivity split is a modest check because 78 of its 90 groups are singleton systems. It i
+chapters/08_discussion.tex,90,90,"T0042,T0045",COVERED,ty split is a modest check because 78 of its 90 groups are singleton systems. It is useful a
+chapters/09_conclusion.tex,476,476,T0001,COVERED,ure adds predictive value. The analysis used 476 MLPerf Inference v6.1 Closed-division measur
+chapters/09_conclusion.tex,105,105,"T0002,T0007",COVERED,rence v6.1 Closed-division measurements from 105 submitter-aware systems and a pre-specified
+chapters/09_conclusion.tex,0.10,0.1,"T0029,T0051",COVERED,best GNN is worse than MLP by approximately 0.10 to 0.12 log units. The repeated-CV differenc
+chapters/09_conclusion.tex,0.12,0.12,T0052,COVERED,N is worse than MLP by approximately 0.10 to 0.12 log units. The repeated-CV difference is $+0
+chapters/09_conclusion.tex,0.115597,0.115597,T0096,COVERED,2 log units. The repeated-CV difference is $+0.115597$ with 95\ $+0.104155$ with 95\ under the f
+chapters/09_conclusion.tex,95,95,"T0041,T0043",COVERED,e repeated-CV difference is $+0.115597$ with 95\ $+0.104155$ with 95\ under the frozen $\p
+chapters/09_conclusion.tex,0.104155,0.104155,T0099,COVERED,ated-CV difference is $+0.115597$ with 95\ $+0.104155$ with 95\ under the frozen $\pm0.05$ rule
+chapters/09_conclusion.tex,95,95,"T0041,T0043",COVERED,nce is $+0.115597$ with 95\ $+0.104155$ with 95\ under the frozen $\pm0.05$ rule because t
+chapters/09_conclusion.tex,0.02,0.02,T0053,COVERED,data cannot exclude a difference as small as 0.02 to 0.05. This is a directional negative find
+chapters/09_conclusion.tex,0.05,0.05,T0015,COVERED,"not exclude a difference as small as 0.02 to 0.05. This is a directional negative finding, not"
+chapters/09_conclusion.tex,0.201853,0.201853,"T0064,T0115",COVERED,ul. Random forest reaches primary errors of $0.201853$ under repeated CV and $0.165012$ under LOSO
+chapters/09_conclusion.tex,0.165012,0.165012,"T0072,T0123",COVERED,"errors of $0.201853$ under repeated CV and $0.165012$ under LOSO, compared with $0.617066$ and $0"
+chapters/09_conclusion.tex,0.617066,0.617066,T0066,COVERED,"CV and $0.165012$ under LOSO, compared with $0.617066$ and $0.580975$ for the group median. These"
+chapters/09_conclusion.tex,0.580975,0.580975,T0074,COVERED,"2$ under LOSO, compared with $0.617066$ and $0.580975$ for the group median. These correspond appr"
+chapters/09_conclusion.tex,22,22,T0092,COVERED,up median. These correspond approximately to 22\ 79\ tabular model rather than a graph model
+chapters/09_conclusion.tex,79,79,T0095,COVERED,edian. These correspond approximately to 22\ 79\ tabular model rather than a graph model. T
+chapters/09_conclusion.tex,0.024523,0.024523,T0109,COVERED,"GraphSAGE minus shuffled-edge GraphSAGE is $+0.024523$ and labeled under repeated CV, but $-0.03"
+chapters/09_conclusion.tex,0.032199,0.032199,T0111,COVERED,"4523$ and labeled under repeated CV, but $-0.032199$ and labeled under LOSO. GraphSAGE is wors"
+chapters/09_conclusion.tex,0.158657,0.158657,T0102,COVERED,"kes best GNN minus MLP more unfavorable at $+0.158657$, but sensitivity is not co-primary. It is a"
+chapters/09_conclusion.tex,78,78,"T0044,T0175",COVERED,not co-primary. It is a modest check because 78 of its 90 groups are singleton systems. Fam
+chapters/09_conclusion.tex,90,90,"T0042,T0045",COVERED,mary. It is a modest check because 78 of its 90 groups are singleton systems. Family extrap
+chapters/09_conclusion.tex,36,36,T0132,COVERED,amily extrapolation is heterogeneous. Across 36 trained-model and headline-family combinatio
+chapters/09_conclusion.tex,18,18,"T0093,T0163",COVERED,"ined-model and headline-family combinations, 18 beat the group median. Best GNN beats MLP in"
+chapters/09_conclusion.tex,95,95,"T0041,T0043",COVERED,multiple error summaries. MLP has the lower 95th percentile under both protocols and the lo
+chapters/09_conclusion.tex,90,90,"T0042,T0045",COVERED,ercentile under both protocols and the lower 90th percentile under repeated CV. LOSO's 90th
+chapters/09_conclusion.tex,90,90,"T0042,T0045",COVERED,er 90th percentile under repeated CV. LOSO's 90th percentiles are effectively tied. Two inte
+chapters/appendix_b_provenance.tex,0.0043,0.0043,T0182,COVERED,imates the leak effect on primary error at $+0.0043$ (95\ reusing the leaky pipeline; all report
+chapters/appendix_b_provenance.tex,95,95,"T0041,T0043",COVERED,e leak effect on primary error at $+0.0043$ (95\ reusing the leaky pipeline; all reported re
+chapters/appendix_b_provenance.tex,0.711303,0.711303,T0185,COVERED,"lation} The historical Spearman value of $0.711303$ came from one favorable seed and partition,"
+chapters/appendix_b_provenance.tex,0.484192,0.484192,T0186,COVERED,mean median-group Spearman of approximately $0.484192$ with the same three-row rule. The historica

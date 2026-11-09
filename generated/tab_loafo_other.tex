@@ -1,0 +1,20 @@
+\begin{table*}[htbp]
+\centering
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrcccccccc}
+\toprule
+\textbf{Family} & \textbf{Sys.} & \textbf{Sup. sys.} & \textbf{Sup. rows} & \textbf{Group median} & \textbf{Ridge} & \textbf{RF} & \textbf{MLP} & \textbf{GraphSAGE} & \textbf{GCN} & \textbf{GAT} & \textbf{Best GNN} \\
+\midrule
+amd\_cdna3\_mi300x & 1 & 1 & 2 & 1.376473 & 0.810770 & 1.200972 & 1.236041 & 1.453123 & 1.435732 & 1.297602 & 1.490590 \\
+amd\_rdna35\_integrated\_radeon\_8060s & 1 & 1 & 1 & 0.966204 & 0.742417 & 1.028630 & 0.695477 & 0.519781 & 0.571530 & 0.893041 & 0.535731 \\
+nvidia\_blackwell\_integrated\_gb10 & 2 & 1 & 1 & 0.322527 & 0.315018 & 0.213816 & 0.281803 & 0.090855 & 0.162582 & 0.517604 & 0.003088 \\
+nvidia\_blackwell\_integrated\_thor & 1 & 1 & 1 & 0.631946 & 1.243431 & 1.143215 & 1.255449 & 1.582791 & 1.472277 & 0.838044 & 1.581338 \\
+nvidia\_hopper\_h200 & 1 & 1 & 2 & 1.010825 & 0.113516 & 0.791017 & 0.719870 & 0.334389 & 0.247812 & 1.333063 & 0.390006 \\
+nvidia\_rubin\_vr200 & 2 & 2 & 8 & 2.800540 & 1.114532 & 0.835638 & 1.026695 & 0.838571 & 0.795890 & 2.249656 & 0.701498 \\
+cpu\_only\_intel\_xeon6\_granite\_rapids & 10 & 10 & 28 & 2.707038 & 1.204246 & 2.041449 & 1.696620 & 1.277336 & 1.477151 & 2.994144 & 1.298226 \\
+\bottomrule
+\end{tabular}}
+\caption{Descriptive small/integrated families and the CPU-only stress case. The CPU-only family remains outside the headline set.}
+\label{tab:loafo-other}
+\end{table*}

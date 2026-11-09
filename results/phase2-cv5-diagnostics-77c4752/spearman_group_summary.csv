@@ -1,0 +1,16 @@
+method,partitions,qualifying_groups_min,qualifying_groups_max,median_group_spearman_partition_mean,group_median_forced_na
+best_gnn,5,18,20,0.619980809617344,False
+gat,5,18,20,0.004719073362843563,False
+gcn,5,18,20,0.61873688757621,False
+gradient_boosting,5,18,20,0.740295631288732,False
+graphsage,5,18,20,0.6348630048013236,False
+graphsage_no_accelerator,5,18,20,0.6238354367722536,False
+graphsage_no_processor,5,18,20,0.6277662561115086,False
+graphsage_no_system,5,18,20,0.6582439339256704,False
+graphsage_no_workload,5,18,20,0.6352473283795846,False
+graphsage_shuffled,5,18,20,0.6438184955303031,False
+group_median,5,18,20,,True
+hierarchical_mixed,5,18,20,0.7065263269345878,False
+mlp,5,18,20,0.8154035026666925,False
+random_forest,5,18,20,0.7937143026693401,False
+ridge,5,18,20,0.8276413327661045,False

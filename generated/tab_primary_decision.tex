@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccc}
+\toprule
+\textbf{Protocol} & \textbf{Best GNN $-$ MLP} & \textbf{95\% CI} & \textbf{Frozen label} \\
+\midrule
+Repeated CV5 & 0.115597 & [0.047136, 0.198051] & inconclusive \\
+LOSO & 0.104155 & [0.023774, 0.192784] & inconclusive \\
+Sensitivity & 0.158657 & [0.058606, 0.257561] & worse \\
+\bottomrule
+\end{tabular}}
+\caption{Co-primary and sensitivity best-GNN-minus-MLP decisions. Point estimates are medians over supported out-of-fold measurements, while the 95\% intervals come from 2,000 bootstrap resamples of complete systems (as in Section~6.3). The intervals are raw 95\% system-clustered bootstrap intervals. The sensitivity row applies the frozen label rule but is not co-primary and is nearly redundant with the system-level split.}
+\label{tab:primary-decision}
+\end{table}

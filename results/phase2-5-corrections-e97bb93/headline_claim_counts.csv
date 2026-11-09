@@ -1,0 +1,3 @@
+quantity,value,families
+headline_families,6,amd_cdna4_mi350x;amd_cdna4_mi355x;intel_xe2_battlemage_arc_pro_b70;nvidia_blackwell_b200;nvidia_blackwell_b300;nvidia_blackwell_rtx_pro
+best_gnn_point_better_than_mlp,2,amd_cdna4_mi355x;intel_xe2_battlemage_arc_pro_b70

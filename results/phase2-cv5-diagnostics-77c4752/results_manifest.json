@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-11-08T00:03:29.907298+00:00",
+  "cv_bundle_manifest_sha256": "af85d70f5a5887252e8e775a5dbb7f545ab708c77ccfb4b262c5c3a655e0c103",
+  "cv_predictions_sha256": "fbb24f26c92c9f649c4da26895889a87dafcf5b18905e61f9ee227b2a41c2597",
+  "data_sha256": "a6853e1e2dc777404ddf9f5e0546679fef758df38bc4ebe5bba21e0c0bb735dd",
+  "git_branch": "phase-1-evaluation",
+  "git_commit": "77c4752e33938abf6b54459002a03522625c250a",
+  "git_dirty": false,
+  "loafo_run": false,
+  "loso_run": false,
+  "output_sha256": {
+    "coverage_reconciliation.csv": "1543db3a3ae7134fa59f412e248580aa0696045828fe6518b0ba567aaa96cdb4",
+    "gat_phase1_comparison.csv": "9b34c620698b3515e7a4c1b12897719d8b0239522d763a0f8e344e431615f7a2",
+    "gat_saved_prediction_comparison.csv": "334fd7c787952241e3e1413bc6a070dc2d3903864dda0d32bce3a3d2a0216002",
+    "gat_training_by_fold_seed.csv": "2f496f356b0e98e25e91803ffb8f5d042309c8ae9c6746248edddae14dd88e37",
+    "gat_training_summary.csv": "267d70b8ec660f9bd584a36cbb697d0f9bac2cd5d04ce5d5e9449397b06b7af2",
+    "graphsage_regression_by_seed.csv": "ea248d54df91afb69bd96da57dd3731eb8e636341da6baf95c093861740573e8",
+    "graphsage_regression_comparison.csv": "d986bcf7213cd97fde4725329c833175b4c242542ee1ffe086e12d111146fec4",
+    "main_table_corrected.csv": "a154463d89dbf1b720f967b20bd56e4e9fe5e57b1b271f8a3bd559c38cecdf20",
+    "mixed_model_fit_status.csv": "af67fb2b44d65b52db45f57dfbf2da9c0ad3a647006a14bb4a870b5c48f026b5",
+    "mixed_model_specification.json": "d98dcb5be9573248fa1c6756d083dd691fb91b2b8a1114665764d2faf3f3d404",
+    "mixed_vs_ridge_by_group.csv": "579550f7ab653b4e5f394e2f61cfbdb30db1b4351211e466dbe68939371ccaef",
+    "partition_primary_errors.csv": "4544e3e5508d527876ad30d16188739edc943749068536b6a2b1148e528edaf6",
+    "partition_system_drivers.csv": "1c4c267e2588e303f0fb29489c661c8827d269c5f547d89f9319009d6bc72dd0",
+    "spearman_group_counts.csv": "2f9605e2787beb13f9923eb341c966af636ffd19a8af8346e1af0254dff0f1a4",
+    "spearman_group_summary.csv": "3a247aea9313317c39e04a98e5e843c42b56d2248f7ffdfbcdc4501d522c394f",
+    "top_abs_z_residuals.csv": "2ca71f767b1b1a783c54f9675cf0332da86042f3e122d74cb1902eafd80acc1f"
+  },
+  "protocol_sha256": "d4c5930477b54f6b3a65bbc1be98b755bc4a2335efcc2261294469d6f0123f3e",
+  "sensitivity_run": false,
+  "wall_seconds": 128.67411795799853
+}

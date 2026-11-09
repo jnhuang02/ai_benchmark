@@ -1,0 +1,111 @@
+diff --git a/protocol.md b/protocol.md
+index 5901666..2496640 100644
+--- a/protocol.md
++++ b/protocol.md
+@@ -1,8 +1,10 @@
+-# Phase 2 Pre-registration, Version 2
++# Phase 2 Pre-registration, Version 2.1
+ 
+ Frozen: 2026-11-07, before any Phase 2 model run.
+ 
+-This version supersedes Version 1 from commit `d3bc835`, whose file SHA-256 was
++This version supersedes Version 2 from commit `cce2f43`, whose file SHA-256 was
++`9062c13cfe2ae50e9a5da2a0e92f48f8d2d2ef32191cd0d38942ac13b40296f4`.
++Version 2 superseded Version 1 from commit `d3bc835`, SHA-256
+ `eb14e445f34c83ee817f59b35555f086be402d031534d4415815c575579fe811`.
+ The amendment log is `protocol_history.md`. Any future design change must be
+ committed and labeled exploratory unless it is made before any Phase 2 result
+@@ -63,6 +65,12 @@ Stress test:
+    execution-regime family. Mixed-accelerator systems are always in training
+    and are never held out as a family.
+ 
++The proposed 15-family map is
++`folds/loafo_family_mapping_proposed.csv`, SHA-256
++`1651770d0b6fd8d5c462bf1dd6f8b5fee5c44066cbf1fa1404d8d9745ffb3bd4`.
++CPU-only is a labeled stress case outside the headline LOAFO estimate.
++GB10 and Jetson Thor are explicit integrated-device families.
++
+ Within each outer fold, validation is selected only from outer-training
+ systems. Roles are disjoint. The five CV partitions reuse the same 105
+ systems but change the system-to-fold assignment.
+@@ -112,6 +120,17 @@ Neural stochastic models use seeds 7-16. For descriptive tables, report the
+ mean and SD of the ten seed-level values. For repeated CV, also report
+ partition-level variability.
+ 
++Metric computation follows the protocol:
++
++- repeated CV: compute the metric separately for each partition from its
++  out-of-fold predictions; then average the five partition metrics;
++- LOSO: compute each seed's metric from the pooled 105-fold out-of-fold
++  predictions. Do not average 105 fold-level metrics as the headline.
++
++Neural seeds for the repeated-CV core are 7-16. To control the LOSO cost, LOSO
++uses three pre-specified neural seeds: **7, 11, and 16**. Sensitivity uses seeds
++7-16. No seed selection may depend on results.
++
+ ## System-clustered inference across partition and seed variability
+ 
+ Confidence intervals use 2,000 bootstrap resamples of whole systems. The same
+@@ -131,6 +150,35 @@ each selected system before pooling. Specifically:
+ Partitions or seeds are never treated as independent bootstrap units. Rows are
+ never resampled independently within a system.
+ 
++## Compute estimate
++
++The ladder has five deterministic model fits per outer fold (`group median`,
++Ridge, random forest, gradient boosting, hierarchical mixed) and nine neural
++fits per outer fold and seed (MLP, GraphSAGE, GCN, GAT, shuffled-edge
++GraphSAGE, and four relation-removal GraphSAGE models).
++
++| Protocol | Outer folds | Neural seeds | Deterministic fits | Neural fits | Total fits |
++| --- | ---: | ---: | ---: | ---: | ---: |
++| 5-fold x 5 partitions | 125 | 10 | 625 | 11,250 | 11,875 |
++| LOSO | 105 | 3 | 525 | 2,835 | 3,360 |
++| sensitivity | 25 | 10 | 125 | 2,250 | 2,375 |
++| Total | 255 | - | 1,275 | 16,335 | 17,610 |
++
++The Phase 1.5 audit measured 120.05 seconds for 300 GraphSAGE fold fits plus
++regression, tests, and orchestration. Using the conservative planning rate
++`0.36` seconds per fit gives:
++
++| Protocol | Estimated compute |
++| --- | ---: |
++| 5-fold x 5 partitions | 4,275 seconds, 71.25 minutes |
++| LOSO, three seeds | 1,209.6 seconds, 20.16 minutes |
++| sensitivity, ten seeds | 855 seconds, 14.25 minutes |
++| Total | 6,339.6 seconds, 105.66 minutes |
++
++This is a planning estimate based on one GNN's measured runtime. It does not
++claim equal fitting cost across model families. With the ten-seed LOSO
++alternative, LOSO would contain 9,975 fits and the total would be 24,225 fits.
++
+ ## Model fitting policy
+ 
+ Policy: no tuning for any model. The same fixed budget applies to every model.
+@@ -193,13 +241,20 @@ validation systems.
+ The equivalence margin is `+/-0.05` log units on the paired difference.
+ Classification uses the 95% system-clustered paired interval:
+ 
+-- `better`: interval is entirely below `-0.05`;
+-- `worse`: interval is entirely above `+0.05`;
+-- `equivalent`: interval is entirely inside `[-0.05, +0.05]`;
+-- `inconclusive`: none of the above.
++| Interval position relative to `[-0.05, +0.05]` | Label |
++| --- | --- |
++| Entire interval below `-0.05` | better |
++| Entire interval above `+0.05` | worse |
++| Entire interval inside `[-0.05, +0.05]`, whether or not it excludes 0 | equivalent |
++| Crosses either boundary, including intervals that exclude 0 but straddle a boundary | inconclusive |
++
++An interval entirely inside the margin but excluding zero is still
++`equivalent`: the equivalence decision concerns practical magnitude, not
++whether zero is inside the interval. An interval outside zero but crossing
++`-0.05` or `+0.05` is `inconclusive`.
+ 
+-Because there are two co-primary protocols, the combined primary conclusion is
+-the intersection of their labels. The hypothesis is called better only if both
++Because there are two co-primary protocols, both must produce the same label
++before a primary claim is made. The hypothesis is called better only if both
+ intervals are entirely below `-0.05`; equivalent only if both are entirely
+ inside the margin; worse only if both are entirely above `+0.05`. Any
+ disagreement is `inconclusive`. There is no multiplicity correction for the

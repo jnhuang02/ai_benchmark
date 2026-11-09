@@ -1,0 +1,6 @@
+left,right,role,mean_difference,difference_95ci_low,difference_95ci_high,probability_left_better,status,secondary_holm_status
+best_gnn,mlp,primary,0.11559662331482538,0.04713564514206242,0.19805094927510894,0.0005,inconclusive,not_applicable
+graphsage,random_forest,secondary,0.17152921690084272,0.11186266236885324,0.2373391460077388,0.0,worse,pending_LOSO
+graphsage,graphsage_shuffled,secondary,0.02452325108219414,0.004590104870325947,0.04501888306861131,0.012,equivalent,pending_LOSO
+gcn,graphsage,secondary,-0.016637783773760663,-0.04514574741326345,0.0074821803182869495,0.9055,equivalent,pending_LOSO
+gat,graphsage,secondary,0.26706748311679074,0.14507682617925544,0.4501143724404768,0.0,worse,pending_LOSO

@@ -1,0 +1,8 @@
+test_production_weights_ignore_test_metadata_on_five_fold_cases (tests.test_leakage.TestFiveFoldWeightBoundary.test_production_weights_ignore_test_metadata_on_five_fold_cases) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 2.843s
+
+OK
+
+wall_seconds=4.856679

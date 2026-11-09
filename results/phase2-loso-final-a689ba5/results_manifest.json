@@ -1,0 +1,39 @@
+{
+  "bootstrap_replicates": 2000,
+  "created_utc": "2026-11-08T00:22:37.712445+00:00",
+  "data_sha256": "a6853e1e2dc777404ddf9f5e0546679fef758df38bc4ebe5bba21e0c0bb735dd",
+  "fold_assignments_sha256": "3ed4dd0bf019685255c6f6d11f309d10f147280487617cf8f49c7c437e433443",
+  "git_branch": "phase-1-evaluation",
+  "git_commit": "a689ba57926001e840971cac25e74da6d90a57ab",
+  "git_dirty": false,
+  "input_files": [
+    {
+      "path": "results/phase2-loso-shard0-3473517/predictions.csv",
+      "sha256": "38a69ffb430b68bf78e3d84df91af15edfc3bff4b8d3b6dc4fa6be75320ba000"
+    },
+    {
+      "path": "results/phase2-loso-shard1-c108010/predictions.csv",
+      "sha256": "e630357890d1b9636aba213d955b91b6033cf8cbc44ad3050391601f0d02bd6b"
+    },
+    {
+      "path": "results/phase2-loso-shard2-3473517/predictions.csv",
+      "sha256": "0c630bf519c3fdf322fbb402ee390696d84919b9ccd35710e05c87f4d203157e"
+    },
+    {
+      "path": "results/phase2-loso-shard3-3473517/predictions.csv",
+      "sha256": "664c9b44b8cb4feb1ca7294519376b6059c6a08dd66bc93a28537da81a8cb527"
+    }
+  ],
+  "loafo_run": false,
+  "output_sha256": {
+    "bootstrap_by_method.csv": "052864a83e5612f635b776f0d4767f385be5ebf6bb2af7b27472a7f183e2a628",
+    "main_table.csv": "5c7a1d063b8950df4b17d97a1810914312209317c37c638e0b0fcecba0ef66eb",
+    "paired_differences.csv": "f34ee6f58bb819fe865b3f195c5c41e2151e848b038f524a68ac1a28615c4c26",
+    "per_group_results.csv": "d35835402e882fefce90aa21ba7d687bca1bf93e7657ffe17825fe94e6ca78d1",
+    "pooled_mape_appendix.csv": "9821dcd4be334cda836def274998930c66edb6205e6af511d4531b696a123c0a",
+    "predictions_by_fold_seed.csv": "5f1b3540157480b65b9a7285b53663c7da69316fb514ec39702d1b3cd0cfb9dd",
+    "selected_gnn_counts.csv": "e779931bedc88aeea7c2fdecfba7ba18a08e153270bf02c3cc6c710ec88f1dac"
+  },
+  "protocol": "loso",
+  "protocol_sha256": "d4c5930477b54f6b3a65bbc1be98b755bc4a2335efcc2261294469d6f0123f3e"
+}

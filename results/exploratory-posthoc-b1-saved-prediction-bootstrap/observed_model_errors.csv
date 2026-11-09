@@ -1,0 +1,7 @@
+method,observed_error,protocol
+gcn,0.3547372383603878,cv5_partitioned
+graphsage,0.37027054095909645,cv5_partitioned
+mlp,0.26107124653968095,cv5_partitioned
+gcn,0.3562359662750386,loso
+graphsage,0.3381609436206334,loso
+mlp,0.24644559716479808,loso

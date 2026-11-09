@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrccc}
+\toprule
+\textbf{Family} & \textbf{Sup. sys.} & \textbf{Models beating GM} & \textbf{Best GNN $-$ MLP} & \textbf{95\% CI} \\
+\midrule
+amd\_cdna4\_mi350x & 3 & 4/6 & 0.572661 & NA (too few systems) \\
+amd\_cdna4\_mi355x & 12 & 0/6 & -0.115406 & [-0.504774, -0.038053] \\
+intel\_xe2\_battlemage\_arc\_pro\_b70 & 3 & 4/6 & -0.391312 & NA (too few systems) \\
+nvidia\_blackwell\_b200 & 14 & 5/6 & 0.101929 & [-0.024416, 0.243393] \\
+nvidia\_blackwell\_b300 & 33 & 3/6 & 0.059492 & [-0.135334, 0.239440] \\
+nvidia\_blackwell\_rtx\_pro & 15 & 2/6 & 0.334701 & [-0.291528, 0.520475] \\
+\midrule
+CPU-only stress case (outside headline) & 10 & 5/6 & -0.398394 & [-0.802894, -0.040203] \\
+\bottomrule
+\end{tabular}}
+\par\smallskip
+\footnotesize Best GNN has a lower point estimate than MLP in MI355X and Intel Arc Pro B70. MI350X and Intel Arc Pro B70 each have four systems but only three supported systems. Intervals are shown only for families with at least eight supported systems. Uncorrected intervals are descriptive.
+\caption{Headline-family comparisons with the group-median baseline and best-GNN-minus-MLP intervals, followed by a separately labeled CPU-only stress case outside the six-family headline set. The eight-supported-system interval threshold excludes MI350X and Intel Arc Pro B70. No multiplicity adjustment is applied to these descriptive comparisons.}
+\label{tab:loafo-pairing}
+\end{table}

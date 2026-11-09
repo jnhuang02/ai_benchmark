@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-11-08T00:33:37.089671+00:00",
+  "data_sha256": "a6853e1e2dc777404ddf9f5e0546679fef758df38bc4ebe5bba21e0c0bb735dd",
+  "families": 15,
+  "family_mapping_sha256": "1651770d0b6fd8d5c462bf1dd6f8b5fee5c44066cbf1fa1404d8d9745ffb3bd4",
+  "fold_assignments_sha256": "017edb2d7c7982855ae5a2effcdd4ba760b73abc57a5db67959e08ab0b763a6b",
+  "fold_summary_sha256": "39eac7ad098d81cb04fbb1dde309568e29571557966d3933927f2cfe511ea4b9",
+  "git_branch": "phase-2.5-loafo",
+  "git_commit": "a06a5bc22218bfc6249fd8db86921c1a5114252c",
+  "heldout_folds": 13,
+  "loafo_model_runs": 0,
+  "mixed_always_train_systems": [
+    "datacenter|Cisco|Cisco UCS H200 x8 + MI350X x8 G200 2x2 TOR|datacenter",
+    "datacenter|Dell_MangoBoost|Heterogeneous Four-Cluster (2x8x MI300X + 2x8x MI355X LLMBoost)|datacenter"
+  ],
+  "protocol_sha256": "d4c5930477b54f6b3a65bbc1be98b755bc4a2335efcc2261294469d6f0123f3e",
+  "system_assignment_sha256": "2ef7874fa8352ebac63047f3582eb434e43e200c853cd207b321c80f98e04fe5",
+  "validation_seed_base": 20264107
+}

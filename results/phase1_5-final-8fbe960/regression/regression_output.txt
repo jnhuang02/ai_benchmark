@@ -1,0 +1,39 @@
+$ /Library/Frameworks/Python.framework/Versions/3.14/bin/python3 ./results/phase1_5-final-8fbe960/regression/phase0_train_graphsage.py --data ./results/phase1_5-final-8fbe960/regression/phase0_mlperf_long.csv --suite all --folds 5 --model graphsage --out-dir ./results/phase1_5-final-8fbe960/regression/graphsage
+fold   1/5 | held out  96 rows / 20 systems
+fold   2/5 | held out  66 rows / 19 systems
+fold   3/5 | held out  82 rows / 19 systems
+fold   4/5 | held out  87 rows / 19 systems
+fold   5/5 | held out 145 rows / 19 systems
+
+Grouped system-level validation (development evidence, not an official MLPerf result):
+       method        pooled_mape median_group_mape rmse_log_score median_group_spearman pooled_mape_95ci_low pooled_mape_95ci_high fold_median_mape
+    graphsage              4.607             0.388          1.455                 0.711                0.681                10.539            0.696
+random_forest              5.570             0.678          1.502                 0.732                1.086                14.191            1.050
+ group_median            250.566             0.776          1.828                -0.369                2.937               739.624            3.913
+        ridge 84104951177567.156             0.603          1.903                 0.666             5255.646   214304302014280.594            2.139
+
+Summary:      ./results/phase1_5-final-8fbe960/regression/graphsage/all_graphsage_summary.csv
+Predictions:  ./results/phase1_5-final-8fbe960/regression/graphsage/all_graphsage_predictions.csv
+Groups:       ./results/phase1_5-final-8fbe960/regression/graphsage/all_graphsage_groups.csv
+
+wall_seconds=5.300348
+
+$ /Library/Frameworks/Python.framework/Versions/3.14/bin/python3 ./results/phase1_5-final-8fbe960/regression/phase0_train_graphsage.py --data ./results/phase1_5-final-8fbe960/regression/phase0_mlperf_long.csv --suite all --folds 5 --model gat --out-dir ./results/phase1_5-final-8fbe960/regression/gat
+fold   1/5 | held out  96 rows / 20 systems
+fold   2/5 | held out  66 rows / 19 systems
+fold   3/5 | held out  82 rows / 19 systems
+fold   4/5 | held out  87 rows / 19 systems
+fold   5/5 | held out 145 rows / 19 systems
+
+Grouped system-level validation (development evidence, not an official MLPerf result):
+       method        pooled_mape median_group_mape rmse_log_score median_group_spearman pooled_mape_95ci_low pooled_mape_95ci_high fold_median_mape
+random_forest              5.570             0.678          1.502                 0.732                1.086                14.191            1.050
+          gat             15.091             0.298          1.422                 0.820                0.529                43.803            0.658
+ group_median            250.566             0.776          1.828                -0.369                2.937               739.624            3.913
+        ridge 84104951177567.156             0.603          1.903                 0.666             5255.646   214304302014280.594            2.139
+
+Summary:      ./results/phase1_5-final-8fbe960/regression/gat/all_gat_summary.csv
+Predictions:  ./results/phase1_5-final-8fbe960/regression/gat/all_gat_predictions.csv
+Groups:       ./results/phase1_5-final-8fbe960/regression/gat/all_gat_groups.csv
+
+wall_seconds=7.807451

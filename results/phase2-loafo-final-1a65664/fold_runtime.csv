@@ -1,0 +1,14 @@
+fold_id,fold_number,systems,supported_rows,prediction_rows,runtime_seconds
+family_00_amd_cdna3_mi300x,1,1,2,36,3.3592392920108978
+family_01_amd_cdna4_mi350x,2,3,20,360,3.6819076249958016
+family_02_amd_cdna4_mi355x,3,12,61,1098,3.1421889170014765
+family_03_amd_rdna35_integrated_radeon_8060s,4,1,1,18,3.5518630419974215
+family_04_cpu_only_intel_xeon6_granite_rapids,5,10,28,504,4.216944916988723
+family_05_intel_xe2_battlemage_arc_pro_b70,6,3,17,306,2.9814936250040773
+family_08_nvidia_blackwell_b200,7,14,45,810,4.650679208978545
+family_09_nvidia_blackwell_b300,8,33,198,3564,2.566655083996011
+family_10_nvidia_blackwell_integrated_gb10,9,1,1,18,2.87006054201629
+family_11_nvidia_blackwell_integrated_thor,10,1,1,18,4.08641816599993
+family_12_nvidia_blackwell_rtx_pro,11,15,50,900,3.0638321670121513
+family_13_nvidia_hopper_h200,12,1,2,36,3.946637584012933
+family_14_nvidia_rubin_vr200,13,2,8,144,3.9992274999967776

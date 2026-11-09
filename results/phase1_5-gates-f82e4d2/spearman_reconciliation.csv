@@ -1,0 +1,9 @@
+dataset,definition,minimum_rows,mean,sd,seeds,qualifying_groups_min,qualifying_groups_max
+attribution_baseline,phase1_minimum_2_rows,2,0.4955606178718307,0.02016349781595724,10,26,26
+attribution_baseline,table_6_4_minimum_3_rows,3,0.4841923751305902,0.027473842381111516,10,25,25
+exact_phase0_graphsage,phase1_minimum_2_rows,2,0.7354551962696299,,1,26,26
+exact_phase0_graphsage,table_6_4_minimum_3_rows,3,0.7113032974423645,,1,25,25
+phase1_fixed_isolation,phase1_minimum_2_rows,2,0.5286599299260326,0.02509976007862659,10,20,20
+phase1_fixed_isolation,table_6_4_minimum_3_rows,3,0.5286599299260326,0.02509976007862659,10,20,20
+phase1_legacy_leaky,phase1_minimum_2_rows,2,0.46608491323220524,0.07374122493466387,10,26,26
+phase1_legacy_leaky,table_6_4_minimum_3_rows,3,0.4344465278483291,0.0865795400262759,10,25,25

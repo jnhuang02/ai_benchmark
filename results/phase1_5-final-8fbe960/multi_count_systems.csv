@@ -1,0 +1,3 @@
+system_id,accelerator,processor,accelerator_count_values,sensitivity_group_id,reported_total_accelerator_values,numeric_feature_contract
+datacenter|HPE|HPE Compute XD690 (8x NVIDIA B300-SXM-270GB TensorRT)|datacenter,NVIDIA B300-SXM-270GB,Intel(R) Xeon(R) 6776P,8;16,HPE|NVIDIA B300-SXM-270GB|Intel(R) Xeon(R) 6776P,8;16,each row uses its scalar total_accelerators value
+datacenter|NVIDIA|NVIDIA GB300 NVL72 (72x GB300-288GB_aarch64 TensorRT)|datacenter,NVIDIA GB300,NVIDIA Grace CPU,72;288,NVIDIA|NVIDIA GB300|NVIDIA Grace CPU,72;288,each row uses its scalar total_accelerators value

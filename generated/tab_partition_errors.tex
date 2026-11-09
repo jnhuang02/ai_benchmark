@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Method} & \textbf{P0} & \textbf{P1} & \textbf{P2} & \textbf{P3} & \textbf{P4} & \textbf{SD} \\
+\midrule
+Random forest & 0.230595 & 0.172587 & 0.242461 & 0.186130 & 0.177491 & 0.032297 \\
+MLP & 0.253798 & 0.261248 & 0.265858 & 0.288952 & 0.235500 & 0.019410 \\
+GraphSAGE & 0.445144 & 0.268147 & 0.339907 & 0.489107 & 0.309048 & 0.093310 \\
+GCN & 0.425807 & 0.249714 & 0.315997 & 0.462557 & 0.319611 & 0.087236 \\
+GAT & 0.594694 & 0.543353 & 0.675100 & 0.696522 & 0.653544 & 0.062715 \\
+\bottomrule
+\end{tabular}}
+\caption{Partition-specific CV5 primary errors. The final column is the sample standard deviation across the five partitions.}
+\label{tab:partition-errors}
+\end{table}

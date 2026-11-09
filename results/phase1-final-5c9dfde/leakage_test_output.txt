@@ -1,0 +1,13 @@
+test_baseline_fit_never_receives_test_rows_for_every_fold (test_leakage.TestEveryFoldIsolation.test_baseline_fit_never_receives_test_rows_for_every_fold) ... ok
+test_no_test_system_graph_scaler_vocabulary_or_baseline_for_every_fold (test_leakage.TestEveryFoldIsolation.test_no_test_system_graph_scaler_vocabulary_or_baseline_for_every_fold) ... ok
+test_roles_are_disjoint_for_every_fold (test_leakage.TestEveryFoldIsolation.test_roles_are_disjoint_for_every_fold) ... ok
+test_unknown_vectors_are_exercised_during_training (test_leakage.TestEveryFoldIsolation.test_unknown_vectors_are_exercised_during_training) ... ok
+test_isolated_weights_ignore_scrambled_test_metadata_every_fold (test_leakage.TestWeightPerturbation.test_isolated_weights_ignore_scrambled_test_metadata_every_fold) ... ok
+test_legacy_graph_fails_the_isolation_guard (test_leakage.TestWeightPerturbation.test_legacy_graph_fails_the_isolation_guard) ... ok
+test_legacy_weights_change_when_test_metadata_changes (test_leakage.TestWeightPerturbation.test_legacy_weights_change_when_test_metadata_changes) ... ok
+test_paired_difference_uses_same_system_draw (test_metrics.TestClusteredBootstrap.test_paired_difference_uses_same_system_draw) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 18.351s
+
+OK

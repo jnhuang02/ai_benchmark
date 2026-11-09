@@ -1,0 +1,59 @@
+{
+  "accelerator_map_sha256": "f52b4021cadbec2582d5b2b5fa5931c146630db068b9ac4ba871b21bc1703c2d",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "./exploratory_posthoc_b1.py",
+    "--output",
+    "results/exploratory-posthoc-b1-saved-prediction-bootstrap"
+  ],
+  "created_utc": "2026-11-09T04:11:34.140202+00:00",
+  "data_sha256": "a6853e1e2dc777404ddf9f5e0546679fef758df38bc4ebe5bba21e0c0bb735dd",
+  "fold_assignments_sha256": "3ed4dd0bf019685255c6f6d11f309d10f147280487617cf8f49c7c437e433443",
+  "git_branch": "revision/writing-consistency-20261108",
+  "git_commit": "57a74e7e98a2ad356d90f07ca3c129cd3e1ced2d",
+  "git_dirty": false,
+  "inputs": {
+    "cv5_bootstrap_draws": {
+      "path": "./results/phase2-cv5-final-aeeb4b4/bootstrap_by_method.csv",
+      "sha256": "7b462442d49d361f185c218b780ddb4aaed6599e53be061e62d0bb1711d41e4e"
+    },
+    "cv5_manifest": {
+      "path": "./results/phase2-cv5-final-aeeb4b4/results_manifest.json",
+      "sha256": "af85d70f5a5887252e8e775a5dbb7f545ab708c77ccfb4b262c5c3a655e0c103"
+    },
+    "cv5_predictions": {
+      "path": "./results/phase2-cv5-final-aeeb4b4/predictions_by_partition_seed.csv",
+      "sha256": "fbb24f26c92c9f649c4da26895889a87dafcf5b18905e61f9ee227b2a41c2597"
+    },
+    "loso_bootstrap_draws": {
+      "path": "./results/phase2-loso-final-a689ba5/bootstrap_by_method.csv",
+      "sha256": "052864a83e5612f635b776f0d4767f385be5ebf6bb2af7b27472a7f183e2a628"
+    },
+    "loso_manifest": {
+      "path": "./results/phase2-loso-final-a689ba5/results_manifest.json",
+      "sha256": "bdbb20b9e86140c9ecd25d1203111249edb97c2357819af7a048d8d0a16f47d3"
+    },
+    "loso_predictions": {
+      "path": "./results/phase2-loso-final-a689ba5/predictions_by_fold_seed.csv",
+      "sha256": "5f1b3540157480b65b9a7285b53663c7da69316fb514ec39702d1b3cd0cfb9dd"
+    }
+  },
+  "label": "exploratory, post hoc, not part of the frozen protocol",
+  "output_sha256": {
+    "README.md": "ac020b14f54107ed5e05bf2eda270fb2e34542a5d79692c65872a4e214a1f9b9",
+    "observed_model_errors.csv": "b8d396838912807f9b202bfd747c135376e08dbfe8e6344aadd39c2a462bb716",
+    "pair_summary.csv": "033271389762f25bd37382c06468f19ac2fef0b024b85d9e41c1c70d05f88529",
+    "paired_bootstrap_draws.csv": "20a9a5a39ce90be9d6e8a954ff14b6b698bd67a1f4b9ae07d19ca33a8b8d9a5d"
+  },
+  "protocol_sha256": "d4c5930477b54f6b3a65bbc1be98b755bc4a2335efcc2261294469d6f0123f3e",
+  "software_versions": {
+    "numpy": "2.4.3",
+    "pandas": "3.0.1",
+    "platform": "macOS-26.6.2-arm64-i386-64bit-Mach-O",
+    "python": "3.13.11",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "torch": "2.10.0",
+    "torch_geometric": "2.7.0"
+  }
+}

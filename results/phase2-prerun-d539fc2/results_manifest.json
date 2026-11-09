@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-11-07T23:22:35.266324+00:00",
+  "data_sha256": "a6853e1e2dc777404ddf9f5e0546679fef758df38bc4ebe5bba21e0c0bb735dd",
+  "datacenter_source_sha256": "8b5ccfe2143281e2ae266de03fbec8e57e69b86aeaa5938de0e578fef47d2d1f",
+  "five_fold_weight_test_passed": true,
+  "five_fold_weight_test_runtime_seconds": 4.856678582989844,
+  "git_branch": "phase-1-evaluation",
+  "git_commit": "d539fc2fd4d8d525eef04d9964d89a4aa7595b37",
+  "git_dirty": false,
+  "loafo_family_mapping_sha256": "1651770d0b6fd8d5c462bf1dd6f8b5fee5c44066cbf1fa1404d8d9745ffb3bd4",
+  "output_sha256": {
+    "five_fold_weight_test.txt": "3a6fa8f4950028b99d96455e7e60993535ce0e227a503dce62c2929c3d2f6dfd",
+    "gb300_source_check.csv": "f62edb3f5a5e41ad56c9a20bb4c0b4d3b2ac175a9d7479973848769648ce5697",
+    "legacy_fixed_reconciliation.csv": "c4138691d1ea3d6a016423a3e7585447175939348202471e908bede172f3504b"
+  },
+  "phase2_model_runs": 0,
+  "protocol_sha256": "d4c5930477b54f6b3a65bbc1be98b755bc4a2335efcc2261294469d6f0123f3e",
+  "wall_seconds": 7.740528583002742
+}

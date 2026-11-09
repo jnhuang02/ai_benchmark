@@ -1,0 +1,21 @@
+\begin{table*}[htbp]
+\centering
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Protocol} & \textbf{Comparison} & \textbf{Difference} & \textbf{95\% CI} & \textbf{Holm $p$} & \textbf{Label} \\
+\midrule
+Repeated CV5 & GraphSAGE $-$ Random forest & 0.171529 & [0.111863, 0.237339] & 0.000 & worse \\
+Repeated CV5 & GAT $-$ GraphSAGE & 0.267067 & [0.145077, 0.450114] & 0.000 & worse \\
+LOSO & GraphSAGE $-$ Random forest & 0.163960 & [0.105163, 0.223994] & 0.000 & worse \\
+LOSO & GAT $-$ GraphSAGE & 0.328409 & [0.192823, 0.498889] & 0.000 & worse \\
+Repeated CV5 & GraphSAGE $-$ GraphSAGE shuffled edges & 0.024523 & [0.004590, 0.045019] & 0.096 & equivalent \\
+LOSO & GraphSAGE $-$ GraphSAGE shuffled edges & -0.032199 & [-0.077127, 0.012450] & 0.387 & inconclusive \\
+Repeated CV5 & GCN $-$ GraphSAGE & -0.016638 & [-0.045146, 0.007482] & 0.387 & equivalent \\
+LOSO & GCN $-$ GraphSAGE & 0.022510 & [-0.030877, 0.095708] & 0.485 & inconclusive \\
+\bottomrule
+\end{tabular}}
+\caption{Secondary comparisons with raw 95\% system-clustered bootstrap intervals and Holm-adjusted p-values. Holm correction is applied to p-values only, not to interval endpoints. Equivalence is interval containment in the frozen $[-0.05,+0.05]$ margin and can coexist with an interval that excludes zero; for example, the repeated-CV edge ablation remains equivalent despite its positive interval and Holm p-value of 0.096.}
+\label{tab:secondary-holm}
+\end{table*}

@@ -1,0 +1,47 @@
+{
+  "bootstrap_replicates": 2000,
+  "created_utc": "2026-11-07T23:47:36.620399+00:00",
+  "data_sha256": "a6853e1e2dc777404ddf9f5e0546679fef758df38bc4ebe5bba21e0c0bb735dd",
+  "diagnostic_manifest_commit": "77c4752",
+  "fold_assignments_sha256": "3ed4dd0bf019685255c6f6d11f309d10f147280487617cf8f49c7c437e433443",
+  "git_branch": "phase-1-evaluation",
+  "git_commit": "aeeb4b41953e15cba3dab816f33482a5aaeec8bb",
+  "git_dirty": false,
+  "input_files": [
+    {
+      "path": "results/phase2-cv5-p0-8129f44/predictions_partition_0.csv",
+      "sha256": "3a1d7165eea2e8eb6aee61d477be274134abb3a7eac64ff590fd72fe99d61fa2"
+    },
+    {
+      "path": "results/phase2-cv5-p1-8129f44/predictions_partition_1.csv",
+      "sha256": "c28fdf4ccc24afece0a494c938ddb6afa386071c9687744e069ce02485eb3226"
+    },
+    {
+      "path": "results/phase2-cv5-p2-8129f44/predictions_partition_2.csv",
+      "sha256": "37788493b4b586303d96a631b015aba744e4a79b395800e25ceabe53bc125acd"
+    },
+    {
+      "path": "results/phase2-cv5-p3-8129f44/predictions_partition_3.csv",
+      "sha256": "e6f9ed85f10630f4726021b8399e086b9f9fd93a20d87c73d0e2f77632b12d77"
+    },
+    {
+      "path": "results/phase2-cv5-p4-8129f44/predictions_partition_4.csv",
+      "sha256": "aa7030fcc64bb9a88b685b3fca46290243f0e2216833b9cfa3b32dd4cb7163df"
+    }
+  ],
+  "output_sha256": {
+    "bootstrap_by_method.csv": "7b462442d49d361f185c218b780ddb4aaed6599e53be061e62d0bb1711d41e4e",
+    "main_table.csv": "2a5c2c496d841e225a81baa74a199a56f1159074dcf66b2445ecc5f8369ee9da",
+    "paired_differences.csv": "221eb76770ad14fff721897c745380925f8dfae35211a5604a80c2f95b6cb3a3",
+    "partition_metrics.csv": "2d9f9aa53fb84da85a0e14848e09df88725d579b1f8a972ae17b6da9e90e5121",
+    "per_group_results.csv": "c12466a520313533b2dfa8762f2bb41a193d603018f4d2d390b29a7fd0016e72",
+    "pooled_mape_appendix.csv": "93308886f09d2cd9839d6127db9c6287ad9d34ecb2199e02a99b79ccf725b760",
+    "predictions_by_partition_seed.csv": "fbb24f26c92c9f649c4da26895889a87dafcf5b18905e61f9ee227b2a41c2597",
+    "selected_gnn_counts.csv": "df50843bc7f9192450f21531b81c3922470cc9076f5bf65edc2dd666499b9b00"
+  },
+  "phase2_loso_run": false,
+  "phase2_sensitivity_run": false,
+  "protocol_hash_unchanged_since_cv5_run": true,
+  "protocol_introduced_commit": "0291baa",
+  "protocol_sha256": "d4c5930477b54f6b3a65bbc1be98b755bc4a2335efcc2261294469d6f0123f3e"
+}

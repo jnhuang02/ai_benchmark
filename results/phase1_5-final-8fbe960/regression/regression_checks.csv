@@ -1,0 +1,5 @@
+model,metric,observed,phase0_value,absolute_difference,reproduced
+graphsage,edge_mean_ape_pct,6289.529815910648,6289.529815910648,0.0,True
+graphsage,singleton_ape_share,0.46214010550186546,0.46214010550186546,0.0,True
+gat,median_group_mape,0.29756497402155335,0.29756497402155335,0.0,True
+gat,median_row_mape,0.23157114656046207,0.23157114656046207,0.0,True

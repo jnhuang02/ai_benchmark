@@ -1,0 +1,6 @@
+protocol,fold_id,test,train,validation,heldout_group
+canonical_cv5,github_010,22,73,10,random_system_group
+canonical_cv5,github_011,21,74,10,random_system_group
+canonical_cv5,github_012,21,74,10,random_system_group
+canonical_cv5,github_013,21,74,10,random_system_group
+canonical_cv5,github_014,20,75,10,random_system_group

@@ -1,0 +1,13 @@
+{
+  "converged_all_folds": true,
+  "fits": 25,
+  "formula": "y ~ C(target_group) + log_total + is_cpu + accelerator_memory",
+  "groups": "accelerator family",
+  "heldout_system_random_effect": 0.0,
+  "heldout_system_random_effect_rationale": "Prediction uses fixed effects only; unseen system contributes no random-intercept estimate and no variance-component update.",
+  "random_intercepts": [
+    "accelerator family",
+    "submitter",
+    "system"
+  ]
+}

@@ -1,0 +1,32 @@
+target_group,rows,result_unique,prediction_unique,minimum_2_rho,minimum_2_enters,minimum_3_rho,minimum_3_enters
+datacenter|v6.1|closed|Inference|VLM||Interactive|Queries/s,9,9,9,0.9166666666666666,True,0.9166666666666666,True
+datacenter|v6.1|closed|Inference|VLM||Offline|Samples/s,19,19,19,0.7017543859649124,True,0.7017543859649124,True
+datacenter|v6.1|closed|Inference|VLM||Server|Queries/s,18,18,18,0.8658410732714137,True,0.8658410732714137,True
+datacenter|v6.1|closed|Inference|deepseek-r1||Interactive|Tokens/s,6,6,6,-0.2571428571428572,True,-0.2571428571428572,True
+datacenter|v6.1|closed|Inference|deepseek-r1||Offline|Tokens/s,32,32,32,0.8574046920821115,True,0.8574046920821115,True
+datacenter|v6.1|closed|Inference|deepseek-r1||Server|Tokens/s,32,32,32,0.7573313782991201,True,0.7573313782991201,True
+datacenter|v6.1|closed|Inference|dlrm-v3||Offline|Samples/s,3,3,3,-1.0,True,-1.0,True
+datacenter|v6.1|closed|Inference|dlrm-v3||Server|Queries/s,3,3,3,-1.0,True,-1.0,True
+datacenter|v6.1|closed|Inference|end to end question-answering||Offline|Tasks/s,1,1,1,,False,,False
+datacenter|v6.1|closed|Inference|end to end vector-database||Offline|Samples/s,1,1,1,,False,,False
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Interactive|Tokens/s,5,5,5,-0.19999999999999998,True,-0.19999999999999998,True
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Offline|Tokens/s,54,54,54,0.6170764246235944,True,0.6170764246235944,True
+datacenter|v6.1|closed|Inference|gpt-oss-120b||Server|Tokens/s,53,53,53,0.5727302048056765,True,0.5727302048056765,True
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Interactive|Tokens/s,9,9,9,0.03333333333333333,True,0.03333333333333333,True
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Offline|Tokens/s,39,39,39,0.3631578947368421,True,0.3631578947368421,True
+datacenter|v6.1|closed|Inference|llama2-70b-99.9||Server|Tokens/s,39,39,39,0.46518218623481783,True,0.46518218623481783,True
+datacenter|v6.1|closed|Inference|llama3.1-8b||Interactive|Tokens/s,14,14,14,0.24395604395604395,True,0.24395604395604395,True
+datacenter|v6.1|closed|Inference|llama3.1-8b||Offline|Tokens/s,31,31,31,0.8004032258064517,True,0.8004032258064517,True
+datacenter|v6.1|closed|Inference|llama3.1-8b||Server|Tokens/s,31,30,31,0.8188325477644887,True,0.8188325477644887,True
+datacenter|v6.1|closed|Inference|rgat||Offline|Samples/s,5,5,5,-0.6,True,-0.6,True
+datacenter|v6.1|closed|Inference|text_to_video||Offline|Samples/s,15,15,15,0.5678571428571427,True,0.5678571428571427,True
+datacenter|v6.1|closed|Inference|text_to_video||SingleStream|Latency (s),15,15,15,0.2964285714285714,True,0.2964285714285714,True
+datacenter|v6.1|closed|Inference|whisper||Offline|Samples/s,23,23,23,0.6610671936758893,True,0.6610671936758893,True
+edge|v6.1|closed|Inference|agentic edge||SingleStream|Latency (ms),5,5,5,-0.3,True,-0.3,True
+edge|v6.1|closed|Inference|whisper||Offline|Samples/s,2,2,2,0.9999999999999999,True,,False
+edge|v6.1|closed|Inference|yolo-95||MultiStream|Latency (ms),3,3,3,-1.0,True,-1.0,True
+edge|v6.1|closed|Inference|yolo-95||Offline|Samples/s,3,3,3,0.5,True,0.5,True
+edge|v6.1|closed|Inference|yolo-95||SingleStream|Latency (ms),3,3,3,-1.0,True,-1.0,True
+edge|v6.1|closed|Inference|yolo-99||MultiStream|Latency (ms),1,1,1,,False,,False
+edge|v6.1|closed|Inference|yolo-99||Offline|Samples/s,1,1,1,,False,,False
+edge|v6.1|closed|Inference|yolo-99||SingleStream|Latency (ms),1,1,1,,False,,False

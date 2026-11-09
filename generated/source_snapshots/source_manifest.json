@@ -1,0 +1,87 @@
+{
+  "coverage": {
+    "sha256": "1543db3a3ae7134fa59f412e248580aa0696045828fe6518b0ba567aaa96cdb4",
+    "snapshot": "generated/source_snapshots/coverage_reconciliation.csv",
+    "source": "mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/coverage_reconciliation.csv"
+  },
+  "cv5_main": {
+    "sha256": "a154463d89dbf1b720f967b20bd56e4e9fe5e57b1b271f8a3bd559c38cecdf20",
+    "snapshot": "generated/source_snapshots/cv5_main_table.csv",
+    "source": "mlperf_gnn/results/phase2-final-f51e57a/cv5_main_table.csv"
+  },
+  "data": {
+    "sha256": "a6853e1e2dc777404ddf9f5e0546679fef758df38bc4ebe5bba21e0c0bb735dd",
+    "snapshot": "generated/source_snapshots/mlperf_long.csv",
+    "source": "mlperf_gnn/data/mlperf_long.csv"
+  },
+  "gat_diagnostics": {
+    "sha256": "267d70b8ec660f9bd584a36cbb697d0f9bac2cd5d04ce5d5e9449397b06b7af2",
+    "snapshot": "generated/source_snapshots/gat_training_summary.csv",
+    "source": "mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/gat_training_summary.csv"
+  },
+  "leak_test": {
+    "sha256": "7e131ac0d4e14b8d39747ffd3cfd8fb676c52d9a6894bfab13a949409ba1fb50",
+    "snapshot": "generated/source_snapshots/paired_bootstrap_differences.csv",
+    "source": "mlperf_gnn/results/phase1-final-5c9dfde/paired_bootstrap_differences.csv"
+  },
+  "loafo_comparisons": {
+    "sha256": "f0dda7572ba74c18e8e35011d1ef782dbddacf2ec91050e8d0f5080639f4022c",
+    "snapshot": "generated/source_snapshots/loafo_group_median_comparisons.csv",
+    "source": "mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_group_median_comparisons.csv"
+  },
+  "loafo_main": {
+    "sha256": "a18ee08a239b790079d9a6858ff0361b91b27b0a8af97ab52b887076f38ded3c",
+    "snapshot": "generated/source_snapshots/main_table_by_family.csv",
+    "source": "mlperf_gnn/results/phase2-loafo-final-1a65664/main_table_by_family.csv"
+  },
+  "loafo_pairs": {
+    "sha256": "3547d4ac6b6c7516f20d27177f2443ba398761ca9d56bd162893af86ec2867d0",
+    "snapshot": "generated/source_snapshots/paired_differences_by_family.csv",
+    "source": "mlperf_gnn/results/phase2-loafo-final-1a65664/paired_differences_by_family.csv"
+  },
+  "loafo_support": {
+    "sha256": "26a74465c0d04cdbe98191789cddc2632ee5f04f4190b6c830d21609e49da4d5",
+    "snapshot": "generated/source_snapshots/loafo_family_support.csv",
+    "source": "mlperf_gnn/results/phase2-5-corrections-e97bb93/loafo_family_support.csv"
+  },
+  "loso_main": {
+    "sha256": "643788d486d2199b1d9bda7ece0b72f2c0067d862281f3d70e9d5330ba450455",
+    "snapshot": "generated/source_snapshots/loso_main_table.csv",
+    "source": "mlperf_gnn/results/phase2-final-f51e57a/loso_main_table.csv"
+  },
+  "partition_errors": {
+    "sha256": "4544e3e5508d527876ad30d16188739edc943749068536b6a2b1148e528edaf6",
+    "snapshot": "generated/source_snapshots/partition_primary_errors.csv",
+    "source": "mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/partition_primary_errors.csv"
+  },
+  "primary_decision": {
+    "sha256": "29f50db2190612a089b3fe3243a944148ec31b73d84467fa69186c006523ec67",
+    "snapshot": "generated/source_snapshots/primary_decision.csv",
+    "source": "mlperf_gnn/results/phase2-final-f51e57a/primary_decision.csv"
+  },
+  "secondary_holm": {
+    "sha256": "fc23d3e0d815daef3b4caf7b258f7b1027b1408ee18f1aefb1058d6855ef9958",
+    "snapshot": "generated/source_snapshots/secondary_holm.csv",
+    "source": "mlperf_gnn/results/phase2-final-f51e57a/secondary_holm.csv"
+  },
+  "sensitivity_main": {
+    "sha256": "7b9c362e4be5482b4e7df50252a08216506460bf0555258da364f7f6c626a37a",
+    "snapshot": "generated/source_snapshots/sensitivity_main_table.csv",
+    "source": "mlperf_gnn/results/phase2-final-f51e57a/sensitivity_main_table.csv"
+  },
+  "spearman_reconciliation": {
+    "sha256": "1b6e5ca0fa7711efb34ab19bf402af0b012f8555845794c488376f638c8ac883",
+    "snapshot": "generated/source_snapshots/spearman_reconciliation.csv",
+    "source": "mlperf_gnn/results/phase1_5-gates-f82e4d2/spearman_reconciliation.csv"
+  },
+  "tail_summary": {
+    "sha256": "d22edf72aae46bdfa326ca5f502140ab10793cdf659a293c4d5f120e42236660",
+    "snapshot": "generated/source_snapshots/tail_summary.csv",
+    "source": "mlperf_gnn/results/phase2-5-analysis-4faac06/tail_summary.csv"
+  },
+  "top_residuals": {
+    "sha256": "2ca71f767b1b1a783c54f9675cf0332da86042f3e122d74cb1902eafd80acc1f",
+    "snapshot": "generated/source_snapshots/top_abs_z_residuals.csv",
+    "source": "mlperf_gnn/results/phase2-cv5-diagnostics-77c4752/top_abs_z_residuals.csv"
+  }
+}

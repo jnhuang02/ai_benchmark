@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lc}
+\toprule
+\textbf{Diagnostic} & \textbf{Value} \\
+\midrule
+Fold-seed fits & 250 \\
+Normalized prediction variance & 0.008526--0.126357 \\
+Unique predictions & 69--112 per fold-seed \\
+Best epoch & 1--67 \\
+Final validation loss & 0.254338--1.506562 \\
+\bottomrule
+\end{tabular}}
+\caption{GAT training diagnostics across the 25 repeated-CV fold cells (25 fold cells $\times$ 10 neural seeds). GAT predictions vary; its failure is not numerical collapse.}
+\label{tab:gat-diagnostic}
+\end{table}
