@@ -150,6 +150,7 @@ def make_graph(
     draw = rng.random(len(accelerator_rows)) < unknown_mask_probability
     training = accelerator_rows["accelerator_id"].isin(train_accelerators).to_numpy()
     accelerator.loc[draw & training] = UNKNOWN
+    accelerator_masked = draw & training
 
     processor = normalized_category(processor_rows["host_processor"]).copy()
     rng = np.random.default_rng(seed + 3)
@@ -190,11 +191,27 @@ def make_graph(
 
     data = HeteroData()
     data["system"].x = torch.as_tensor(system_features, dtype=torch.float32)
+    accelerator_features = features.vocabulary.one_hot_array(
+        pd.DataFrame({"accelerator": accelerator}), "accelerator"
+    )
+    if "accelerator_memory_type" in features.vocabulary.categories:
+        # Memory feature set only. The type is hidden whenever the accelerator
+        # identity is masked so masking keeps its meaning.
+        memory_type = normalized_category(
+            accelerator_rows["accelerator_memory_type"]
+        ).copy()
+        memory_type.loc[accelerator_masked] = UNKNOWN
+        accelerator_features = np.hstack(
+            [
+                accelerator_features,
+                features.vocabulary.one_hot_array(
+                    pd.DataFrame({"accelerator_memory_type": memory_type}),
+                    "accelerator_memory_type",
+                ),
+            ]
+        )
     data["accelerator"].x = torch.as_tensor(
-        features.vocabulary.one_hot_array(
-            pd.DataFrame({"accelerator": accelerator}), "accelerator"
-        ),
-        dtype=torch.float32,
+        accelerator_features, dtype=torch.float32
     )
     data["processor"].x = torch.as_tensor(
         features.vocabulary.one_hot_array(

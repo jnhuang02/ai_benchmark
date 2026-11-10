@@ -12,6 +12,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from evaluation.data import feature_set_manifest
 from evaluation.data import DEFAULT_DATA, load_family_map, sha256_file
 from evaluation.evaluate import GNNConfig, fold_role_sets
 from evaluation.features import (
@@ -612,6 +613,7 @@ def main() -> None:
         "git_commit": git_output("rev-parse", "HEAD"),
         "git_branch": git_output("branch", "--show-current"),
         "git_dirty": bool(git_output("status", "--porcelain")),
+        **feature_set_manifest(),
         "data_sha256": sha256_file(DEFAULT_DATA),
         "protocol_sha256": protocol_hash,
         "cv_bundle_manifest_sha256": sha256_file(

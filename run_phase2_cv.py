@@ -14,6 +14,7 @@ from pathlib import Path
 
 import pandas as pd
 
+from evaluation.data import feature_set_manifest
 from evaluation.data import DEFAULT_DATA, sha256_file
 from evaluation.evaluate import GNNConfig
 from evaluation.phase2 import (
@@ -149,6 +150,7 @@ def main() -> None:
         "git_commit": git_output("rev-parse", "HEAD"),
         "git_branch": git_output("branch", "--show-current"),
         "git_dirty": bool(git_output("status", "--porcelain")),
+        **feature_set_manifest(),
         "data_sha256": sha256_file(DEFAULT_DATA),
         "fold_assignments_sha256": sha256_file(
             ROOT / "folds" / "phase2_fold_assignments.csv"

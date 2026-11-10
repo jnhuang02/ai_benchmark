@@ -15,6 +15,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from evaluation.data import feature_set_manifest
 from evaluation.data import DEFAULT_DATA, sha256_file
 from evaluation.evaluate import GNNConfig
 from evaluation.phase2 import (
@@ -423,6 +424,7 @@ def main() -> None:
         "git_commit": git_output("rev-parse", "HEAD"),
         "git_branch": git_output("branch", "--show-current"),
         "git_dirty": bool(git_output("status", "--porcelain")),
+        **feature_set_manifest(),
         "protocol": "loafo",
         "protocol_sha256": sha256_file(ROOT / "protocol.md"),
         "data_sha256": sha256_file(DEFAULT_DATA),

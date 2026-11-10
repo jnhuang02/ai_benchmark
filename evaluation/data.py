@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import os
 from pathlib import Path
 
 import pandas as pd
@@ -28,6 +29,23 @@ NUMERIC_COLUMNS = [
     "host_processor_cores",
     "total_accelerators",
 ]
+
+# Feature-set switch. "frozen" reproduces protocol v2.1 exactly. "memory" is a
+# post-lock exploratory extension that adds per-accelerator memory capacity and
+# memory type from data/system_memory.csv (built by prepare_memory_features.py).
+# It is read once at import time so every module sees the same column lists.
+FEATURE_SETS = ("frozen", "memory")
+FEATURE_SET = os.environ.get("AI_BENCHMARK_FEATURE_SET", "frozen")
+if FEATURE_SET not in FEATURE_SETS:
+    raise ValueError(
+        f"AI_BENCHMARK_FEATURE_SET must be one of {FEATURE_SETS}, got {FEATURE_SET!r}"
+    )
+DEFAULT_MEMORY_TABLE = ROOT / "data" / "system_memory.csv"
+MEMORY_CATEGORICAL_COLUMNS = ["accelerator_memory_type"]
+MEMORY_NUMERIC_COLUMNS = ["accelerator_memory_gb"]
+if FEATURE_SET == "memory":
+    CATEGORICAL_COLUMNS = CATEGORICAL_COLUMNS + MEMORY_CATEGORICAL_COLUMNS
+    NUMERIC_COLUMNS = NUMERIC_COLUMNS + MEMORY_NUMERIC_COLUMNS
 
 
 def sha256_file(path: Path) -> str:
@@ -56,7 +74,7 @@ def load_dataset(path: Path = DEFAULT_DATA) -> pd.DataFrame:
         "result",
         "log_performance",
         "direction",
-        *NUMERIC_COLUMNS,
+        *(column for column in NUMERIC_COLUMNS if column not in MEMORY_NUMERIC_COLUMNS),
     }
     missing = required.difference(frame.columns)
     if missing:
@@ -71,7 +89,51 @@ def load_dataset(path: Path = DEFAULT_DATA) -> pd.DataFrame:
     for column in ["organization", "accelerator", "host_processor", "precision"]:
         frame[column] = frame[column].fillna("").astype(str)
     frame["cpu_only"] = frame["total_accelerators"].eq(0).astype(float)
+    if FEATURE_SET == "memory":
+        frame = attach_memory_features(frame)
     return frame
+
+
+def feature_set_manifest() -> dict[str, object]:
+    """Fields every run manifest records so feature sets are never confused."""
+    manifest: dict[str, object] = {
+        "feature_set": FEATURE_SET,
+        "categorical_columns": list(CATEGORICAL_COLUMNS),
+        "numeric_columns": list(NUMERIC_COLUMNS),
+    }
+    if FEATURE_SET == "memory":
+        manifest["memory_table_sha256"] = sha256_file(DEFAULT_MEMORY_TABLE)
+    return manifest
+
+
+def load_memory_table(path: Path = DEFAULT_MEMORY_TABLE) -> pd.DataFrame:
+    table = pd.read_csv(path, keep_default_na=False, na_values={"accelerator_memory_gb": [""]})
+    expected = {"system_id", *MEMORY_CATEGORICAL_COLUMNS, *MEMORY_NUMERIC_COLUMNS}
+    missing = expected.difference(table.columns)
+    if missing:
+        raise ValueError(f"Memory table is missing columns: {sorted(missing)}")
+    if table["system_id"].duplicated().any():
+        raise ValueError("Memory table is not unique by system_id")
+    return table
+
+
+def attach_memory_features(
+    frame: pd.DataFrame, path: Path = DEFAULT_MEMORY_TABLE
+) -> pd.DataFrame:
+    """Join per-system memory features; missing values stay missing."""
+    table = load_memory_table(path)[
+        ["system_id", *MEMORY_CATEGORICAL_COLUMNS, *MEMORY_NUMERIC_COLUMNS]
+    ]
+    uncovered = set(frame["system_id"]) - set(table["system_id"])
+    if uncovered:
+        raise ValueError(
+            f"Memory table lacks {len(uncovered)} systems; rerun prepare_memory_features.py"
+        )
+    merged = frame.merge(table, on="system_id", how="left", validate="many_to_one")
+    merged["accelerator_memory_type"] = (
+        merged["accelerator_memory_type"].fillna("").astype(str)
+    )
+    return merged
 
 
 def load_family_map(path: Path = DEFAULT_FAMILY_MAP) -> pd.DataFrame:
