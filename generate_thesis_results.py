@@ -6,10 +6,12 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import shutil
 from pathlib import Path
 
 import matplotlib
+from evaluation.bundles import bundle
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -18,13 +20,13 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parent
-THESIS = ROOT.parent / "thesis_overleaf"
+THESIS = Path(os.environ.get("AI_BENCHMARK_THESIS_DIR", ROOT.parent / "thesis_overleaf")).resolve()
 DATA = ROOT / "data" / "mlperf_long.csv"
-FINAL = ROOT / "results" / "phase2-final-f51e57a"
-TAIL = ROOT / "results" / "phase2-5-analysis-4faac06"
-DIAG = ROOT / "results" / "phase2-cv5-diagnostics-77c4752"
-CORRECTIONS = ROOT / "results" / "phase2-5-corrections-e97bb93"
-LOAFO = ROOT / "results" / "phase2-loafo-final-1a65664"
+FINAL = bundle("final")
+TAIL = bundle("tail")
+DIAG = bundle("diagnostics")
+CORRECTIONS = bundle("corrections")
+LOAFO = bundle("loafo")
 PHASE1 = ROOT / "results" / "phase1-final-5c9dfde"
 GATES = ROOT / "results" / "phase1_5-gates-f82e4d2"
 
@@ -132,6 +134,25 @@ def write(path: Path, text: str) -> None:
     path.write_text(text.rstrip() + "\n")
 
 
+# Short titles for the List of Tables, matching the one-line entries used in
+# published UCLA theses; the full caption still appears with each table.
+SHORT_CAPTIONS = {
+    "tab:data-coverage": "Coverage of the MLPerf Inference v6.1 Datacenter and Edge results.",
+    "tab:protocol": "Validation designs.",
+    "tab:mlperf-parameters": "Parameters required to reproduce an MLPerf Inference result.",
+    "tab:model-ladder": "Primary error for all models.",
+    "tab:primary-decision": "Best GNN minus MLP by validation design.",
+    "tab:secondary-holm": "Secondary comparisons with Holm-adjusted p-values.",
+    "tab:tail-summary": "Error tails for random forest, MLP, and GraphSAGE.",
+    "tab:loafo-headline": "Leave-one-family-out errors for the headline families.",
+    "tab:loafo-other": "Leave-one-family-out errors for small families and CPU-only systems.",
+    "tab:loafo-pairing": "Family comparisons with the group median and best GNN minus MLP.",
+    "tab:partition-errors": "Primary error by repeated-CV partition.",
+    "tab:gat-diagnostic": "GAT training diagnostics.",
+    "tab:provenance": "Provenance values.",
+}
+
+
 def table_wrapper(
     caption: str,
     label: str,
@@ -160,7 +181,7 @@ def table_wrapper(
             r"\bottomrule",
             r"\end{tabular}}",
             *note_lines,
-            f"\\caption{{{caption}}}",
+            (f"\\caption[{SHORT_CAPTIONS[label]}]{{{caption}}}" if label in SHORT_CAPTIONS else f"\\caption{{{caption}}}"),
             f"\\label{{{label}}}",
             f"\\end{{{environment}}}",
         ]
@@ -284,7 +305,7 @@ def generate_tables(output: Path) -> None:
 
     primary = read_input("primary_decision")
     rows = [
-        r"\textbf{Protocol} & \textbf{Best GNN $-$ MLP} & \textbf{95\% CI} & \textbf{Frozen label} \\",
+        r"\textbf{Protocol} & \textbf{Best GNN $-$ MLP} & \textbf{95\% CI} & \textbf{Label} \\",
         r"\midrule",
     ]
     protocol_names = {
@@ -303,7 +324,7 @@ def generate_tables(output: Path) -> None:
         table_wrapper(
             "Co-primary and sensitivity best-GNN-minus-MLP decisions. The "
             "intervals are raw 95\\% system-clustered bootstrap intervals. "
-            "The sensitivity row applies the frozen label rule but is not "
+            "The sensitivity row applies the same label rule but is not "
             "co-primary and is nearly redundant with the system-level split.",
             "tab:primary-decision",
             "lccc",
@@ -330,10 +351,8 @@ def generate_tables(output: Path) -> None:
             "Secondary comparisons with raw 95\\% system-clustered bootstrap "
             "intervals and Holm-adjusted p-values. Holm correction is applied "
             "to p-values only, not to interval endpoints. Equivalence is "
-            "interval containment in the frozen $[-0.05,+0.05]$ margin and "
-            "can coexist with an interval that excludes zero; for example, the "
-            "repeated-CV edge ablation remains equivalent despite its positive "
-            "interval and Holm p-value of 0.096.",
+            "interval containment in the $[-0.05,+0.05]$ margin and "
+            "can coexist with an interval that excludes zero.",
             "tab:secondary-holm",
             "llcccc",
             rows,

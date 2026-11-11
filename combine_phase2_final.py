@@ -12,14 +12,15 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from evaluation.bundles import bundle
 from evaluation.data import DEFAULT_DATA, sha256_file
 
 
 ROOT = Path(__file__).resolve().parent
-CV = ROOT / "results" / "phase2-cv5-final-aeeb4b4"
-LOSO = ROOT / "results" / "phase2-loso-final-a689ba5"
-SENS = ROOT / "results" / "phase2-sensitivity-final-a689ba5"
-DIAG = ROOT / "results" / "phase2-cv5-diagnostics-77c4752"
+CV = bundle("cv5")
+LOSO = bundle("loso")
+SENS = bundle("sensitivity")
+DIAG = bundle("diagnostics")
 
 
 def git_output(*args: str) -> str:
