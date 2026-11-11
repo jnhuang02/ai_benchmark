@@ -13,6 +13,7 @@ from pathlib import Path
 
 import pandas as pd
 
+from evaluation.data import feature_set_manifest
 from evaluation.data import DEFAULT_DATA, sha256_file
 from evaluation.evaluate import GNNConfig
 from evaluation.phase2 import (
@@ -129,6 +130,7 @@ def main() -> None:
         "git_commit": git_output("rev-parse", "HEAD"),
         "git_branch": git_output("branch", "--show-current"),
         "git_dirty": bool(git_output("status", "--porcelain")),
+        **feature_set_manifest(),
         "protocol": args.protocol,
         "shard_index": args.shard_index,
         "shard_count": args.shard_count,

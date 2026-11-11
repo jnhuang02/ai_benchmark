@@ -55,6 +55,58 @@ Normalize throughput and latency per task and record whether higher is better.
 - GraphSAGE is a GNN. It is inductive and usually the primary candidate for a
   system graph; GCN and GAT are useful ablations, not implementation synonyms.
 
+## Hardware Metadata Features
+
+System description JSONs (`closed/<submitter>/systems/<platform>.json`) hold
+hardware fields that the result exports omit, such as
+`accelerator_memory_capacity`, `accelerator_memory_configuration`, and
+`host_memory_capacity`.
+
+- Link result rows to JSONs through the results round's `summary.csv`
+  (`Location` gives the submitter folder, `Platform` the JSON name), matching on
+  submitter, scenario, and result value. Display names differ between exports,
+  so do not join on system name. Map any unmatched systems by hand and record
+  each mapping.
+- These fields are self-reported and inconsistent. Normalize units (MiB vs. GB),
+  spelling (`HBM3E` vs. `HBM3e`), and free text. Check each value against the
+  other systems in the same accelerator family; v6.1 includes RTX PRO cards
+  labeled HBM3e or HBM2e that are actually GDDR7. Record every correction in a
+  note column.
+- Give CPU-only systems 0 GB and type `none`. Treat systems with two
+  accelerator models as `mixed`. Leave values reported as `N/A` on accelerated
+  systems missing and impute them within each training fold; never fill them
+  from memory.
+- Memory type closely follows accelerator family, so its added value shows up
+  mainly under leave-one-accelerator-family-out splits.
+- The v6.1 JSONs also report accelerator interconnect, host memory, and host
+  networking, but no memory-bandwidth field. Bandwidth must come from vendor
+  specifications; do not claim it is in the system descriptions.
+- Check that every system sharing an accelerator gets the same memory type. A
+  graph that stores the type once per accelerator node otherwise takes it from
+  whichever system comes first (in v6.1, one of four Intel Arc Pro B70 systems
+  reports N/A).
+- Add new features behind an opt-in switch so earlier results still
+  reproduce. In a project with a frozen, pre-registered protocol, a feature
+  added after the results were seen must be disclosed as post hoc. Whether it
+  becomes the primary result is the author's decision, but never present it as
+  part of the pre-registered design.
+- In `ai_benchmark`, `AI_BENCHMARK_FEATURE_SET=memory` adds the features (built
+  by `prepare_memory_features.py` into `data/system_memory.csv`), and
+  `AI_BENCHMARK_BUNDLES=memory` points the combine, diagnostics, tail, and
+  thesis-table scripts at the memory-feature bundles. The thesis reports this
+  memory-feature run as its single final evaluation, with one sentence
+  disclosing that the features were added after an initial evaluation.
+
+## Reporting Claims
+
+- When a decision rule requires two validation designs to agree, a split
+  result (for example, *equivalent* under one and *inconclusive* under the
+  other) supports no formal claim. Summaries in the abstract, discussion, and
+  conclusion must say so rather than restate the more favorable label.
+- Trace every reported number to a saved result file and column, and check
+  descriptive claims (counts, sizes, ranges) against the data before writing
+  them.
+
 ## References
 
 - Read [references/benchmarks-and-metrics.md](references/benchmarks-and-metrics.md)
@@ -63,7 +115,8 @@ Normalize throughput and latency per task and record whether higher is better.
   for server, iOS, and Tiny execution guidance and troubleshooting.
 - Read [references/results-and-modeling.md](references/results-and-modeling.md)
   for the analyzed result snapshots, baselines, GraphSAGE design, validation,
-  trace limitations, and roofline requirements.
+  trace limitations, roofline requirements, and the `ai_benchmark` thesis
+  results.
 
 Load only the reference needed for the current task. For result analysis,
 retain exact version and unit labels in outputs; for a new benchmark run, report

@@ -370,6 +370,10 @@ def _mixed_frame(frame: pd.DataFrame) -> pd.DataFrame:
             default=np.nan,
         )
     )
+    if "accelerator_memory_gb" in output.columns:
+        # Memory feature set: use the system-description capacity instead of
+        # parsing the accelerator name.
+        memory = pd.to_numeric(output["accelerator_memory_gb"], errors="coerce")
     output["accelerator_memory"] = memory
     output["family"] = output["accelerator_family"].fillna("unknown")
     output["submitter"] = output["organization"]

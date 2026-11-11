@@ -16,6 +16,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from evaluation.data import feature_set_manifest
 from evaluation.data import (
     DEFAULT_DATA,
     load_dataset,
@@ -483,6 +484,7 @@ def write_manifest(output: Path) -> None:
         "git_commit": git_output("rev-parse", "HEAD"),
         "git_branch": git_output("branch", "--show-current"),
         "git_dirty": bool(git_output("status", "--porcelain")),
+        **feature_set_manifest(),
         "data_sha256": sha256_file(DEFAULT_DATA),
         "phase2_model_runs": 0,
         "output_sha256": files,

@@ -2,6 +2,25 @@
 
 All evaluation changes are recorded here with their scientific reason.
 
+## 2026-11-10
+
+- Added `evaluation/bundles.py` and the `AI_BENCHMARK_BUNDLES` switch so the
+  combine, diagnostics, tail, LOAFO-support, and thesis-table scripts can read
+  the memory-feature bundles (`memory`) instead of the frozen ones (default).
+  Ran them into `results/memory-*` and regenerated the thesis tables and
+  figures from that single final run. Removed frozen-run wording from
+  generated captions. `AI_BENCHMARK_THESIS_DIR` overrides the thesis path.
+  Reason: the thesis now reports one final evaluation with memory features.
+
+- Added `exploratory_memory_ablation.py` and reran every Phase 2 model
+  (repeated CV, LOSO, sensitivity, LOAFO) with
+  `AI_BENCHMARK_FEATURE_SET=memory` into `results/exploratory-memory-*`.
+  Reason: report the accelerator-memory features as a post-lock exploratory
+  ablation. The script asserts identical supported rows and bootstrap
+  replicates, forms paired memory-minus-frozen intervals, applies the frozen
+  decision rule descriptively, and writes the thesis `tab_memory_*.tex`
+  tables. Frozen bundles and the frozen co-primary label are unchanged.
+
 ## 2026-11-08
 
 - Clarified generated table presentation rather than editing table values:

@@ -35,9 +35,11 @@ These are exploratory, task-specific associations. Different units, system
 families, batching strategies, precision, networking, and software stacks mean
 they do not establish that adding accelerators causes proportional speedup.
 
-## Metadata-Only Baseline
+## Metadata-Only Baseline (Early Snapshot)
 
-Leave-one-system-out results using metadata features produced:
+This is an early exploratory snapshot that predates the thesis pipeline; use
+the "Thesis Results" section below for current numbers. Leave-one-system-out
+results using metadata features produced:
 
 | Model | Pooled MAPE | Median fold MAPE |
 | --- | ---: | ---: |
@@ -115,3 +117,37 @@ Useful figures are predicted versus measured performance, residuals by
 accelerator family, aggregate model comparison, GraphSAGE/GCN/GAT ablation, and
 uncertainty by task. Keep the final discussion tied to the exact rows and
 versions that support it.
+
+## Thesis Results (`ai_benchmark`, Memory-Feature Run)
+
+The thesis evaluates 476 MLPerf Inference v6.1 Closed-division Datacenter and
+Edge measurements from 105 submitter-aware systems, with accelerator memory
+capacity and type added from the system-description JSONs. All designs hold out
+complete systems. The primary error is the median absolute log ratio (lower is
+better); intervals come from 2,000 bootstrap resamples of systems.
+
+| Model | Repeated CV5 | LOSO |
+| --- | ---: | ---: |
+| Random forest | 0.156 | 0.144 |
+| Hierarchical mixed | 0.185 | 0.188 |
+| MLP | 0.220 | 0.193 |
+| Best GNN | 0.365 | 0.317 |
+| GraphSAGE | 0.370 | 0.331 |
+| Group median | 0.617 | 0.581 |
+
+- Best GNN minus MLP: +0.151 (95% CI [0.089, 0.227]) under CV5 and +0.125
+  ([0.064, 0.202]) under LOSO. Both exceed the +0.05 margin, so the label is
+  *worse* under both designs.
+- Real minus shuffled-edge GraphSAGE: +0.023 (*equivalent*) under CV5 and
+  +0.028 (*inconclusive*) under LOSO. Both point estimates favor the shuffled
+  graph, but the designs disagree, so no formal edge claim is made.
+- Leave-one-accelerator-family-out: 25 of 36 model-family combinations beat
+  the group median across the six headline families; results are descriptive
+  and unpooled.
+- Validation sets for best-GNN selection hold 10 systems (CV5) or 12 (LOSO);
+  78 of the 90 sensitivity groups are singletons.
+
+In the GNN, memory capacity is a result-node numeric feature (every result
+carries its system's value) and memory type is an accelerator-node feature that
+is masked with the accelerator identity. The system node carries only the
+submitter and system type.

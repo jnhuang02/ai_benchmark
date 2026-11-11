@@ -19,11 +19,12 @@ from evaluation.phase2 import (
     fit_hierarchical_mixed_detailed,
     load_phase2_frame,
 )
+from evaluation.bundles import bundle, loso_shard_glob
 
 
 ROOT = Path(__file__).resolve().parent
-CV = ROOT / "results" / "phase2-cv5-final-aeeb4b4"
-LOSO = ROOT / "results" / "phase2-loso-final-a689ba5"
+CV = bundle("cv5")
+LOSO = bundle("loso")
 METHODS = ("random_forest", "mlp", "graphsage")
 QUANTILES = (0.5, 0.75, 0.9, 0.95)
 
@@ -144,7 +145,7 @@ def empty_loso_folds() -> pd.DataFrame:
     loso = assignments.loc[assignments["protocol"].eq("loso")]
     rows = []
     for manifest_path in sorted(
-        (ROOT / "results").glob("phase2-loso-shard*/run_manifest.json")
+        (ROOT / "results").glob(f"{loso_shard_glob()}/run_manifest.json")
     ):
         manifest = json.loads(manifest_path.read_text())
         for fold_id in manifest["empty_folds"]:

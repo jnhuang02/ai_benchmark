@@ -14,10 +14,11 @@ from pathlib import Path
 import pandas as pd
 
 from evaluation.data import DEFAULT_DATA, sha256_file
+from evaluation.bundles import bundle
 
 
 ROOT = Path(__file__).resolve().parent
-LOAFO = ROOT / "results" / "phase2-loafo-final-1a65664"
+LOAFO = bundle("loafo")
 FAMILY_MAP = ROOT / "folds" / "loafo_family_mapping_proposed.csv"
 SYSTEM_ASSIGNMENT = ROOT / "folds" / "loafo_system_assignment_proposed.csv"
 PROTOCOL = ROOT / "protocol.md"
