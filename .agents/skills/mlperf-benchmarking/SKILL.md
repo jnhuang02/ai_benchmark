@@ -78,10 +78,34 @@ hardware fields that the result exports omit, such as
   from memory.
 - Memory type closely follows accelerator family, so its added value shows up
   mainly under leave-one-accelerator-family-out splits.
-- In a project with a frozen, pre-registered protocol, add new features
-  behind an opt-in switch (in `ai_benchmark`: `AI_BENCHMARK_FEATURE_SET=memory`,
-  built by `prepare_memory_features.py` into `data/system_memory.csv`). Report
-  them as a post-lock exploratory ablation, never as the primary result.
+- The v6.1 JSONs also report accelerator interconnect, host memory, and host
+  networking, but no memory-bandwidth field. Bandwidth must come from vendor
+  specifications; do not claim it is in the system descriptions.
+- Check that every system sharing an accelerator gets the same memory type. A
+  graph that stores the type once per accelerator node otherwise takes it from
+  whichever system comes first (in v6.1, one of four Intel Arc Pro B70 systems
+  reports N/A).
+- Add new features behind an opt-in switch so earlier results still
+  reproduce. In a project with a frozen, pre-registered protocol, a feature
+  added after the results were seen must be disclosed as post hoc. Whether it
+  becomes the primary result is the author's decision, but never present it as
+  part of the pre-registered design.
+- In `ai_benchmark`, `AI_BENCHMARK_FEATURE_SET=memory` adds the features (built
+  by `prepare_memory_features.py` into `data/system_memory.csv`), and
+  `AI_BENCHMARK_BUNDLES=memory` points the combine, diagnostics, tail, and
+  thesis-table scripts at the memory-feature bundles. The thesis reports this
+  memory-feature run as its single final evaluation, with one sentence
+  disclosing that the features were added after an initial evaluation.
+
+## Reporting Claims
+
+- When a decision rule requires two validation designs to agree, a split
+  result (for example, *equivalent* under one and *inconclusive* under the
+  other) supports no formal claim. Summaries in the abstract, discussion, and
+  conclusion must say so rather than restate the more favorable label.
+- Trace every reported number to a saved result file and column, and check
+  descriptive claims (counts, sizes, ranges) against the data before writing
+  them.
 
 ## References
 
@@ -91,7 +115,8 @@ hardware fields that the result exports omit, such as
   for server, iOS, and Tiny execution guidance and troubleshooting.
 - Read [references/results-and-modeling.md](references/results-and-modeling.md)
   for the analyzed result snapshots, baselines, GraphSAGE design, validation,
-  trace limitations, and roofline requirements.
+  trace limitations, roofline requirements, and the `ai_benchmark` thesis
+  results.
 
 Load only the reference needed for the current task. For result analysis,
 retain exact version and unit labels in outputs; for a new benchmark run, report
